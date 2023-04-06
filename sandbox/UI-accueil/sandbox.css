@@ -249,14 +249,16 @@ body #vertical-ico {
 	position: absolute;
 	bottom: 19px;
 	right: 80px;
-	transition: var(--transition-timer-3);}
+	transition: var(--transition-timer-3);
+}
 body #vertical-mail {
 	margin: auto;
 	position: fixed;
 	right: -65px;
 	bottom: 135px;
 	transform: rotate(90deg);
-	transition: var(--transition-timer-3);}
+	transition: var(--transition-timer-3);
+}
 #vertical-mail p::after {
 	content: "";
 	width: 50px;
@@ -265,7 +267,8 @@ body #vertical-mail {
 	position: absolute;
 	bottom: 13px;
 	left: 180px;
-	transition: var(--transition-timer-3);}
+	transition: var(--transition-timer-3);
+}
 #vertical-mail p::before {
 	content: "";
 	width: 150px;
@@ -365,8 +368,9 @@ body #vertical-mail {
 		right: 25px;
 		align-items: flex-end;
 	}
+}
 
-
+@media screen and (min-width: 1200px) {
 	body #vertical-mail {
 		margin: auto;
 		position: fixed;
