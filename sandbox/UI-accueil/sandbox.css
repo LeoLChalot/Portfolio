@@ -17,6 +17,7 @@
 	--font-general: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
 	--font-link: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 	--transition-timer: 0.3s all ease;
+	--transition-timer-3: 1s all ease;
 }
 /* ********************************************* */
 /* *                  RESET CSS                * */
@@ -229,7 +230,7 @@ body #vertical-ico {
 	left: -10px;
 	bottom: 135px;
 	transform: rotate(-90deg);
-	transition: var(--transition-timer);
+	transition: var(--transition-timer-3);
 }
 #vertical-ico p::after {
 	content: "";
@@ -248,16 +249,14 @@ body #vertical-ico {
 	position: absolute;
 	bottom: 19px;
 	right: 80px;
-	transition: var(--transition-timer);
-}
+	transition: var(--transition-timer-3);}
 body #vertical-mail {
 	margin: auto;
 	position: fixed;
 	right: -65px;
 	bottom: 135px;
 	transform: rotate(90deg);
-	transition: var(--transition-timer);
-}
+	transition: var(--transition-timer-3);}
 #vertical-mail p::after {
 	content: "";
 	width: 50px;
@@ -266,8 +265,7 @@ body #vertical-mail {
 	position: absolute;
 	bottom: 13px;
 	left: 180px;
-	transition: var(--transition-timer);
-}
+	transition: var(--transition-timer-3);}
 #vertical-mail p::before {
 	content: "";
 	width: 150px;
