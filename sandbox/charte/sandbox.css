@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500&display=swap');
+/* ********************************************* */
+/* *         VARIABLES ROOT GLOBALES           * */
+/* ********************************************* */
+:root{
+    --background: #0A192F;
+    --background-card : #112240;
+    --color-link : #64FFDA;
+    --btn-hover : #64ffdb61;
+    --color-header : #CCD6F6;
+    --color-text : #A2ADCC;
+    --color-text-muted : #54617F;
+    --padding-card : 8px;
+    --padding-section : 1em;
+    --border-radius : 5px;
+    --border-green : 1px solid #64FFDA;
+    --font-general : "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-link :"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    --transition-timer : .3s all ease;
+    --shadow : 1px 0px 11px 0px rgba(17, 34, 64, 1);
+}
+/* ********************************************* */
+/* *                  RESET CSS                * */
+/* ********************************************* */
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    font-family: var(--font-general);
+    line-height: 2em;
+}
+a,
+button{
+    font-family: var(--font-link);
+    cursor: default;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: var(--color-header);
+}
+p{
+    color: var(--color-text);
+}
+.before::before{
+    content: '01.';
+    font-family: "Roboto Mono";
+    color: var(--color-link);
+    margin-right: 10px;
+}
+.text-muted{
+    color: var(--color-text-muted);
+}
+a{
+    color: var(--color-link);
+    text-decoration: none;
+    width: auto;
+    position: relative;
+    line-height: 2em;
+}
+a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-link);
+    transition: var(--transition-timer);
+}
+a:hover::before{
+    width: 100%;
+}
+button{
+    width: 100px;
+    height: 50px;
+    border-radius: var(--border-radius);
+    background-color: var(--background);
+    border: var(--border-green);
+    color: var(--color-link);
+    transition: var(--transition-timer);
+}
+button:hover{
+    background-color: var(--btn-hover);
+    border: var(--background-card);
+    color: var(--color-header);
+}
+#container{
+    position: relative;
+    width: 250px;
+    height: 500px;
+    border-radius: var(--border-radius);
+    padding: var(--padding-section);
+    border : var(--border-green);
+    display: flex;
+    flex-direction: column;
+}
