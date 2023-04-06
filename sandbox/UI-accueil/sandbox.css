@@ -21,7 +21,7 @@
 /* ********************************************* */
 /* *                  RESET CSS                * */
 /* ********************************************* */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
 	width: 0;
 }
 *,
@@ -96,7 +96,7 @@ a::before {
 a:hover::before {
 	width: 100%;
 }
-hr{
+hr {
 	border-color: var(--color-link);
 }
 button {
@@ -113,8 +113,17 @@ button:hover {
 	border: var(--background-card);
 	color: var(--color-text);
 }
-.title{
+.title {
 	max-width: 50%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#vertical-ico,
+#vertical-mail {
+	display: block;
 }
 /* ********************************************* */
 /* *                CSS Menu-Aside             * */
@@ -267,8 +276,8 @@ body #vertical-mail {
 	padding: var(--padding-section);
 }
 .card-container {
+	max-width: 80%;
 	position: relative;
-	max-width: 370px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -294,7 +303,7 @@ body #vertical-mail {
 	line-height: 1.4em;
 	font-size: 1em;
 }
-.card-container .card-image{
+.card-container .card-image {
 	display: none;
 }
 .card-container .card-image img {
@@ -306,9 +315,10 @@ body #vertical-mail {
 	cursor: help;
 }
 .card-container:hover img,
-.card-container:hover .card-info{
+.card-container:hover .card-info {
 	filter: none;
 }
+
 .card-container:nth-child(odd) .card-text p {
 	text-align: left;
 }
@@ -324,11 +334,14 @@ body #vertical-mail {
 	font-size: 0.7em;
 }
 @media screen and (min-width: 768px) {
+	#vertical-ico,
+	#vertical-mail {
+		display: block;
+	}
 	.card-container {
-		max-width: 1000px;
 		flex-direction: row;
 	}
-	.card-container .card-image{
+	.card-container .card-image {
 		display: block;
 	}
 	.card-info:nth-child(odd) {
@@ -340,10 +353,5 @@ body #vertical-mail {
 	.card-info:nth-child(even) {
 		right: 25px;
 		align-items: flex-end;
-	}
-}
-@media screen and (min-width: 1200px) {
-	.card-container {
-		max-width: 1000px;
 	}
 }
