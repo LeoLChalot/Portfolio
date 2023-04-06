@@ -82,7 +82,6 @@ a {
 	text-decoration: none;
 	width: auto;
 	position: relative;
-	line-height: 2em;
 }
 a::before {
 	content: "";
@@ -121,10 +120,10 @@ button:hover {
 	justify-content: center;
 	align-items: center;
 }
-.title h1{
+.title h1 {
 	font-size: 3em;
 }
-.title p{
+.title p {
 	text-align: justify;
 }
 #vertical-ico,
@@ -162,7 +161,7 @@ button:hover {
 	background-color: var(--color-link);
 	transition: 0.3s all;
 }
-#btn-burger.active{
+#btn-burger.active {
 	background-color: var(--background-card);
 }
 #btn-burger.active span:nth-child(2) {
@@ -228,8 +227,9 @@ body #vertical-ico {
 	margin: auto;
 	position: fixed;
 	left: -10px;
-	bottom: 235px;
+	bottom: 135px;
 	transform: rotate(-90deg);
+	transition: var(--transition-timer);
 }
 #vertical-ico p::after {
 	content: "";
@@ -242,28 +242,31 @@ body #vertical-ico {
 }
 #vertical-ico p::before {
 	content: "";
-	width: 200px;
+	width: 100px;
 	height: 1px;
 	background-color: var(--color-link);
 	position: absolute;
 	bottom: 19px;
 	right: 80px;
+	transition: var(--transition-timer);
 }
 body #vertical-mail {
 	margin: auto;
 	position: fixed;
 	right: -65px;
-	bottom: 235px;
+	bottom: 135px;
 	transform: rotate(90deg);
+	transition: var(--transition-timer);
 }
 #vertical-mail p::after {
 	content: "";
-	width: 150px;
+	width: 50px;
 	height: 1px;
 	background-color: var(--color-link);
 	position: absolute;
 	bottom: 13px;
 	left: 180px;
+	transition: var(--transition-timer);
 }
 #vertical-mail p::before {
 	content: "";
@@ -310,7 +313,7 @@ body #vertical-mail {
 	box-shadow: var(--shadow);
 }
 .card-container .card-info .card-text p {
-	line-height: 1.4em;
+	line-height: 1.5em;
 	font-size: 1em;
 }
 .card-container .card-image {
@@ -363,5 +366,39 @@ body #vertical-mail {
 	.card-info:nth-child(even) {
 		right: 25px;
 		align-items: flex-end;
+	}
+
+
+	body #vertical-mail {
+		margin: auto;
+		position: fixed;
+		right: -65px;
+		bottom: 235px;
+		transform: rotate(90deg);
+	}
+	body #vertical-ico {
+		margin: auto;
+		position: fixed;
+		left: -10px;
+		bottom: 235px;
+		transform: rotate(-90deg);
+	}
+	#vertical-ico p::before {
+		content: "";
+		width: 200px;
+		height: 1px;
+		background-color: var(--color-link);
+		position: absolute;
+		bottom: 19px;
+		right: 80px;
+	}
+	#vertical-mail p::after {
+		content: "";
+		width: 150px;
+		height: 1px;
+		background-color: var(--color-link);
+		position: absolute;
+		bottom: 13px;
+		left: 180px;
 	}
 }
