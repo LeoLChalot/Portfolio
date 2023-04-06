@@ -278,7 +278,6 @@ body #vertical-mail {
 	bottom: 13px;
 	right: 180px;
 }
-
 /* ********************************************* */
 /* *              	   CSS Card		           * */
 /* ********************************************* */
@@ -332,7 +331,6 @@ body #vertical-mail {
 .card-container:hover .card-info {
 	filter: none;
 }
-
 .card-container:nth-child(odd) .card-text p {
 	text-align: left;
 }
@@ -369,7 +367,6 @@ body #vertical-mail {
 		align-items: flex-end;
 	}
 }
-
 @media screen and (min-width: 1200px) {
 	body #vertical-mail {
 		margin: auto;
