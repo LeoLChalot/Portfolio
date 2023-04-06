@@ -268,7 +268,7 @@ body #vertical-mail {
 }
 .card-container {
 	position: relative;
-	max-width: 400px;
+	max-width: 370px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
