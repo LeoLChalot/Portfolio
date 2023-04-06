@@ -121,6 +121,9 @@ button:hover {
 	justify-content: center;
 	align-items: center;
 }
+.title h1{
+	font-size: 3em;
+}
 #vertical-ico,
 #vertical-mail {
 	display: block;
