@@ -143,8 +143,8 @@ button:hover {
 	position: fixed;
 	top: 5px;
 	left: 5px;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	padding: 1px;
 	border-radius: 50%;
 	overflow: hidden;
@@ -152,6 +152,7 @@ button:hover {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+	background-color: var(--background);
 }
 #btn-burger span {
 	z-index: 3;
@@ -161,18 +162,21 @@ button:hover {
 	background-color: var(--color-link);
 	transition: 0.3s all;
 }
+#btn-burger.active{
+	background-color: var(--background-card);
+}
 #btn-burger.active span:nth-child(2) {
 	display: none;
 }
 #btn-burger.active span:first-child {
 	z-index: 3;
 	background-color: var(--color-text);
-	transform: translate(0px, 9px) rotate(40deg) scale(1.5);
+	transform: translate(0px, 7px) rotate(40deg) scale(1.5);
 }
 #btn-burger.active span:last-child {
 	z-index: 3;
 	background-color: var(--color-text);
-	transform: translate(0px, -9px) rotate(-40deg) scale(1.5);
+	transform: translate(0px, -7px) rotate(-40deg) scale(1.5);
 }
 /* ************************************* */
 /* *                Aside              * */
