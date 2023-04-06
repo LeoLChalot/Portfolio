@@ -114,7 +114,7 @@ button:hover {
 	color: var(--color-text);
 }
 .title {
-	max-width: 50%;
+	width: 80%;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -123,6 +123,9 @@ button:hover {
 }
 .title h1{
 	font-size: 3em;
+}
+.title p{
+	text-align: justify;
 }
 #vertical-ico,
 #vertical-mail {
