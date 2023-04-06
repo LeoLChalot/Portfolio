@@ -234,7 +234,7 @@ body #vertical-ico {
 }
 #vertical-ico p::after {
 	content: "";
-	width: 200px;
+	width: 50px;
 	height: 1px;
 	background-color: var(--color-link);
 	position: absolute;
@@ -255,13 +255,13 @@ body #vertical-mail {
 	margin: auto;
 	position: fixed;
 	right: -65px;
-	bottom: 135px;
+	bottom: 105px;
 	transform: rotate(90deg);
 	transition: var(--transition-timer-3);
 }
 #vertical-mail p::after {
 	content: "";
-	width: 50px;
+	width: 20px;
 	height: 1px;
 	background-color: var(--color-link);
 	position: absolute;
@@ -271,7 +271,7 @@ body #vertical-mail {
 }
 #vertical-mail p::before {
 	content: "";
-	width: 150px;
+	width: 30px;
 	height: 1px;
 	background-color: var(--color-link);
 	position: absolute;
