@@ -5,9 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="assets/style/style.css" />
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-		<script src="assets/script/aos.js" defer></script>
-		<script src="assets/script.js" defer></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="assets/script/script.js" defer></script>
 		<title>Projets - Portfolio</title>
 	</head>
 	<body>
@@ -86,7 +85,7 @@
 		</div>
 		<main>
 			<section class="title">
-				<h1 class="typewriter">Collection...</h1>
+				<h1 id="typewriter" data-message="Collection..."></h1>
 				<h2 class="text-muted">...Des différents <span class="highlight">projets réalisés</span> en école</h2>
 				<p>
 					Parce que la présentation de mes réalisations vaut plus que de simples mots, je vous propose ici une
@@ -95,7 +94,7 @@
 				</p>
 			</section>
 			<section id="list-projet">
-				<div class="card-container">
+				<div class="card-container" data-aos="fade-right">
 					<div class="card-info">
 						<p class="highlight">Featured Project</p>
 						<h2 class="before" num="01">Projet template</h2>
@@ -134,7 +133,7 @@
 						<a><img src="assets/img/projet-1.png" alt="" /></a>
 					</div>
 				</div>
-				<div class="card-container">
+				<div class="card-container" data-aos="fade-left">
 					<div class="card-image">
 						<a><img src="assets/img/projet-2.jpg" alt="" /></a>
 					</div>
@@ -173,7 +172,7 @@
 						</svg>
 					</div>
 				</div>
-				<div class="card-container">
+				<div class="card-container" data-aos="fade-right">
 					<div class="card-info">
 						<p class="highlight">Featured Project</p>
 						<h2 class="before" num="03">Projet template</h2>
@@ -212,7 +211,7 @@
 						<a><img src="assets/img/projet-3.jpg" alt="" /></a>
 					</div>
 				</div>
-				<div class="card-container">
+				<div class="card-container" data-aos="fade-left">
 					<div class="card-image">
 						<a><img src="assets/img/projet-1.png" alt="" /></a>
 					</div>
@@ -251,7 +250,7 @@
 						</svg>
 					</div>
 				</div>
-				<div class="card-container">
+				<div class="card-container" data-aos="fade-right">
 					<div class="card-info">
 						<p class="highlight">Featured Project</p>
 						<h2 class="before" num="05">Projet template</h2>
@@ -290,7 +289,7 @@
 						<a><img src="assets/img/projet-2.jpg" alt="" /></a>
 					</div>
 				</div>
-				<div class="card-container">
+				<div class="card-container" data-aos="fade-left">
 					<div class="card-image">
 						<a><img src="assets/img/projet-3.jpg" alt="" /></a>
 					</div>
@@ -329,7 +328,7 @@
 						</svg>
 					</div>
 				</div>
-				<div class="card-container">
+				<div class="card-container" data-aos="fade-right">
 					<div class="card-info">
 						<p class="highlight">Featured Project</p>
 						<h2 class="before" num="07">Projet template</h2>
@@ -368,7 +367,7 @@
 						<a><img src="assets/img/projet-1.png" alt="" /></a>
 					</div>
 				</div>
-				<div class="card-container">
+				<div class="card-container" data-aos="fade-left">
 					<div class="card-image">
 						<a><img src="assets/img/projet-2.jpg" alt="" /></a>
 					</div>
@@ -413,5 +412,7 @@
 		<div id="vertical-mail">
 			<p>larouchalot@gmail.com</p>
 		</div>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="assets/script/aos.js"></script>
 	</body>
 </html>

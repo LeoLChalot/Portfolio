@@ -15,7 +15,7 @@
 	--padding-card: 8px;
 	--padding-section: 1em;
 	--border-green: 1px solid #64ffda;
-	--border-radius : 8px;
+	--border-radius: 8px;
 	--font-general: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
 	--font-link: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 	--transition-timer: 0.3s all ease;
@@ -26,6 +26,9 @@
 /* ********************************************* */
 ::-webkit-scrollbar {
 	width: 0;
+}
+html{
+	scroll-behavior: smooth;
 }
 *,
 ::before,
@@ -44,13 +47,16 @@ body {
 }
 section {
 	display: flex;
+	width: 80%;
+	text-align: justify;
 	min-height: 90vh;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	gap: 2em;
 	padding: var(--padding-section);
 }
-main{
+main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -59,7 +65,11 @@ main{
 /* ********************************************* */
 /* *                Design et charte           * */
 /* ********************************************* */
-
+ul li {
+	list-style-type: none;
+	text-align: center;
+	line-height: 30px;
+}
 h1,
 h2,
 h3,
@@ -75,6 +85,7 @@ button {
 	font-family: var(--font-link);
 	cursor: default;
 }
+
 h1,
 h2,
 h3,
@@ -86,15 +97,15 @@ h6 {
 p {
 	color: var(--color-text);
 }
-svg{
+svg {
 	color: var(--color-text);
 	transition: var(--transition-timer);
 }
-svg:hover{
+svg:hover {
 	color: var(--color-link);
 }
 .before::before {
-	content: attr(num) '.';
+	content: attr(num) ".";
 	font-family: var(--font-link);
 	color: var(--color-link);
 	margin-right: 10px;
@@ -102,36 +113,21 @@ svg:hover{
 .text-muted {
 	color: var(--color-text-muted);
 }
-.text-info{
-	font-size: .8em;
+.text-info {
+	font-size: 0.8em;
 	font-family: var(--font-link);
 }
 .highlight {
 	color: var(--color-link);
 }
-.typewriter {
-	overflow: hidden;
-	border-right: 0.15em solid var(--color-link);
-	white-space: nowrap;
-	margin: 0 auto;
-	letter-spacing: 0.15em;
-	animation: typing 2s steps(20, end), cursor-style .75s step-end infinite;
+#typewriter span {
+	color: #64ffda;
+	animation: cursor 1s linear infinite;
 }
-@keyframes typing {
-	from {
-		width: 0;
-	}
-	to {
-		width: 20%;
-	}
-}
-@keyframes cursor-style {
-	from,
-	to {
-		border-color: transparent;
-	}
+
+@keyframes cursor {
 	50% {
-		border-color: var(--color-link);
+		opacity: 0;
 	}
 }
 a {
@@ -151,6 +147,22 @@ a::before {
 }
 a:hover::before {
 	width: 100%;
+}
+.underline{
+	position: relative;
+}
+.underline::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background-color: var(--color-link);
+}
+.f-letter::first-letter{
+	font-size: 2em;
+	letter-spacing: 5px;
+	color: var(--color-link);
 }
 hr {
 	border-color: var(--color-link);
@@ -174,14 +186,13 @@ hr {
 	display: block;
 }
 
-
-.btn-container{
-	width: 30%;
+.btn-container {
+	width: 80%;
 	display: flex;
 	justify-content: space-around;
 }
 button,
-input[type = button] {
+input[type="button"] {
 	width: 100px;
 	height: 50px;
 	border-radius: var(--border-radius);
@@ -193,12 +204,19 @@ input[type = button] {
 	transition: var(--transition-timer);
 }
 button:hover,
-input[type = button]:hover {
+input[type="button"]:hover {
 	background-color: var(--color-green-hover);
 	border: var(--background-card);
 }
 
-
+.btn-up{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 25px;
+	right: 50px;
+}
 
 /* ********************************************* */
 /* *                CSS Menu-Aside             * */
@@ -387,7 +405,7 @@ body #vertical-mail {
 	position: relative;
 	z-index: 0;
 	width: 100%;
-	filter:hue-rotate(100deg) contrast(.8) blur(2px);
+	filter: hue-rotate(100deg) contrast(0.8) blur(2px);
 	transition: var(--transition-timer);
 	cursor: help;
 }
