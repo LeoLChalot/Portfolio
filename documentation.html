@@ -5,8 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="assets/style/style.css" />
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-		<script src="assets/script/aos.js" defer></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<script src="assets/script/script.js" defer></script>
 		<title>Accueil - Portfolio</title>
 	</head>
@@ -20,7 +19,6 @@
 			<aside id="aside-container">
 				<ul id="aside-menu">
 					<li class="aside-item"><a href="index.html">Accueil</a></li>
-					<li class="aside-item"><a href="profil.html">A propos de moi</a></li>
 					<li class="aside-item"><a href="bts_sio.html">BTS SIO</a></li>
 					<li class="aside-item"><a href="synthese.html">Synthèse</a></li>
 					<li class="aside-item"><a href="ecole.html">Ecole</a></li>
@@ -84,11 +82,39 @@
 			</p>
 		</div>
 
-
-
+		<main>
+			<section class="title">
+				<h1 id="typewriter" data-message="Documentations"></h1>
+				<h2 class="text-muted">Ensemble des documentations réalisées</h2>
+			</section>
+			<section id="list-documentation">
+				<div class="card-container" data-aos="fade-right">
+					<div class="card-info">
+						<p class="highlight">Gestion incidents</p>
+						<h2 class="before" num="01">GLPI</h2>
+						<div class="card-text">
+							<p>
+								GLPI est un outils permettant la création, le suivi et la gestion de ticket d’incident.
+								Ce TP repose d’une part sur la création d’un serveur Apache sur notre VM et d’autre par
+								sur l’accès du Back-Office depuis notre machine personnelle
+							</p>
+						</div>
+						<div class="list-techno">
+							<a href="assets/DOCS/GLPI.pdf" target="_blank">Visualiser</a>
+							<a href="assets/DOCS/GLPI.pdf" download="">Télécharger</a>
+						</div>
+					</div>
+					<div class="card-image">
+						<a><img src="assets/DOCS/doc-GLPI.png" alt="Documentation GLPI" /></a>
+					</div>
+				</div>
+			</section>
+		</main>
 
 		<div id="vertical-mail">
 			<p>larouchalot@gmail.com</p>
 		</div>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="assets/script/aos.js"></script>
 	</body>
 </html>

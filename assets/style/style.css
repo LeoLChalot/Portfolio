@@ -27,7 +27,7 @@
 ::-webkit-scrollbar {
 	width: 0;
 }
-html{
+html {
 	scroll-behavior: smooth;
 }
 *,
@@ -49,7 +49,7 @@ section {
 	display: flex;
 	width: 80%;
 	text-align: justify;
-	min-height: 90vh;
+	min-height: 100vh;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -148,7 +148,7 @@ a::before {
 a:hover::before {
 	width: 100%;
 }
-.underline{
+.underline {
 	position: relative;
 }
 .underline::before {
@@ -159,7 +159,7 @@ a:hover::before {
 	height: 1px;
 	background-color: var(--color-link);
 }
-.f-letter::first-letter{
+.f-letter::first-letter {
 	font-size: 2em;
 	letter-spacing: 5px;
 	color: var(--color-link);
@@ -187,13 +187,18 @@ hr {
 }
 
 .btn-container {
-	width: 80%;
-	display: flex;
-	justify-content: space-around;
+	display: none;
+}
+.menu-top{
+	z-index: 5;
+	position: fixed;
+	top: 0;
+	padding: 10px 0;
+	backdrop-filter: blur(5px);
 }
 button,
 input[type="button"] {
-	width: 100px;
+	width: 80px;
 	height: 50px;
 	border-radius: var(--border-radius);
 	font-family: var(--font-link);
@@ -209,8 +214,8 @@ input[type="button"]:hover {
 	border: var(--background-card);
 }
 
-.btn-up{
-	width: 50px;
+.btn-up {
+	width: 50px !important;
 	height: 50px;
 	border-radius: 50%;
 	position: fixed;
@@ -426,8 +431,15 @@ body #vertical-mail {
 	display: flex;
 	gap: 15px;
 	font-size: 0.7em;
+	line-height: 20px;
 }
 @media screen and (min-width: 768px) {
+	.btn-container{
+		display: block;
+		width: 80%;
+		display: flex;
+		justify-content: space-around;
+	}
 	#vertical-ico,
 	#vertical-mail {
 		display: block;
@@ -481,5 +493,37 @@ body #vertical-mail {
 		position: absolute;
 		bottom: 13px;
 		left: 180px;
+	}
+}
+
+/* ********************************************* */
+/* *              	 CSS a propos		       * */
+/* ********************************************* */
+#image-design {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	border-radius: var(--border-radius);
+	border: var(--border-green);
+}
+#image-design img {
+	width: 100%;
+	position: inherit;
+	bottom: 15px;
+	right: 15px;
+	border-radius: var(--border-radius);
+	filter: grayscale(100%);
+	transition: var(--transition-timer);
+}
+#image-design img:hover {
+	bottom: 0;
+	right: 0;
+	filter: none;
+}
+@media screen and (min-width: 768px) {
+	#a-propos{
+		/* width: 100%; */
+		display: flex;
+		flex-direction: row;
 	}
 }
