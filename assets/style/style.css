@@ -124,6 +124,19 @@ svg:hover {
 	color: var(--color-header);
 	animation: cursor 1s linear infinite;
 }
+.carousel {
+	width: 500px;
+	height: 500px;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: scroll;
+}
+.carousel img{
+	width: 100%;
+}
+@keyframes carousel{
+	
+}
 
 @keyframes cursor {
 	50% {
@@ -186,7 +199,7 @@ hr {
 	display: block;
 }
 
-.menu-top{
+.menu-top {
 	z-index: 5;
 	position: fixed;
 	top: 0;
@@ -369,11 +382,17 @@ body #vertical-mail {
 	bottom: 13px;
 	right: 180px;
 }
+.progression {
+	width: 70%;
+}
+.progression img {
+	width: 100%;
+}
 /* ********************************************* */
 /* *              	   CSS Card		           * */
 /* ********************************************* */
 #AP,
-#projets{
+#projets {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -439,7 +458,7 @@ body #vertical-mail {
 	line-height: 20px;
 }
 @media screen and (min-width: 768px) {
-	.btn-container{
+	.btn-container {
 		display: block;
 		width: 80%;
 		display: flex;
@@ -526,9 +545,9 @@ body #vertical-mail {
 	filter: none;
 }
 @media screen and (min-width: 768px) {
-	#a-propos{
-		/* width: 100%; */
+	#a-propos {
 		display: flex;
 		flex-direction: row;
 	}
 }
+
