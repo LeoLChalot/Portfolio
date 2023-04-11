@@ -84,250 +84,278 @@
 		</div>
 		<main>
 			<section class="title">
-				<h1 id="typewriter" data-message="Collection..."></h1>
-				<h2 class="text-muted">...Des différents <span class="highlight">projets réalisés</span> en école</h2>
+				<h1 class="typewrite" data-period="5000" data-type='[ "Collection..." ]'>
+					<span class="wrap"></span>
+				</h1>
+				<h2 class="text-muted">... Des différents <span class="highlight">projets réalisés</span> en école</h2>
 				<p>
 					Parce que la présentation de mes réalisations vaut plus que de simples mots, je vous propose ici une
 					collection de l'ensemble de mes projets réalisés au sein de l'<span class="highlight">IPSSI</span>
 					durant mon cursus.
 				</p>
+				<div class="btn-container">
+					<input type="button" name="lien1" value="AP" onclick="self.location.href='#AP'" onclick />
+					<input type="button" name="lien2" value="Projets" onclick="self.location.href='#projets'" onclick />
+				</div>
 			</section>
 			<section id="list-projet">
-				<div class="card-container" data-aos="fade-right">
-					<div class="card-info">
-						<p class="highlight">Activité Professionnelle</p>
-						<h2 class="before" num="AP.1">Horizon Dev Web</h2>
-						<div class="card-text">
-							<p>
-								Lors de cette activité professionnelle, nous avons dû imaginer un concept d'entreprise
-								et réaliser une site web dédié aux services proposés par celle-ci.
-							</p>
+				<div id="AP">
+					<div class="card-container" data-aos="fade-right">
+						<div class="card-info">
+							<p class="highlight">Activité Professionnelle</p>
+							<h2 class="before" num="AP.1">Horizon Dev Web</h2>
+							<div class="card-text">
+								<p>
+									Lors de cette activité professionnelle, nous avons dû imaginer un concept
+									d'entreprise et réaliser une site web dédié aux services proposés par celle-ci.
+								</p>
+							</div>
+							<div class="list-techno">
+								<p>HTML 5</p>
+								<p>CSS 3</p>
+								<p>Js (ES6)</p>
+								<p>PHP</p>
+								<a href="https://github.com/LeoLChalot/BTSSIO-AP1-horizon" targer="_blank">Dépôt Github</a>
+							</div>
 						</div>
-						<div class="list-techno">
-							<p>HTML 5</p>
-							<p>CSS 3</p>
-							<p>Js (ES6)</p>
-							<p>PHP</p>
-							<a href="#" targer="_blank">Accéder à la galerie</a>
-						</div>
-					</div>
-					<div class="card-image">
-						<a><img src="ap/ap1/logo2.png" alt="Logo entreprise fictive" /></a>
-					</div>
-				</div>
-				<div class="card-container" data-aos="fade-left">
-					<div class="card-image">
-						<a><img src="ap/ap2/m2l.png" alt="" /></a>
-					</div>
-					<div class="card-info">
-						<p class="highlight">Activité Professionnelle</p>
-						<h2 class="before" num="AP.2">Maison des Ligue de Lorraine</h2>
-						<div class="card-text">
-							<p>
-								Durant cette seconde activité professionnelle, il nous aura fallu établir une étude de
-								cas en rapport avec la Maison des Ligues de Lorraine (M2L) et proposer deux solutions
-								logicielle pour les activités professionnelles 3 et 4
-							</p>
-						</div>
-						<div class="list-techno">
-							<a href="#" targer="_blank">Accéder à la galerie</a>
-							<p>Cahier des charges</p>
-						</div>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							width="20px"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-external-link"
-						>
-							<title>External Link</title>
-							<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-							<polyline points="15 3 21 3 21 9"></polyline>
-							<line x1="10" y1="14" x2="21" y2="3"></line>
-						</svg>
-					</div>
-				</div>
-				<div class="card-container" data-aos="fade-right">
-					<div class="card-info">
-						<p class="highlight">Activité Professionnelle</p>
-						<h2 class="before" num="AP.3">M2L Solution Légère</h2>
-						<div class="card-text">
-							<p>
-								Réalisation de la solution légère (WEB) pour la Maison des Ligue de Lorraine. Cette activité professionnelle sera réalisée durant la seconde année de BTS.
-							</p>
-						</div>
-						<div class="list-techno">
-							<p>Technologies à définir...</p>
-							<a href="#" targer="_blank">Accéder à la galerie</a>
+						<div class="card-image">
+							<a><img src="ap/ap1/logo2.png" alt="Logo entreprise fictive" /></a>
 						</div>
 					</div>
-					<div class="card-image">
-						<a><img src="ap/ap2/m2l.png" alt="" /></a>
-					</div>
-				</div>
-				<div class="card-container" data-aos="fade-left">
-					<div class="card-image">
-						<a><img src="ap/ap2/m2l.png" alt="" /></a>
-					</div>
-					<div class="card-info">
-						<p class="highlight">Activité Professionnelle</p>
-						<h2 class="before" num="AP.4">M2L Solution Lourde</h2>
-						<div class="card-text">
-							<p>
-								Réalisation de la solution lourde (WEB) pour la Maison des Ligue de Lorraine. Cette activité professionnelle sera réalisée durant la seconde année de BTS.
-							</p>
+					<div class="card-container" data-aos="fade-left">
+						<div class="card-image">
+							<a><img src="ap/ap2/m2l.png" alt="" /></a>
 						</div>
-						<div class="list-techno">
-							<a href="#" targer="_blank">Accéder à la galerie</a>
-							<p>Technologies à définir...</p>
-						</div>
-					</div>
-				</div>
-				<div class="card-container" data-aos="fade-right">
-					<div class="card-info">
-						<p class="highlight">Projet Scolaire</p>
-						<h2 class="before" num="01">Librairie Fictive "MilleFeuilles"</h2>
-						<div class="card-text">
-							<p>
-								Utilisation de l'API Google Book pour la réalisation d'un site web de recherche et de réservation de références de livres. Initiation à l'utilisation des API avec PHP, gestion des créations et connexions de comptes utilisateurs. 
-							</p>
-						</div>
-						<div class="list-techno">
-							<p>HTML 5</p>
-							<p>CSS 3</p>
-							<p>Bootstrap</p>
-							<p>PHP</p>
-							<p>SQL</p>
-							<a href="#" targer="_blank">Accéder à la galerie</a>
+						<div class="card-info">
+							<p class="highlight">Activité Professionnelle</p>
+							<h2 class="before" num="AP.2">Maison des Ligue de Lorraine</h2>
+							<div class="card-text">
+								<p>
+									Durant cette seconde activité professionnelle, il nous aura fallu établir une étude
+									de cas en rapport avec la Maison des Ligues de Lorraine (M2L) et proposer deux
+									solutions logicielle pour les activités professionnelles 3 et 4
+								</p>
+							</div>
+							<div class="list-techno">
+								<a href="#" targer="_blank">Dépôt Github</a>
+								<p>Cahier des charges</p>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								role="img"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								width="20px"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="feather feather-external-link"
+							>
+								<title>External Link</title>
+								<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+								<polyline points="15 3 21 3 21 9"></polyline>
+								<line x1="10" y1="14" x2="21" y2="3"></line>
+							</svg>
 						</div>
 					</div>
-					<div class="card-image">
-						<a><img src="ap/librairie/librairie_full.png" alt="Images Librairie millefeuilles" /></a>
+					<div class="card-container" data-aos="fade-right">
+						<div class="card-info">
+							<p class="highlight">Activité Professionnelle</p>
+							<h2 class="before" num="AP.3">M2L Solution Légère</h2>
+							<div class="card-text">
+								<p>
+									Réalisation de la solution légère (WEB) pour la Maison des Ligue de Lorraine. Cette
+									activité professionnelle sera réalisée durant la seconde année de BTS.
+								</p>
+							</div>
+							<div class="list-techno">
+								<p>Technologies à définir...</p>
+								<a href="#" targer="_blank">Dépôt Github</a>
+							</div>
+						</div>
+						<div class="card-image">
+							<a><img src="ap/ap2/m2l.png" alt="" /></a>
+						</div>
+					</div>
+					<div class="card-container" data-aos="fade-left">
+						<div class="card-image">
+							<a><img src="ap/ap2/m2l.png" alt="" /></a>
+						</div>
+						<div class="card-info">
+							<p class="highlight">Activité Professionnelle</p>
+							<h2 class="before" num="AP.4">M2L Solution Lourde</h2>
+							<div class="card-text">
+								<p>
+									Réalisation de la solution lourde (WEB) pour la Maison des Ligue de Lorraine. Cette
+									activité professionnelle sera réalisée durant la seconde année de BTS.
+								</p>
+							</div>
+							<div class="list-techno">
+								<a href="#" targer="_blank">Dépôt Github</a>
+								<p>Technologies à définir...</p>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="card-container" data-aos="fade-left">
-					<div class="card-image">
-						<a><img src="assets/img/projet-3.jpg" alt="" /></a>
+				<div id="projets">
+					<div class="card-container" data-aos="fade-right">
+						<div class="card-info">
+							<p class="highlight">Projet Scolaire</p>
+							<h2 class="before" num="01">Librairie Fictive "MilleFeuilles"</h2>
+							<div class="card-text">
+								<p>
+									Utilisation de l'API Google Book pour la réalisation d'un site web de recherche et
+									de réservation de références de livres. Initiation à l'utilisation des API avec PHP,
+									gestion des créations et connexions de comptes utilisateurs.
+								</p>
+							</div>
+							<div class="list-techno">
+								<p>HTML 5</p>
+								<p>CSS 3</p>
+								<p>Bootstrap</p>
+								<p>PHP</p>
+								<p>SQL</p>
+								<a href="https://github.com/LeoLChalot/BTSSIO-API-Google-Book" targer="_blank">Dépôt Github</a>
+							</div>
+						</div>
+						<div class="card-image">
+							<a><img src="ap/librairie/librairie_full.png" alt="Images Librairie millefeuilles" /></a>
+						</div>
 					</div>
-					<div class="card-info">
-						<p class="highlight">Featured Project</p>
-						<h2 class="before" num="06">Projet template</h2>
-						<div class="card-text">
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptate quibusdam
-								ullam doloremque <a>repellat</a>, <a>temporibus</a>, quos veritatis,
-								<a>perspiciatis</a> nihil repellendus.
-							</p>
+					<div class="card-container" data-aos="fade-left">
+						<div class="card-image">
+							<a><img src="projets/API-METEO/vignette.png" alt="" /></a>
 						</div>
-						<div class="list-techno">
-							<p>React.js</p>
-							<p>Angular</p>
-							<p>Next.js</p>
-							<p>Three.js</p>
+						<div class="card-info">
+							<p class="highlight">Projet Scolaire</p>
+							<h2 class="before" num="02">API Météo</h2>
+							<div class="card-text">
+								<p>
+									Création d'une interface de prévisions météo grâce à l'utilisation de l'API
+									"OpenWeatherMap" avec Axios et l'outil HTML "GeoLocation".
+								</p>
+							</div>
+							<div class="list-techno">
+								<a href="https://github.com/LeoLChalot/BTSSIO-API-meteo" targer="_blank">Dépôt Github</a>
+								<p>HTML 5</p>
+								<p>CSS 3</p>
+								<p>Javascript</p>
+								<p>Axios</p>
+							</div>
 						</div>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							width="20px"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-external-link"
-						>
-							<title>External Link</title>
-							<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-							<polyline points="15 3 21 3 21 9"></polyline>
-							<line x1="10" y1="14" x2="21" y2="3"></line>
-						</svg>
 					</div>
-				</div>
-				<div class="card-container" data-aos="fade-right">
-					<div class="card-info">
-						<p class="highlight">Featured Project</p>
-						<h2 class="before" num="07">Projet template</h2>
-						<div class="card-text">
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptate quibusdam
-								ullam doloremque <a>repellat</a>, <a>temporibus</a>, quos veritatis,
-								<a>perspiciatis</a> nihil repellendus.
-							</p>
+					<div class="card-container" data-aos="fade-right">
+						<div class="card-info">
+							<p class="highlight">Projet Scolaire</p>
+							<h2 class="before" num="03">Générateur de proverbes</h2>
+							<div class="card-text">
+								<p>
+									Création d'un générateur de proverbe, l'utilisation d'une API et de Javascript a
+									permis la réalisation d'une interface simple de génération de proverbes
+								</p>
+							</div>
+							<div class="list-techno">
+								<p>HTML 5</p>
+								<p>CSS 3</p>
+								<p>Javascript</p>
+								<p>Axios</p>
+								<a href="https://github.com/LeoLChalot/BTSSIO-Random-Proverb" targer="_blank">Dépôt Github</a>
+							</div>
 						</div>
-						<div class="list-techno">
-							<p>React.js</p>
-							<p>Angular</p>
-							<p>Next.js</p>
-							<p>Three.js</p>
+						<div class="card-image">
+							<a><img src="projets/API-PROVERBES/vignette.jpg" alt="" /></a>
 						</div>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							width="20px"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-external-link"
-						>
-							<title>External Link</title>
-							<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-							<polyline points="15 3 21 3 21 9"></polyline>
-							<line x1="10" y1="14" x2="21" y2="3"></line>
-						</svg>
 					</div>
-					<div class="card-image">
-						<a><img src="assets/img/projet-1.png" alt="" /></a>
-					</div>
-				</div>
-				<div class="card-container" data-aos="fade-left">
-					<div class="card-image">
-						<a><img src="assets/img/projet-2.jpg" alt="" /></a>
-					</div>
-					<div class="card-info">
-						<p class="highlight">Featured Project</p>
-						<h2 class="before" num="08">Projet template</h2>
-						<div class="card-text">
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptate quibusdam
-								ullam doloremque <a>repellat</a>, <a>temporibus</a>, quos veritatis,
-								<a>perspiciatis</a> nihil repellendus.
-							</p>
+					<div class="card-container" data-aos="fade-left">
+						<div class="card-image">
+							<a><img src="projets/TODO2/TODO-2(1).png" alt="" /></a>
 						</div>
-						<div class="list-techno">
-							<p>React.js</p>
-							<p>Angular</p>
-							<p>Next.js</p>
-							<p>Three.js</p>
+						<div class="card-info">
+							<p class="highlight">Projet Scolaire</p>
+							<h2 class="before" num="04">Todo List (JS)</h2>
+							<div class="card-text">
+								<p>
+									Création d'une todo list en Javascript avec gestion des tâches en cours, réalisées,
+									et suppression au choix de celles-ci
+								</p>
+							</div>
+							<div class="list-techno">
+								<a href="https://github.com/LeoLChalot/BTSSIO-TodoList" targer="_blank">Dépôt Github</a>
+								<p>HTML 5</p>
+								<p>CSS 3</p>
+								<p>Javascript</p>
+							</div>
 						</div>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							width="20px"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-external-link"
-						>
-							<title>External Link</title>
-							<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-							<polyline points="15 3 21 3 21 9"></polyline>
-							<line x1="10" y1="14" x2="21" y2="3"></line>
-						</svg>
+					</div>
+					<div class="card-container" data-aos="fade-right">
+						<div class="card-info">
+							<p class="highlight">Projet Scolaire</p>
+							<h2 class="before" num="05">Todo List (PHP)</h2>
+							<div class="card-text">
+								<p>
+									Parce qu'une fois n'est pas coutume, j'ai aussi réalisée une todo list en php, avec
+									filtre, ajout, suppression et possibilité de "checker" les éléments de celle ci.
+								</p>
+								<p>
+									Utilisation de l'objet PDO pour communiquer avec la base de données.
+								</p>
+							</div>
+							<div class="list-techno">
+								<p>HTML 5</p>
+								<p>CSS 3</p>
+								<p>PHP</p>
+								<p>PDO</p>
+								<a href="https://github.com/LeoLChalot/BTSSIO-TodoList-1" targer="_blank">Dépôt Github</a>
+							</div>
+						</div>
+						<div class="card-image">
+							<a><img src="projets/TODO/TODO(1).png" alt="" /></a>
+						</div>
+					</div>
+					<div class="card-container" data-aos="fade-left">
+						<div class="card-image">
+							<a><img src="projets/SHIFUMI/vignette.png" alt="" /></a>
+						</div>
+						<div class="card-info">
+							<p class="highlight">Projet Scolaire</p>
+							<h2 class="before" num="06">Shi Fu Mi</h2>
+							<div class="card-text">
+								<p>
+									Réalisation d'un jeu de pierre / feuille/ ciseau en Javascript. Affichage des scores, et choix aléatoire de l'ordi.
+								</p>
+							</div>
+							<div class="list-techno">
+								<a href="https://github.com/LeoLChalot/BTSSIO-ShiFuMi" targer="_blank">Dépôt Github</a>
+								<p>HTML 5</p>
+								<p>CSS 3</p>
+								<p>Javascript</p>
+							</div>
+						</div>
+					</div>
+					<div class="card-container" data-aos="fade-right">
+						<div class="card-info">
+							<p class="highlight">Projet Scolaire</p>
+							<h2 class="before" num="07">Calculatrice</h2>
+							<div class="card-text">
+								<p>
+									Réalisation d'une calculatrice en Javascript, les opérations de bases sont réalisables. Projet servant principalement à la gestion des évènements
+								</p>
+							</div>
+							<div class="list-techno">
+								<p>HTML 5</p>
+								<p>CSS 3</p>
+								<p>Javascript</p>
+								<a href="https://github.com/LeoLChalot/BTSSIO-Calculatrice" targer="_blank">Dépôt Github</a>
+							</div>
+						</div>
+						<div class="card-image">
+							<a><img src="projets/CALCULATRICE/vignette.png" alt="" /></a>
+						</div>
 					</div>
 				</div>
 			</section>
+			<input class="btn-up" type="button" name="lien5" value="Up" onclick="self.location.href='#'" onclick />
 		</main>
 
 		<div id="vertical-mail">

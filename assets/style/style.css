@@ -120,14 +120,14 @@ svg:hover {
 .highlight {
 	color: var(--color-link);
 }
-#typewriter span {
-	color: #64ffda;
+.typewrite span {
+	color: var(--color-header);
 	animation: cursor 1s linear infinite;
 }
 
 @keyframes cursor {
 	50% {
-		opacity: 0;
+		border-right: 0px solid transparent;
 	}
 }
 a {
@@ -186,9 +186,6 @@ hr {
 	display: block;
 }
 
-.btn-container {
-	display: none;
-}
 .menu-top{
 	z-index: 5;
 	position: fixed;
@@ -375,6 +372,14 @@ body #vertical-mail {
 /* ********************************************* */
 /* *              	   CSS Card		           * */
 /* ********************************************* */
+#AP,
+#projets{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2em;
+}
 .card-container {
 	max-width: 80%;
 	position: relative;
