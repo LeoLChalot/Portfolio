@@ -184,6 +184,7 @@ try {
 				// ? Récupération et assignement via l'attribut "href" de la balise <a> du lien de l'article
 				let linkArticle = listItemXML[i].getElementsByTagName("link")[0].childNodes[0].nodeValue;
 				aArticle.href = linkArticle;
+				aArticle.target = "_blank"
 				aArticle.textContent = "Lire l'article";
 
 				let ogArray = listItemXML[i].getElementsByTagName("og");
@@ -201,7 +202,7 @@ try {
 				// console.log(divArticleText)
 				// console.log(divArticleTitle)
 				// console.log(divArticleContent)
-				console.log(divArticle)
+				// console.log(divArticle)
 
 				divArticleTitle.appendChild(h2Title)
 				
