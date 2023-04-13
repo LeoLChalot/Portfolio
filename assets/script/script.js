@@ -105,21 +105,124 @@ window.onload = function () {
 // let url = "https://towardsdatascience.com/feed"
 // let url = "https://www.marktechpost.com/category/technology/artificial-intelligence/feed/";
 
-// * data format XML
+// ************************************** //
+// **	   Récupération du flus RSS    ** //
+// ************************************** //
+
+// ? Création des éléments de la section veille IA
+let veilleContainer = document.getElementById('veille-container')
+let articleContainer = document.createElement("div");
+
+let divArticleContainer = document.getElementById("article-container");
 let url = "https://blog.google/technology/ai/rss/";
 let parser, xmlDoc;
+
+// ? Requête au flux RSS googleAI
 try {
 	axios
 		.get(url)
 		.then((result) => {
 			let data = result.data;
-			console.log(data);
+			// console.log(data);
+
+			// ? Création de l'objet DOMParser
 			parser = new DOMParser();
+
+			// ? Récupération du DOM XML
 			xmlDoc = parser.parseFromString(data, "text/xml");
-			console.log(xmlDoc);
-			// document.getElementById("rss-feed").innerHTML = xmlDoc.getElementsByTagName("item")[0].childNodes[0].nodeValue;
+			// console.log(xmlDoc);
+
+			// ? Récupération des articles "Item" du DOM XML
 			let listItemXML = xmlDoc.getElementsByTagName("item");
-			console.log(listItemXML[0])
+			// console.log(listItemXML[0]);
+
+			// ? Récupération des 5 derniers articles tech
+			for (let i = 0; i < 5; i++) {
+				// console.log(listItemXML[i]);
+
+				// ? Création des éléments des cards rss
+				let divArticle = document.createElement("article");
+				divArticle.classList.add("article");
+				let divArticleTitle = document.createElement("div");
+				divArticleTitle.classList.add("article-title");
+				let h2Title = document.createElement("h2");
+				let divArticleContent = document.createElement("div");
+				divArticleContent.classList.add("article-content");
+				let divArticleView = document.createElement("div");
+				divArticleView.classList.add("article-view");
+				let imgArticle = document.createElement("img");
+				imgArticle.classList.add("vignette-article");
+				let aArticle = document.createElement("a");
+				aArticle.classList.add("lien-article");
+				let divArticleText = document.createElement("div");
+				divArticleText.classList.add("article-text");
+				let divArticleDescription = document.createElement("div");
+				divArticleDescription.classList.add("article-description");
+				let pDescription = document.createElement("p");
+				pDescription.classList.add("description");
+				let pDate = document.createElement("p");
+				pDate.classList.add("article-date");
+
+				// ? Récupération et assignement du titre de l'article
+				h2Title.innerHTML = listItemXML[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+
+				// ? Récupération et assignement du lien de la vignette de l'article
+				let srcImg = listItemXML[i].getElementsByTagName("media:content")[0].getAttribute("url");
+
+				// ? Récupération et assignement via l'attribut "alt" de la balise <img> de la description
+				let altImg = listItemXML[i].getElementsByTagName("media:description")[0].childNodes[0].nodeValue;
+				imgArticle.src = srcImg;
+				imgArticle.alt = altImg;
+				// console.log(imgArticle);
+
+				// ? Formatage de la date au format souhaité
+				let date = listItemXML[i].getElementsByTagName("pubDate")[0].childNodes[0].nodeValue;
+				// console.log(date);
+				date = date.substring(0, 16);
+				pDate.innerHTML = date;
+
+				// ? Récupération et assignement via l'attribut "href" de la balise <a> du lien de l'article
+				let linkArticle = listItemXML[i].getElementsByTagName("link")[0].childNodes[0].nodeValue;
+				aArticle.href = linkArticle;
+				aArticle.textContent = "Lire l'article";
+
+				let ogArray = listItemXML[i].getElementsByTagName("og");
+				// console.log(ogArray[0].childNodes[2].textContent);
+				pDescription.textContent = ogArray[0].childNodes[2].textContent;
+
+				// ? Insertion des éléments à afficher
+				// console.log(h2Title)
+				// console.log(imgArticle)
+				// console.log(aArticle)
+				// console.log(divArticleView)
+				// console.log(pDescription)
+				// console.log(divArticleDescription)
+				// console.log(pDate)
+				// console.log(divArticleText)
+				// console.log(divArticleTitle)
+				// console.log(divArticleContent)
+				console.log(divArticle)
+
+				divArticleTitle.appendChild(h2Title)
+				
+				divArticleView.appendChild(imgArticle)
+				divArticleView.appendChild(aArticle)
+				divArticleContent.appendChild(divArticleView)
+
+				divArticleDescription.appendChild(pDescription)
+				divArticleText.appendChild(divArticleDescription)
+				divArticleText.appendChild(pDate)
+				
+				divArticleContent.appendChild(divArticleText)
+
+
+				divArticle.appendChild(divArticleTitle)
+				divArticle.appendChild(divArticleContent)
+
+
+				divArticleContainer.appendChild(divArticle)
+
+			}
 		})
 		.catch((err) => {
 			console.log(err);

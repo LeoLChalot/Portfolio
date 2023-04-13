@@ -57,7 +57,7 @@ try {
 
 			// ? Récupération des 5 derniers articles tech
 			for (let i = 0; i < 5; i++) {
-				// console.log(listItemXML[i]);
+				console.log(listItemXML[i]);
 
 				// ? Création de la balise <article> HTML
 				let container = document.createElement("article");
@@ -79,7 +79,8 @@ try {
 				let linkMedia = listItemXML[i].getElementsByTagName("media:content")[0].getAttribute("url");
 
 				// ? Récupération et assignement via l'attribut "alt" de la balise <img> de la description
-				let descriptionMedia = listItemXML[i].getElementsByTagName("media:description")[0].childNodes[0].nodeValue;
+				let descriptionMedia =
+					listItemXML[i].getElementsByTagName("media:description")[0].childNodes[0].nodeValue;
 				itemMedia.src = linkMedia;
 				itemMedia.width = "300";
 				itemMedia.alt = descriptionMedia;
@@ -93,7 +94,7 @@ try {
 
 				// ? Formatage de la date au format souhaité
 				let date = listItemXML[i].getElementsByTagName("pubDate")[0].childNodes[0].nodeValue;
-				// console.log(date);
+				console.log(date);
 				date = date.substring(0, 16);
 				publiDate.innerHTML = date;
 
@@ -105,9 +106,16 @@ try {
 				itemArticle.href = linkArticle;
 				itemArticle.textContent = "Lire l'article";
 
+				let descriptionArticle = document.createElement('p')
+				let ogArray = listItemXML[i].getElementsByTagName("og");
+				console.log(ogArray[0].childNodes[2].textContent);
+				descriptionArticle.textContent = ogArray[0].childNodes[2].textContent;
+				descriptionArticle.style.textAlign = "center"
+
 				// ? Insertion des éléments à afficher
 				container.appendChild(itemTitle);
 				container.appendChild(itemMedia);
+				container.appendChild(descriptionArticle)
 				container.appendChild(itemArticle);
 				container.appendChild(publiDate);
 				rss.appendChild(container);
