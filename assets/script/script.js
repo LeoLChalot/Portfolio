@@ -107,17 +107,23 @@ window.onload = function () {
 
 // * data format XML
 let url = "https://blog.google/technology/ai/rss/";
-
-
-
+let parser, xmlDoc;
 try {
 	axios
-	.get(url)
-	.then((res) => {
-		let data = res.data
-		console.log(data);
-	})
+		.get(url)
+		.then((result) => {
+			let data = result.data;
+			console.log(data);
+			parser = new DOMParser();
+			xmlDoc = parser.parseFromString(data, "text/xml");
+			console.log(xmlDoc);
+			// document.getElementById("rss-feed").innerHTML = xmlDoc.getElementsByTagName("item")[0].childNodes[0].nodeValue;
+			let listItemXML = xmlDoc.getElementsByTagName("item");
+			console.log(listItemXML[0])
+		})
+		.catch((err) => {
+			console.log(err);
+		});
 } catch {
 	(err) => console.log(err);
 }
-
