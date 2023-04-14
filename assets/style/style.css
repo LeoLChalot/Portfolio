@@ -38,6 +38,9 @@ html {
 	padding: 0;
 	margin: 0;
 }
+/* ********************************************* */
+/* *                Design et charte           * */
+/* ********************************************* */
 body {
 	width: 100%;
 	min-height: 100vh;
@@ -78,9 +81,6 @@ main {
 	flex-direction: column;
 	align-items: center;
 }
-/* ********************************************* */
-/* *                Design et charte           * */
-/* ********************************************* */
 ul li {
 	list-style-type: none;
 	text-align: center;
@@ -465,68 +465,6 @@ body #vertical-mail {
 	font-size: 0.7em;
 	line-height: 20px;
 }
-@media screen and (min-width: 768px) {
-	.btn-container {
-		display: block;
-		width: 80%;
-		display: flex;
-		justify-content: space-around;
-	}
-	#vertical-ico,
-	#vertical-mail {
-		display: block;
-	}
-	.card-container {
-		flex-direction: row;
-	}
-	.card-container .card-image {
-		display: block;
-	}
-	.card-info:nth-child(odd) {
-		left: 25px;
-	}
-	.card-container:nth-child(odd) .card-text p {
-		text-align: left;
-	}
-	.card-info:nth-child(even) {
-		right: 25px;
-		align-items: flex-end;
-	}
-}
-@media screen and (min-width: 1200px) {
-	body #vertical-mail {
-		margin: auto;
-		position: fixed;
-		right: -65px;
-		bottom: 235px;
-		transform: rotate(90deg);
-	}
-	body #vertical-ico {
-		margin: auto;
-		position: fixed;
-		left: -10px;
-		bottom: 235px;
-		transform: rotate(-90deg);
-	}
-	#vertical-ico p::before {
-		content: "";
-		width: 200px;
-		height: 1px;
-		background-color: var(--color-link);
-		position: absolute;
-		bottom: 19px;
-		right: 80px;
-	}
-	#vertical-mail p::after {
-		content: "";
-		width: 150px;
-		height: 1px;
-		background-color: var(--color-link);
-		position: absolute;
-		bottom: 13px;
-		left: 180px;
-	}
-}
 /* ********************************************* */
 /* *              	 CSS a propos		       * */
 /* ********************************************* */
@@ -550,12 +488,6 @@ body #vertical-mail {
 	bottom: 0;
 	right: 0;
 	filter: none;
-}
-@media screen and (min-width: 768px) {
-	#a-propos {
-		display: flex;
-		flex-direction: row;
-	}
 }
 /* ********************************************* */
 /* *              	 	 RSS 			       * */
@@ -648,9 +580,43 @@ body #vertical-mail {
 .article-text p:last-child {
 	text-align: right;
 }
+
+/* ********************************* */
+/* * 		@Media queries		   * */
+/* ********************************* */
 @media screen and (min-width: 768px) {
+	#a-propos {
+		display: flex;
+		flex-direction: row;
+	}
+	.btn-container {
+		display: block;
+		width: 80%;
+		display: flex;
+		justify-content: space-around;
+	}
+	#vertical-ico,
+	#vertical-mail {
+		display: block;
+	}
+	.card-container {
+		flex-direction: row;
+	}
+	.card-container .card-image {
+		display: block;
+	}
+	.card-info:nth-child(odd) {
+		left: 25px;
+	}
+	.card-container:nth-child(odd) .card-text p {
+		text-align: left;
+	}
+	.card-info:nth-child(even) {
+		right: 25px;
+		align-items: flex-end;
+	}
 	.article {
-		width: 100%;
+		width: 700px;
 		height: auto;
 	}
 	.article-content {
@@ -660,6 +626,40 @@ body #vertical-mail {
 		flex-direction: row-reverse;
 	}
 	.article-view {
-		width: 60%;
+		width: 100%;
+	}
+}
+@media screen and (min-width: 1200px) {
+	body #vertical-mail {
+		margin: auto;
+		position: fixed;
+		right: -65px;
+		bottom: 235px;
+		transform: rotate(90deg);
+	}
+	body #vertical-ico {
+		margin: auto;
+		position: fixed;
+		left: -10px;
+		bottom: 235px;
+		transform: rotate(-90deg);
+	}
+	#vertical-ico p::before {
+		content: "";
+		width: 200px;
+		height: 1px;
+		background-color: var(--color-link);
+		position: absolute;
+		bottom: 19px;
+		right: 80px;
+	}
+	#vertical-mail p::after {
+		content: "";
+		width: 150px;
+		height: 1px;
+		background-color: var(--color-link);
+		position: absolute;
+		bottom: 13px;
+		left: 180px;
 	}
 }
