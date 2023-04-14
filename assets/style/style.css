@@ -49,7 +49,11 @@ body {
 footer {
 	position: absolute;
 	top: 0;
-	left: calc(50% - 70px);
+	left: calc(50% - 35px);
+	z-index: 5;
+}
+.copyright{
+	font-size: .5em;
 }
 section {
 	display: flex;
@@ -440,7 +444,7 @@ body #vertical-mail {
 	width: 100%;
 	filter: hue-rotate(100deg) contrast(0.8) blur(2px);
 	transition: var(--transition-timer);
-	cursor: help;
+	border-radius: var(--border-radius);
 }
 .card-container:hover img,
 .card-container:hover .card-info {

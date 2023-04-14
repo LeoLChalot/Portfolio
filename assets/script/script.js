@@ -178,11 +178,11 @@ try {
 
 				// ? Récupération des tag "Category" XML
 				let tagList = listItemXML[i].getElementsByTagName("category");
-				// console.log(tagList);
+				console.log(tagList);
 				let tagArray = [];
 				let tag;
 				for (let i = 0; i < tagList.length; i++) {
-					// console.log(tagList[i].childNodes[0].nodeValue);
+					console.log(tagList[i].childNodes[0].nodeValue);
 					tag = tagList[i].childNodes[0].nodeValue;
 					// console.log(tag);
 					tagArray.push(tag);
@@ -191,7 +191,7 @@ try {
 				// console.log(tagArray);
 				for (let i = 0; i < tagArray.length; i++) {
 					let pTag = document.createElement("p");
-					pTag.classList.add("text-muted", "text-info");
+					pTag.classList.add("tag", "text-muted", "text-info");
 					let tag = tagArray[i];
 					pTag.innerText = tag;
 					divArticleTag.appendChild(pTag);
@@ -225,7 +225,7 @@ try {
 				// console.log(divArticleText)
 				// console.log(divArticleTitle)
 				// console.log(divArticleContent)
-				console.log(divArticle)
+				// console.log(divArticle)
 
 				divArticleTitle.appendChild(h2Title);
 
