@@ -110,7 +110,7 @@ window.onload = function () {
 // ************************************** //
 
 // ? Création des éléments de la section veille IA
-let veilleContainer = document.getElementById('veille-container')
+let veilleContainer = document.getElementById("veille-container");
 let articleContainer = document.createElement("div");
 
 let divArticleContainer = document.getElementById("article-container");
@@ -158,6 +158,8 @@ try {
 				divArticleText.classList.add("article-text");
 				let divArticleDescription = document.createElement("div");
 				divArticleDescription.classList.add("article-description");
+				let divArticleTag = document.createElement("div");
+				divArticleTag.classList.add("article-tag");
 				let pDescription = document.createElement("p");
 				pDescription.classList.add("description");
 				let pDate = document.createElement("p");
@@ -175,6 +177,29 @@ try {
 				imgArticle.alt = altImg;
 				// console.log(imgArticle);
 
+				// ? Récupération des tag "Category" XML
+				let tagList = listItemXML[i].getElementsByTagName("category");
+				// console.log(tagList);
+				let tagArray = [];
+				let tag;
+				for (let i = 0; i < tagList.length; i++) {
+					// console.log(tagList[i].childNodes[0].nodeValue);
+					tag = tagList[i].childNodes[0].nodeValue;
+					console.log(tag)
+					tagArray.push(tag);
+					console.log(tagArray)
+				}
+				// console.log(tagArray);
+				for(let i = 0; i < tagArray.length; i++){
+					let pTag = document.createElement('p')
+					pTag.classList.add('text-muted', 'text-info')
+					let tag = tagArray[i]
+					pTag.innerText = tag
+					divArticleTag.appendChild(pTag)
+				}
+
+				
+				console.log(divArticleTag)
 				// ? Formatage de la date au format souhaité
 				let date = listItemXML[i].getElementsByTagName("pubDate")[0].childNodes[0].nodeValue;
 				// console.log(date);
@@ -184,7 +209,7 @@ try {
 				// ? Récupération et assignement via l'attribut "href" de la balise <a> du lien de l'article
 				let linkArticle = listItemXML[i].getElementsByTagName("link")[0].childNodes[0].nodeValue;
 				aArticle.href = linkArticle;
-				aArticle.target = "_blank"
+				aArticle.target = "_blank";
 				aArticle.textContent = "Lire l'article";
 
 				let ogArray = listItemXML[i].getElementsByTagName("og");
@@ -204,25 +229,25 @@ try {
 				// console.log(divArticleContent)
 				// console.log(divArticle)
 
-				divArticleTitle.appendChild(h2Title)
 				
-				divArticleView.appendChild(imgArticle)
-				divArticleView.appendChild(aArticle)
-				divArticleContent.appendChild(divArticleView)
 
-				divArticleDescription.appendChild(pDescription)
-				divArticleText.appendChild(divArticleDescription)
-				divArticleText.appendChild(pDate)
-				
-				divArticleContent.appendChild(divArticleText)
+				divArticleTitle.appendChild(h2Title);
 
+				divArticleView.appendChild(imgArticle);
+				divArticleView.appendChild(aArticle);
+				divArticleContent.appendChild(divArticleView);
 
-				divArticle.appendChild(divArticleTitle)
-				divArticle.appendChild(divArticleContent)
+				divArticleDescription.appendChild(pDescription);
+				divArticleText.appendChild(divArticleDescription);
+				divArticleText.appendChild(divArticleTag)
+				divArticleText.appendChild(pDate);
 
+				divArticleContent.appendChild(divArticleText);
 
-				divArticleContainer.appendChild(divArticle)
+				divArticle.appendChild(divArticleTitle);
+				divArticle.appendChild(divArticleContent);
 
+				divArticleContainer.appendChild(divArticle);
 			}
 		})
 		.catch((err) => {
