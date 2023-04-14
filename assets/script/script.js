@@ -4,7 +4,6 @@ let asideContainer = document.querySelector("#aside-container");
 let btnBurgerSpan = document.querySelectorAll("#btn-burger span");
 let copyright = document.querySelector(".copyright");
 let body = document.querySelector("body");
-
 // console.log(btnBurger);
 
 btnBurger.addEventListener("click", () => {
@@ -185,21 +184,20 @@ try {
 				for (let i = 0; i < tagList.length; i++) {
 					// console.log(tagList[i].childNodes[0].nodeValue);
 					tag = tagList[i].childNodes[0].nodeValue;
-					console.log(tag)
+					// console.log(tag);
 					tagArray.push(tag);
-					console.log(tagArray)
+					// console.log(tagArray);
 				}
 				// console.log(tagArray);
-				for(let i = 0; i < tagArray.length; i++){
-					let pTag = document.createElement('p')
-					pTag.classList.add('text-muted', 'text-info')
-					let tag = tagArray[i]
-					pTag.innerText = tag
-					divArticleTag.appendChild(pTag)
+				for (let i = 0; i < tagArray.length; i++) {
+					let pTag = document.createElement("p");
+					pTag.classList.add("text-muted", "text-info");
+					let tag = tagArray[i];
+					pTag.innerText = tag;
+					divArticleTag.appendChild(pTag);
 				}
 
-				
-				console.log(divArticleTag)
+				// console.log(divArticleTag);
 				// ? Formatage de la date au format souhaité
 				let date = listItemXML[i].getElementsByTagName("pubDate")[0].childNodes[0].nodeValue;
 				// console.log(date);
@@ -227,9 +225,7 @@ try {
 				// console.log(divArticleText)
 				// console.log(divArticleTitle)
 				// console.log(divArticleContent)
-				// console.log(divArticle)
-
-				
+				console.log(divArticle)
 
 				divArticleTitle.appendChild(h2Title);
 
@@ -239,7 +235,7 @@ try {
 
 				divArticleDescription.appendChild(pDescription);
 				divArticleText.appendChild(divArticleDescription);
-				divArticleText.appendChild(divArticleTag)
+				divArticleText.appendChild(divArticleTag);
 				divArticleText.appendChild(pDate);
 
 				divArticleContent.appendChild(divArticleText);
