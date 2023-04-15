@@ -50,7 +50,7 @@ body {
 	align-items: center;
 }
 footer {
-	width: 100%;
+	/* width: 100%; */
 	position: absolute;
 	top: 0;
 	left: calc(50% - 35px);
@@ -112,6 +112,9 @@ h6 {
 }
 .wrap{
 	font-size: .6em;
+}
+h2{
+	font-size: .5em;
 }
 p {
 	color: var(--color-text);
@@ -588,6 +591,9 @@ body #vertical-mail {
 /* ********************************* */
 @media screen and (min-width: 768px) {
 	.wrap{
+		font-size: 1em;
+	}
+	h2{
 		font-size: 1em;
 	}
 	#a-propos {
