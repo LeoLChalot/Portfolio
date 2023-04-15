@@ -50,6 +50,7 @@ body {
 	align-items: center;
 }
 footer {
+	width: 100%;
 	position: absolute;
 	top: 0;
 	left: calc(50% - 35px);
