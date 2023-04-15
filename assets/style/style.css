@@ -416,7 +416,6 @@ body #vertical-mail {
 .card-container {
 	max-width: 80%;
 	position: relative;
-	/* perspective-origin: 2000px; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
