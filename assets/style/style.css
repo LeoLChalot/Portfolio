@@ -306,7 +306,7 @@ input[type="button"]:hover {
 	top: 0;
 	left: 0;
 	height: 100%;
-	width: 400px;
+	/* width: 100%; */
 	background-color: var(--background-card);
 	backdrop-filter: blur(8px);
 	transform: translateX(-400px);
@@ -315,6 +315,8 @@ input[type="button"]:hover {
 #aside-container.active {
 	transform: translateX(0px);
 	transition: var(--transition-timer);
+	box-shadow: var(--shadow);
+	backdrop-filter: blur(50%);
 }
 #aside-container #aside-menu {
 	width: 100%;
