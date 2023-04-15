@@ -57,8 +57,8 @@ footer {
 	text-align: center;
 	z-index: 5;
 }
-.copyright{
-	font-size: .5em;
+.copyright {
+	font-size: 0.5em;
 	z-index: 5;
 }
 section {
@@ -112,10 +112,10 @@ h5,
 h6 {
 	color: var(--color-header);
 }
-.wrap{
-	font-size: .6em;
+.wrap {
+	font-size: 0.6em;
 }
-h2{
+h2 {
 	font-size: 18px;
 }
 p {
@@ -475,10 +475,13 @@ body #vertical-mail {
 /* ********************************************* */
 /* *              	 CSS a propos		       * */
 /* ********************************************* */
+#list-info li p{
+	line-height: 1.3em;
+}
 #image-design {
 	position: relative;
-	width: 300px;
-	height: 300px;
+	width: 180px;
+	height: 180px;
 	border-radius: var(--border-radius);
 	border: var(--border-green);
 }
@@ -592,10 +595,26 @@ body #vertical-mail {
 /* * 		@Media queries		   * */
 /* ********************************* */
 @media screen and (min-width: 768px) {
-	.wrap{
+	#image-design {
+		position: relative;
+		width: 300px;
+		height: 300px;
+		border-radius: var(--border-radius);
+		border: var(--border-green);
+	}
+	#image-design img {
+		width: 100%;
+		position: inherit;
+		bottom: 15px;
+		right: 15px;
+		border-radius: var(--border-radius);
+		filter: grayscale(100%);
+		transition: var(--transition-timer);
+	}
+	.wrap {
 		font-size: 1em;
 	}
-	h2{
+	h2 {
 		font-size: 1em;
 	}
 	#a-propos {
