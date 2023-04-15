@@ -109,6 +109,9 @@ h5,
 h6 {
 	color: var(--color-header);
 }
+.wrap{
+	font-size: .6em;
+}
 p {
 	color: var(--color-text);
 }
@@ -585,6 +588,9 @@ body #vertical-mail {
 /* * 		@Media queries		   * */
 /* ********************************* */
 @media screen and (min-width: 768px) {
+	.wrap{
+		font-size: 1em;
+	}
 	#a-propos {
 		display: flex;
 		flex-direction: row;
