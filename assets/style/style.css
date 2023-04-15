@@ -59,6 +59,7 @@ footer {
 }
 .copyright{
 	font-size: .5em;
+	z-index: 5;
 }
 section {
 	display: flex;
@@ -221,7 +222,7 @@ hr {
 	z-index: 5;
 	position: fixed;
 	top: 0;
-	padding: 10px 0;
+	padding: 15px 0;
 	backdrop-filter: blur(5px);
 }
 button,
