@@ -136,7 +136,7 @@ try {
 			// console.log(listItemXML[0]);
 
 			// ? Récupération des 5 derniers articles tech
-			for (let i = 0; i < 5; i++) {
+			for (let i = 0; i < 10; i++) {
 				// console.log(listItemXML[i]);
 
 				// ? Création des éléments des cards rss
