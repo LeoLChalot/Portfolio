@@ -78,6 +78,13 @@ section .header {
 	align-items: center;
 	justify-content: center;
 }
+q{
+	display: block;
+	margin: 1em 0;
+	width: 50%;
+	text-align: center;
+	align-self: flex-end;
+}
 main {
 	width: 100%;
 	display: flex;
@@ -198,6 +205,7 @@ a:hover::before {
 	color: var(--color-link);
 }
 hr {
+	width: 100%;
 	border-color: var(--color-link);
 }
 .title {
@@ -505,6 +513,27 @@ body #vertical-mail {
 /* ********************************************* */
 /* *              	 	 RSS 			       * */
 /* ********************************************* */
+.info-ia{
+	padding: 1em;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.info-ia ul{
+	display: block;
+	width: 100%;
+	max-width: 400px;
+	padding: 5px;
+}
+.info-ia ul li{
+	text-align: left;
+}
+.veille{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
 #veille-container {
 	display: none;
 	opacity: 0;
