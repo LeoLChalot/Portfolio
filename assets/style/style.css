@@ -357,7 +357,7 @@ input[type="button"]:hover {
 body #vertical-ico {
 	margin: auto;
 	position: fixed;
-	left: -10px;
+	left: -20px;
 	bottom: 135px;
 	transform: rotate(-90deg);
 	transition: var(--transition-timer-1);
@@ -384,7 +384,7 @@ body #vertical-ico {
 body #vertical-mail {
 	margin: auto;
 	position: fixed;
-	right: -60px;
+	right: -70px;
 	bottom: 105px;
 	transform: rotate(90deg);
 	transition: var(--transition-timer-1);
@@ -718,14 +718,14 @@ body #vertical-mail {
 	body #vertical-mail {
 		margin: auto;
 		position: fixed;
-		right: -65px;
+		right: -70px;
 		bottom: 235px;
 		transform: rotate(90deg);
 	}
 	body #vertical-ico {
 		margin: auto;
 		position: fixed;
-		left: -10px;
+		left: -20px;
 		bottom: 235px;
 		transform: rotate(-90deg);
 	}
