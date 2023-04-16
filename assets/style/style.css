@@ -250,6 +250,7 @@ input[type="button"]:hover {
 	bottom: 25px;
 	right: 50px;
 }
+
 /* ********************************************* */
 /* *                CSS Menu-Aside             * */
 /* ********************************************* */
@@ -504,35 +505,29 @@ body #vertical-mail {
 /* ********************************************* */
 /* *              	 	 RSS 			       * */
 /* ********************************************* */
-.veille-container {
+#veille-container {
+	display: none;
+	opacity: 0;
+	transition: var(--transition-timer-3);
+}
+#veille-container.active {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	opacity: 1;
+	transition: var(--transition-timer-3);
 }
-/* .article {
-	width: 100%;
-	margin-bottom: 2em;
-	background-color: var(--background-card);
-	border-radius: var(--border-radius);
-	box-shadow: var(--shadow);
-}
-#article-container {
-	width: 100%;
-	padding: 1em;
-	display: flex;
-	flex-direction: column;
-	gap: 2em;
-} */
-.veille-container #article-container .article {
+
+#veille-container #article-container .article {
 	width: 100%;
 	max-width: 350px;
 	background-color: var(--background-card);
 	border-radius: var(--border-radius);
 	box-shadow: var(--shadow);
 }
-.veille-container #article-container {
+#veille-container #article-container {
 	width: 100%;
 	padding: 1em;
 	display: flex;
@@ -667,17 +662,17 @@ body #vertical-mail {
 		right: 25px;
 		align-items: flex-end;
 	}
-	.veille-container{
+	#veille-container{
 		width: 100%;
 		align-items: flex-start;
 	}
-	.veille-container #article-container .article {
+	#veille-container #article-container .article {
 		max-width: 600px;
 		background-color: var(--background-card);
 		border-radius: var(--border-radius);
 		box-shadow: var(--shadow);
 	}
-	.veille-container #article-container {
+	#veille-container #article-container {
 		width: 100%;
 		padding: 1em;
 		justify-content: center;

@@ -40,16 +40,22 @@
 					Les deux <span class="highlight">veilles technologiques</span> ci-dessous auront été réalisées
 					pendant mon parcours au sein de l'<span class="highlight">IPSSI</span>.
 				</p>
+				<div class="btn-container">
+					<input type="button" name="lien1" value="IA" onclick="self.location.href='#IA'" onclick />
+					<input type="button" name="lien5" value="en cours" onclick="self.location.href='#'" onclick />
+				</div>
 			</section>
 
-			<section class="veille IA">
+			<section class="veille" id="IA">
 				<div class="header">
 					<h1>L'Intelligence Artificielle</h1>
 					<h2 class="typewrite" data-period="2000" data-type='[ "Utopie ?", "Dystopie ?" ]'>
 						<span class="wrap"></span>
 					</h2>
+					<h3>Pour accéder aux dernières actualités de Google en métière d'IA, cliquez ici</h3>
+					<input id="btn-google-ia" type="button" value="Afficher"/>
 				</div>
-				<div class="veille-container">
+				<div id="veille-container">
 					<div id="article-container"></div>
 				</div>
 			</section>

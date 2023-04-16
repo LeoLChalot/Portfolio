@@ -55,16 +55,13 @@ class TxtType {
 		} else {
 			this.txt = fullTxt.substring(0, this.txt.length + 1);
 		}
-
 		this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
-
 		let that = this;
 		let delta = 200 - Math.random() * 100;
 
 		if (this.isDeleting) {
 			delta /= 2;
 		}
-
 		if (!this.isDeleting && this.txt === fullTxt) {
 			delta = this.period;
 			this.isDeleting = true;
@@ -73,7 +70,6 @@ class TxtType {
 			this.loopNum++;
 			delta = 500;
 		}
-
 		setTimeout(function () {
 			that.tick();
 		}, delta);
@@ -96,6 +92,9 @@ window.onload = function () {
 	document.body.appendChild(css);
 };
 
+
+
+
 // ? Flux RSS
 // ! RS policy: No 'Access-Control-Allow-Origin' header i
 // let url = "https://www.technologyreview.com/feed/";
@@ -107,6 +106,9 @@ window.onload = function () {
 // ************************************** //
 // **	   Récupération du flus RSS    ** //
 // ************************************** //
+let btnGoogleIA = document.getElementById('btn-google-ia');
+
+console.log(btnGoogleIA)
 
 // ? Création des éléments de la section veille IA
 let veilleContainer = document.getElementById("veille-container");
@@ -115,6 +117,17 @@ let articleContainer = document.createElement("div");
 let divArticleContainer = document.getElementById("article-container");
 let url = "https://blog.google/technology/ai/rss/";
 let parser, xmlDoc;
+
+btnGoogleIA.addEventListener('click', () => {
+	veilleContainer.classList.toggle('active');
+	if(btnGoogleIA.value == "Afficher"){
+		btnGoogleIA.value = "Masquer"
+	} else {
+		btnGoogleIA.value = "Afficher"
+	}
+})
+
+
 
 // ? Requête au flux RSS googleAI
 try {
@@ -178,11 +191,11 @@ try {
 
 				// ? Récupération des tag "Category" XML
 				let tagList = listItemXML[i].getElementsByTagName("category");
-				console.log(tagList);
+				// console.log(tagList);
 				let tagArray = [];
 				let tag;
 				for (let i = 0; i < tagList.length; i++) {
-					console.log(tagList[i].childNodes[0].nodeValue);
+					// console.log(tagList[i].childNodes[0].nodeValue);
 					tag = tagList[i].childNodes[0].nodeValue;
 					// console.log(tag);
 					tagArray.push(tag);
