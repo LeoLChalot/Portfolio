@@ -214,7 +214,7 @@ try {
 				// console.log(ogArray[0].childNodes[2].textContent);
 				pDescription.textContent = ogArray[0].childNodes[2].textContent;
 
-				// ? Insertion des éléments à afficher
+				// ? console.log des éléments à afficher
 				// console.log(h2Title)
 				// console.log(imgArticle)
 				// console.log(aArticle)

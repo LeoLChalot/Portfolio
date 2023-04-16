@@ -507,24 +507,42 @@ body #vertical-mail {
 .veille-container {
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
-.article {
-	width: 300px;
-	height: 100vh;
+/* .article {
+	width: 100%;
 	margin-bottom: 2em;
 	background-color: var(--background-card);
 	border-radius: var(--border-radius);
 	box-shadow: var(--shadow);
 }
-.article-container {
+#article-container {
 	width: 100%;
 	padding: 1em;
 	display: flex;
 	flex-direction: column;
 	gap: 2em;
-	border-left: var(--border-green);
+} */
+.veille-container #article-container .article {
+	width: 100%;
+	max-width: 350px;
+	background-color: var(--background-card);
+	border-radius: var(--border-radius);
+	box-shadow: var(--shadow);
 }
+.veille-container #article-container {
+	width: 100%;
+	padding: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 2em;
+}
+
 .header h1 {
 	text-align: center;
 }
@@ -649,19 +667,28 @@ body #vertical-mail {
 		right: 25px;
 		align-items: flex-end;
 	}
-	.article {
-		width: 700px;
-		height: auto;
+	.veille-container{
+		width: 100%;
+		align-items: flex-start;
+	}
+	.veille-container #article-container .article {
+		max-width: 600px;
+		background-color: var(--background-card);
+		border-radius: var(--border-radius);
+		box-shadow: var(--shadow);
+	}
+	.veille-container #article-container {
+		width: 100%;
+		padding: 1em;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 2em;
 	}
 	.article-content {
 		flex-direction: row;
 	}
-	.article-content:nth-child(odd) {
-		flex-direction: row-reverse;
-	}
-	.article-view {
-		width: 100%;
-	}
+
 }
 @media screen and (min-width: 1200px) {
 	body #vertical-mail {
