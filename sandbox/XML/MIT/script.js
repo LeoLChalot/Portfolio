@@ -2,10 +2,11 @@
 let veilleContainer = document.getElementById("veille-container");
 
 let divArticleContainer = document.getElementById("article-container");
-let url = "https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml";
+
+let url =
+	"https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.lafermeduweb.net%2Ftag%2Frss%2Fnodejs.xml?search_veille%5Bsorting%5D=&search_veille%5BnbPerPages%5D=10&search_veille%5BdateInterval%5D=&search_veille%5Bauthor%5D=&search_veille%5Blang%5D=all&search_veille%5Bsearch%5D=";
+
 let parser, xmlDoc;
-
-
 
 // ? Requête au flux RSS googleAI
 try {
@@ -13,23 +14,12 @@ try {
 		.get(url)
 		.then((result) => {
 			let data = result.data;
-			// console.log(data);
-
-			// ? Création de l'objet DOMParser
-			parser = new DOMParser();
-
-			// ? Récupération du DOM XML
-			xmlDoc = parser.parseFromString(data, "text/xml");
-			// console.log(xmlDoc);
-
-			// ? Récupération des articles "Item" du DOM XML
-			let listItemXML = xmlDoc.getElementsByTagName("item");
-			console.log(listItemXML[0]);
+			// console.log(data)
+			let items = data.items;
+			console.log(items);
 
 			// ? Récupération des 5 derniers articles tech
 			for (let i = 0; i < 10; i++) {
-				// console.log(listItemXML[i]);
-
 				// ? Création des éléments des cards rss
 				let divArticle = document.createElement("article");
 				divArticle.classList.add("article");
@@ -55,74 +45,27 @@ try {
 				let pDate = document.createElement("p");
 				pDate.classList.add("article-date");
 
-				// ? Récupération et assignement du titre de l'article
-				h2Title.innerHTML = listItemXML[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
 
-				// ? Récupération et assignement du lien de la vignette de l'article
-				let srcImg = listItemXML[i].getElementsByTagName("media:content")[0].getAttribute("url");
 
-				// ? Récupération et assignement via l'attribut "alt" de la balise <img> de la description
-				let altImg = listItemXML[i].getElementsByTagName("media:description")[0].childNodes[0].nodeValue;
-				imgArticle.src = srcImg;
-				imgArticle.alt = altImg;
-				// console.log(imgArticle);
-
-				// ? Récupération des tag "Category" XML
-				let tagList = listItemXML[i].getElementsByTagName("category");
-				// console.log(tagList);
-				let tagArray = [];
-				let tag;
-				for (let i = 0; i < tagList.length; i++) {
-					// console.log(tagList[i].childNodes[0].nodeValue);
-					tag = tagList[i].childNodes[0].nodeValue;
-					// console.log(tag);
-					tagArray.push(tag);
-					// console.log(tagArray);
-				}
-				// console.log(tagArray);
-				for (let i = 0; i < tagArray.length; i++) {
-					let pTag = document.createElement("p");
-					pTag.classList.add("tag", "text-muted", "text-info");
-					let tag = tagArray[i];
-					pTag.innerText = tag;
-					divArticleTag.appendChild(pTag);
-				}
-
-				// console.log(divArticleTag);
-				// ? Formatage de la date au format souhaité
-				let date = listItemXML[i].getElementsByTagName("pubDate")[0].childNodes[0].nodeValue;
-				// console.log(date);
-				date = date.substring(0, 16);
-				pDate.innerHTML = date;
-
-				// ? Récupération et assignement via l'attribut "href" de la balise <a> du lien de l'article
-				let linkArticle = listItemXML[i].getElementsByTagName("link")[0].childNodes[0].nodeValue;
-				aArticle.href = linkArticle;
-				aArticle.target = "_blank";
-				aArticle.textContent = "Lire l'article";
-
-				let ogArray = listItemXML[i].getElementsByTagName("og");
-				// console.log(ogArray[0].childNodes[2].textContent);
-				pDescription.textContent = ogArray[0].childNodes[2].textContent;
 
 				// ? console.log des éléments à afficher
-				divArticleTitle.appendChild(h2Title);
+				// divArticleTitle.appendChild(h2Title);
 
-				divArticleView.appendChild(imgArticle);
-				divArticleView.appendChild(aArticle);
-				divArticleContent.appendChild(divArticleView);
+				// divArticleView.appendChild(imgArticle);
+				// divArticleView.appendChild(aArticle);
+				// divArticleContent.appendChild(divArticleView);
 
-				divArticleDescription.appendChild(pDescription);
-				divArticleText.appendChild(divArticleDescription);
-				divArticleText.appendChild(divArticleTag);
-				divArticleText.appendChild(pDate);
+				// divArticleDescription.appendChild(pDescription);
+				// divArticleText.appendChild(divArticleDescription);
+				// divArticleText.appendChild(divArticleTag);
+				// divArticleText.appendChild(pDate);
 
-				divArticleContent.appendChild(divArticleText);
+				// divArticleContent.appendChild(divArticleText);
 
-				divArticle.appendChild(divArticleTitle);
-				divArticle.appendChild(divArticleContent);
+				// divArticle.appendChild(divArticleTitle);
+				// divArticle.appendChild(divArticleContent);
 
-				divArticleContainer.appendChild(divArticle);
+				// divArticleContainer.appendChild(divArticle);
 			}
 		})
 		.catch((err) => {
