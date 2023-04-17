@@ -3,6 +3,7 @@ let veilleContainer = document.getElementById("veille-container");
 
 let divArticleContainer = document.getElementById("article-container");
 
+// ? https://api.rss2json.com/v1/api.json?rss_url=[url] - Les ":" sont notés "%3A", les "/" sont notés "%2F"
 let url = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fblog.google%2Ftechnology%2Fai%2Frss";
 
 // ? Requête au flux RSS googleAI
@@ -11,12 +12,31 @@ try {
 		.get(url)
 		.then((result) => {
 			let data = result.data;
-			// console.log(data)
 			let items = data.items;
-			console.log(items);
+			console.log(items)
 
 			// ? Récupération des 5 derniers articles tech
 			items.forEach((item) => {
+
+			/* 
+			?! Objet récupéré sous la forme JSON
+			*	{ 
+			*		0{
+			*			author:
+			?			categories: [Tableau de mots clés] [item.categorie[index]]
+			*			content:
+			*			description:
+			?			ensclosure :
+			?					link: (source de l'image pour la vignette) [item.enclosure.link]
+			*			guid:
+			?			link: (lien vers l'article) [item.link]
+			?			pubDate: (date au format AA-MM-JJ HH-MM-SS) [item.pubDate]
+			*			thumbnail:
+			?			title: (titre de l'article) [item.title]
+			*		}
+			*	}
+			*/
+
 				// ? Création des éléments des cards rss
 				let divArticle = document.createElement("article");
 				divArticle.classList.add("article");
@@ -33,41 +53,31 @@ try {
 				aArticle.classList.add("lien-article");
 				let divArticleText = document.createElement("div");
 				divArticleText.classList.add("article-text");
-				let divArticleDescription = document.createElement("div");
-				divArticleDescription.classList.add("article-description");
-				let divArticleTag = document.createElement("div");
-				divArticleTag.classList.add("article-tag");
-				let pDescription = document.createElement("p");
-				pDescription.classList.add("description");
 				let pDate = document.createElement("p");
 				pDate.classList.add("article-date");
 
 				h2Title.textContent = item.title;
-				divArticleView.innerHTML = item.description;
+				console.log(h2Title)
+				imgArticle.src = item.enclosure.link;
+				console.log(imgArticle)
 				aArticle.textContent = "Lire l'article";
 				aArticle.href = item.link;
 				let date = item.pubDate;
 				date = date.substring(0, 10);
+				pDate.innerText = date
 				console.log(date)
 
 				// ? console.log des éléments à afficher
 				divArticleTitle.appendChild(h2Title);
+				divArticleView.appendChild(imgArticle);
+				divArticleView.appendChild(aArticle);
+				divArticleContent.appendChild(divArticleView);
+				divArticleText.appendChild(pDate);
+				divArticleContent.appendChild(divArticleText);
+				divArticle.appendChild(divArticleTitle);
+				divArticle.appendChild(divArticleContent);
 
-				// divArticleView.appendChild(imgArticle);
-				// divArticleView.appendChild(aArticle);
-				// divArticleContent.appendChild(divArticleView);
-
-				// divArticleDescription.appendChild(pDescription);
-				// divArticleText.appendChild(divArticleDescription);
-				// divArticleText.appendChild(divArticleTag);
-				// divArticleText.appendChild(pDate);
-
-				// divArticleContent.appendChild(divArticleText);
-
-				// divArticle.appendChild(divArticleTitle);
-				// divArticle.appendChild(divArticleContent);
-
-				// divArticleContainer.appendChild(divArticle);
+				divArticleContainer.appendChild(divArticle);
 			});
 		})
 		.catch((err) => {
