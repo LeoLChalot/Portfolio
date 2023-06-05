@@ -13,28 +13,6 @@ btnBurger.addEventListener("click", () => {
 	console.log(copyright);
 });
 
-// ? JS Typerwriter
-// let message = document.querySelector("#typewriter").dataset.message;
-// console.log(message);
-// let textPosition = 0;
-// let speed = 1000;
-// function typewriter(message) {
-// 	document.querySelector("#typewriter").innerHTML = message[0].substring(0, textPosition) + "<span>|</span>";
-// 	if (textPosition++ != message[0].length) {
-// 		setTimeout(typewriter(message), speed);
-// 	}
-// }
-// window.addEventListener("load", typewriter(message));
-
-// let TxtType = function (el, toRotate, period) {
-// 	this.toRotate = toRotate;
-// 	this.el = el;
-// 	this.loopNum = 0;
-// 	this.period = parseInt(period, 10) || 2000;
-// 	this.txt = "";
-// 	this.tick();
-// 	this.isDeleting = false;
-// };
 
 class TxtType {
 	constructor(el, toRotate, period) {
@@ -136,8 +114,6 @@ btnPdfIA.addEventListener('click', () => {
 		btnPdfIA.value = "Afficher"
 	}
 })
-
-
 
 // ? Requête au flux RSS googleAI
 try {
