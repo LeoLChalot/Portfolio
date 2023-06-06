@@ -130,6 +130,9 @@ h6 {
 h2 {
 	font-size: 18px;
 }
+.h-projet{
+	font-size: 18px;
+}
 p {
 	color: var(--color-text);
 	line-height: 1.5em;
