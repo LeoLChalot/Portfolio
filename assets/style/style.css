@@ -76,7 +76,7 @@ section {
 	gap: 2em;
 	padding: var(--padding-section);
 }
-section .header {
+section .header-ia {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
