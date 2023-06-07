@@ -129,6 +129,7 @@ h6 {
 }
 h2 {
 	font-size: 18px;
+	text-align: center;
 }
 .h-projet{
 	font-size: 18px;
@@ -334,13 +335,15 @@ input[type="button"]:hover {
 	padding: var(--padding-section);
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
+	/* align-items: flex-end; */
+	align-items: center;
 	justify-content: space-around;
 }
 #aside-container #aside-menu .aside-item {
 	list-style-type: none;
 	width: 100%;
 	text-align: right;
+	/* text-align: center; */
 }
 #aside-container #aside-menu .aside-item a {
 	color: var(--color-link);
@@ -427,13 +430,21 @@ body #vertical-mail {
 	gap: 2em;
 }
 .card-container {
-	max-width: 80%;
+	max-width: 100%;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
+
+.card-right h2{
+	text-align: left;
+}
+.card-left h2{
+	text-align: right;
+}
+
 .card-container .card-info {
 	position: relative;
 	padding: var(--padding-card) 0;
