@@ -882,7 +882,7 @@ body #vertical-mail {
   #container-info {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 1rem;
@@ -973,6 +973,9 @@ body #vertical-mail {
     position: absolute;
     bottom: 13px;
     left: 190px;
+  }
+  #container-info {
+    flex-direction: column;
   }
 
   #list-info {
