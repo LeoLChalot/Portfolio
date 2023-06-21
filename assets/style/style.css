@@ -478,6 +478,7 @@ body #vertical-mail {
 
 #AP,
 #projets {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -814,6 +815,8 @@ body #vertical-mail {
   transform: perspective(800px) rotateY(0deg);
   opacity: 1;
 }
+
+
 
 /* ********************************* */
 /* * 		@Media queries		   * */
