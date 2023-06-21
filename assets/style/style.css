@@ -940,6 +940,37 @@ body #vertical-mail {
     flex-direction: row;
     align-items: center;
   }
+
+  /* ********************************* */
+  /* * 		    Documentations  		   * */
+  /* ********************************* */
+
+  .container-doc {
+    max-width: 600px;
+    max-height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .container-doc a img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-box-reflect: below 4px
+      linear-gradient(transparent, transparent, rgba(31, 31, 31, 0.267));
+    transform-origin: center;
+    transform: perspective(900px) rotateY(25deg);
+    transition: 0.5s;
+  }
+  .container-doc:hover a img {
+    opacity: 0.2;
+  }
+  .container-doc a img:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+  }
 }
 @media screen and (min-width: 1024px) {
   body #vertical-mail {
@@ -973,9 +1004,6 @@ body #vertical-mail {
     position: absolute;
     bottom: 13px;
     left: 190px;
-  }
-  #container-info {
-    flex-direction: column;
   }
 
   #list-info {
