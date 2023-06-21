@@ -431,7 +431,7 @@ body #vertical-mail {
 /* ********************************************* */
 .card {
   width: 100%;
-  height: 40vh;
+  height: 45vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -502,6 +502,7 @@ body #vertical-mail {
 }
 
 .card-container .card-info {
+  width: 100%;
   position: relative;
   padding: var(--padding-card) 0;
   z-index: 999;
@@ -509,6 +510,9 @@ body #vertical-mail {
   flex-direction: column;
   filter: grayscale(80%);
   transition: var(--transition-timer);
+}
+.card-container .card-info .list-techno p{
+  display: none;
 }
 .card-container .card-info .card-text {
   background-color: var(--background-card);
@@ -830,11 +834,14 @@ body #vertical-mail {
   }
   .card {
     width: 100%;
-    max-width: 600px;
+    max-width: 750px;
     height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .card-container .card-info .list-techno p{
+    display: block;
   }
   .card-text {
     height: 8rem;
@@ -976,6 +983,7 @@ body #vertical-mail {
   }
 }
 @media screen and (min-width: 1024px) {
+
   body #vertical-mail {
     margin: auto;
     position: fixed;
@@ -1079,6 +1087,25 @@ body #vertical-mail {
   #logo-large-screen img:nth-child(12) {
     left: calc(341.8px + 400px - 25px);
     top: calc(0px - 192.38px + 400px - 25px);
+  }
+
+  #AP, #projets{
+    flex-direction: row;
+  }
+  .card{
+    max-width: 600px;
+    height: 50vh;
+  }
+  .card .card-container .card-image{
+    width: 300px;
+    height: auto;
+  }
+  .card .card-container .card-info{
+    width: 300px;
+  }
+  .card .card-container .card-info .card-text{
+    width: 300px;
+    height: auto;
   }
   /* ********************************* */
   /* * 		    Documentations  		   * */
