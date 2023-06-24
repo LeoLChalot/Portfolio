@@ -33,6 +33,10 @@ body {
   background: #15181a;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
+a{
+  color: #00F8F8;
+  text-decoration: none;
+}
 
 button,
 input[type="button"] {
@@ -54,6 +58,9 @@ button:hover,
 input[type="button"]:hover {
   background-color: var(--color-green-hover);
   border: var(--background-card);
+}
+strong{
+  color: #E6A92C;
 }
 
 .skw-pages {
@@ -113,11 +120,25 @@ input[type="button"]:hover {
   height: 100%;
   padding: 0 30%;
   color: #fff;
+  font-family: cursive;
   transform: skewX(18deg);
   transition: transform 1s, opacity 1s;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.skw-page__content ul{
+margin: 1.5rem .4rem;
+}
+.skw-page__content ul li{
+  list-style-type: none;
+  text-align: center;
+  margin: 1rem;
+}
+.skw-page__content p{
+  display: block;
+  text-align: justify;
+  padding: 1.3rem;
 }
 .skw-page__half--left .skw-page__content {
   padding-left: 30%;
