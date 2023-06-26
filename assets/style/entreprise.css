@@ -42,7 +42,7 @@ button,
 input[type="button"] {
   z-index: 999;
   position: absolute;
-  bottom: 50px;
+  bottom: 25px;
   width: 80px;
   height: 50px;
   border-radius: var(--border-radius);
@@ -59,10 +59,10 @@ input[type="button"]:hover {
   border: var(--background-card);
 }
 .skw-page__half--right .skw-page__skewed .skw-page__content input[type="button"]{
-  right: 300px;
+  right: 250px;
 }
 .skw-page__half--left .skw-page__skewed .skw-page__content input[type="button"]{
-  left: 300px;
+  left: 250px;
 }
 strong{
   color: #E6A92C;
@@ -144,6 +144,7 @@ margin: 1.5rem .4rem;
   display: block;
   text-align: justify;
   padding: 1.3rem;
+  word-wrap: break-word;
 }
 .skw-page__half--left .skw-page__content {
   padding-left: 30%;
@@ -171,6 +172,10 @@ margin: 1.5rem .4rem;
 }
 .skw-page__link {
   color: #ffa0a0;
+  transition: .4s all ease;
+}
+.skw-page__link:hover {
+  transform: scale(1.5em);
 }
 .skw-page-1 .skw-page__half--left .skw-page__content {
   background-image: url("../img/Entreprise/Safebear/couverture-1.png");
@@ -203,7 +208,8 @@ margin: 1.5rem .4rem;
   background: #292929;
 }
 
-.logo{
+.logo,
+.last-logo{
   position: fixed;
   top:25px;
   width: 100px;
@@ -217,5 +223,21 @@ margin: 1.5rem .4rem;
 }
 .skw-page__half--left .skw-page__skewed .skw-page__content .logo{
   left: 250px;
+}
+.skw-page__half--right .skw-page__skewed .last-logo{
+  right: 250px;
+}
+.last-logo{
+  z-index: -1;
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  top: calc(100% / 2 - 400px);
+  left: calc(100% / 2 - 400px);
+  opacity: .3;
+  filter: blur(10px);
+}
+.skw-page__content .content{
+  z-index: 1;
 }
 /*# sourceMappingURL=style.css.map */
