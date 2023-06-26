@@ -42,8 +42,7 @@ button,
 input[type="button"] {
   z-index: 999;
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 50px;
   width: 80px;
   height: 50px;
   border-radius: var(--border-radius);
@@ -58,6 +57,12 @@ button:hover,
 input[type="button"]:hover {
   background-color: var(--color-green-hover);
   border: var(--background-card);
+}
+.skw-page__half--right .skw-page__skewed .skw-page__content input[type="button"]{
+  right: 300px;
+}
+.skw-page__half--left .skw-page__skewed .skw-page__content input[type="button"]{
+  left: 300px;
 }
 strong{
   color: #E6A92C;
@@ -198,4 +203,19 @@ margin: 1.5rem .4rem;
   background: #292929;
 }
 
+.logo{
+  position: fixed;
+  top:25px;
+  width: 100px;
+  height: 100px;
+  background: url("../img/Entreprise/Safebear/logo-safebear.svg");
+  background-size: cover;
+}
+
+.skw-page__half--right .skw-page__skewed .skw-page__content .logo{
+  right: 250px;
+}
+.skw-page__half--left .skw-page__skewed .skw-page__content .logo{
+  left: 250px;
+}
 /*# sourceMappingURL=style.css.map */
