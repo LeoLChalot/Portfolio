@@ -30,8 +30,8 @@
 }
 
 body {
-  background: #373737;;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  background: #373737;
+  font-family: Cursive, "Open Sans", Helvetica, Arial, sans-serif;
 }
 a {
   color: #00f8f8;
@@ -208,9 +208,14 @@ input[type="button"]:hover {
   background-color: var(--color-green-hover);
   border: var(--background-card);
 }
+.skw-page {
+  display: none;
+}
+strong {
+  color: #e6a92c;
+}
 
 @media screen and (max-width: 767px) {
-  
   #small {
     width: 100%;
     height: 100%;
@@ -222,6 +227,7 @@ input[type="button"]:hover {
   }
   #small .slide {
     width: 100%;
+    max-width: 500px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -230,35 +236,51 @@ input[type="button"]:hover {
     color: white;
   }
 
-  #small .slide h2{
-    
+  #small .slide h2 {
+    font-size: 18px;
+    text-align: center;
   }
-  #small .slide h4{
-
+  #small .slide h3 {
+    font-size: 16px;
   }
-  #small .slide p{
-
+  #small .slide h4 {
+    font-size: 14px;
   }
-  #small .slide ul{
-
+  #small .slide p {
+    font-size: 12px;
+    text-align: justify;
+    margin: 15px 0;
+  }
+  #small .slide ul {
+    display: block;
+    min-width: 300px;
+    max-width: 500px;
+    list-style: none;
   }
   #small .slide ul li{
-
+    margin-top: 15px;
+  }
+  #small .slide ul li p{
+    font-size: 12px;
+    text-align: center;
+  }
+  #small .slide ul li a{
+    font-size: 14px;
+    text-align: center;
   }
 
   .logo {
     position: fixed;
     top: 20px;
     right: 20px;
-    width: 75px;
-    height: 75px;
+    width: 40px;
+    height: 40px;
     background: url("../img/Entreprise/Safebear/logo-safebear.svg");
     background-size: cover;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-
   #small {
     width: 100%;
     height: 100%;
@@ -270,6 +292,7 @@ input[type="button"]:hover {
   }
   #small .slide {
     width: 100%;
+    max-width: 700px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -278,20 +301,24 @@ input[type="button"]:hover {
     color: white;
   }
 
-  #small .slide h2{
-
+  #small .slide p {
+    text-align: justify;
+    margin: 15px 0;
   }
-  #small .slide h4{
-
+  #small .slide h2 {
+    text-align: center;
   }
-  #small .slide p{
-
-  }
-  #small .slide ul{
-
+  #small .slide ul {
+    display: block;
+    min-width: 600px;
+    max-width: 700px;
+    list-style: none;
   }
   #small .slide ul li{
-
+    margin-top: 20px;
+  }
+  #small .slide ul li p{
+    text-align: center;
   }
 
   .logo {
@@ -309,12 +336,16 @@ input[type="button"]:hover {
   #small {
     display: none;
   }
+  .skw-page {
+    display: block;
+  }
   .hamburger,
-  .hamburger + label{
-    display:none;
+  .hamburger + label {
+    display: none;
     visibility: hidden;
-  }{
-    display:none;
+  }
+   {
+    display: none;
   }
 
   input[type="button"] {
@@ -336,9 +367,7 @@ input[type="button"]:hover {
     input[type="button"] {
     left: 250px;
   }
-  strong {
-    color: #e6a92c;
-  }
+  
 
   .skw-pages {
     overflow: hidden;
