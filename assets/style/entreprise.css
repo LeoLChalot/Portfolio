@@ -228,7 +228,8 @@ strong {
   #small .slide {
     width: 100%;
     max-width: 500px;
-    height: 100vh;
+    min-height: 100vh;
+    margin: 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,17 +238,17 @@ strong {
   }
 
   #small .slide h2 {
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
   }
   #small .slide h3 {
-    font-size: 16px;
+    font-size: 20px;
   }
   #small .slide h4 {
-    font-size: 14px;
+    font-size: 18px;
   }
   #small .slide p {
-    font-size: 12px;
+    font-size: 16px;
     text-align: justify;
     margin: 15px 0;
   }
@@ -261,11 +262,11 @@ strong {
     margin-top: 15px;
   }
   #small .slide ul li p{
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
   }
   #small .slide ul li a{
-    font-size: 14px;
+    font-size: 17px;
     text-align: center;
   }
 
@@ -293,7 +294,7 @@ strong {
   #small .slide {
     width: 100%;
     max-width: 700px;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
