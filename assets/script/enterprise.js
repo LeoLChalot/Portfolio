@@ -48,4 +48,13 @@ $(document).ready(function () {
       navigateDown();
     }
   });
+
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelectorAll("nav a");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      hamburger.checked = false;
+    });
+  });
 });
