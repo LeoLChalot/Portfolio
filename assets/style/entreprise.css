@@ -31,7 +31,7 @@
 
 body {
   background: #373737;
-  font-family: Cursive, "Open Sans", Helvetica, Arial, sans-serif;
+  font-family:"Open Sans", Helvetica, Arial, sans-serif;
 }
 a {
   color: #00f8f8;
@@ -85,7 +85,7 @@ input[type="checkbox"] {
 
 .hamburger:checked + label span {
   background: transparent;
-  z-index: 1;
+  z-index: 0;
 }
 
 .hamburger:checked + label span::after,
@@ -133,6 +133,7 @@ nav ul {
   left: 0;
   bottom: 0;
   right: 0;
+  z-index:0;
 }
 
 nav ul li {
@@ -140,7 +141,7 @@ nav ul li {
 }
 
 nav a {
-  font-size: 2vmax;
+  font-size: 30px;
   text-decoration: none;
   color: white;
   opacity: 0;
@@ -265,7 +266,7 @@ strong {
     font-size: 16px;
     text-align: center;
   }
-  #small .slide ul li a{
+  #small .slide ul li p a{
     font-size: 17px;
     text-align: center;
   }
@@ -344,9 +345,6 @@ strong {
   .hamburger + label {
     display: none;
     visibility: hidden;
-  }
-   {
-    display: none;
   }
 
   input[type="button"] {
