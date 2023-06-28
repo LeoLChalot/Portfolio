@@ -265,7 +265,7 @@ input[type="button"] {
   border: var(--border-green);
   color: var(--color-link);
   transition: var(--transition-timer);
-  cursor:crosshair;
+  cursor: crosshair;
 }
 button:hover,
 input[type="button"]:hover {
@@ -284,6 +284,7 @@ input[type="button"]:hover {
 /* *                   CSS navbar             * */
 /* ********************************************* */
 nav {
+  z-index: 100000;
   display: none;
 }
 
@@ -842,6 +843,121 @@ body #vertical-mail {
   opacity: 1;
 }
 
+#list-entreprises {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+#list-entreprises article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#list-entreprises article input {
+  width: auto;
+  padding: 0.5rem;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  max-width: 600px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #868686;
+  overflow: hidden;
+  max-height: 0;
+  padding: 20px;
+  margin: 1em 1em 0 1em;
+  box-shadow: inset 0px 0px 22px 0px rgba(0, 0, 0, 1);
+  transition: max-height 10s ease-in-out;
+}
+.show {
+  display: block;
+  max-height: max-content;
+}
+
+.skills-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.skill {
+  background-color: #464646;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+.skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 1);
+}
+.skill .img {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.skill .text {
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+.skill img {
+  width: 200px;
+  height: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.skill .text h3 {
+  font-family: sans-serif;
+  font-size: 3em;
+  color: #fff;
+  display: block;
+  text-align: center;
+  max-width: 400px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.skill p {
+  font-family: sans-serif;
+  line-height: 1.5em;
+  color: #fff;
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
 /* ********************************* */
 /* * 		      @Media queries		   * */
 /* ********************************* */
@@ -851,7 +967,7 @@ body #vertical-mail {
     display: none;
   }
   nav {
-    z-index: 1000;
+    z-index: 10000;
     background-color: #54617f;
     position: fixed;
     top: 0;
@@ -861,6 +977,7 @@ body #vertical-mail {
     align-items: center;
     width: 100%;
     height: 50px;
+    box-shadow: 0px -2px 24px 10px rgba(0, 0, 0, 1);
   }
   nav a {
     font-weight: bold;
@@ -879,11 +996,6 @@ body #vertical-mail {
   }
   .card .card-container {
     width: 100%;
-  }
-  .card .card-container .card-image {
-    /* width: 300px;
-    height: auto; */
-    /* display: none; */
   }
   .card .card-container .card-info {
     width: 300px;
@@ -1189,6 +1301,113 @@ body #vertical-mail {
     transform: perspective(800px) rotateY(0deg);
     opacity: 1;
   }
+  #list-entreprises {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  #list-entreprises article {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #list-entreprises article input {
+    width: auto;
+    padding: 0.5rem;
+  }
+  #list-entreprises article {
+    width: 100%;
+    max-width: 900px;
+  }
+  .dropdown {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+  .dropdown-content {
+    position: relative;
+    display: none;
+    flex-direction: row;
+    align-items: baseline;
+    max-width: 1000px;
+    max-height: 0;
+    padding: 20px;
+
+    margin-bottom: 1em;
+    background-color: #868686;
+  }
+  .show {
+    display: flex;
+    max-height: max-content;
+  }
+
+  .skills-container {
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .skill {
+    max-width: 300px;
+    margin: 10px;
+  }
+  .skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 1);
+  }
+  .skill .img {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .skill .text {
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .skill img {
+    width: 200px;
+    height: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .skill .text h3 {
+    font-family: sans-serif;
+    font-size: 3em;
+    color: #fff;
+    display: block;
+    text-align: center;
+    max-width: 400px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .skill p {
+    font-family: sans-serif;
+    line-height: 1.5em;
+    color: #fff;
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1255,5 +1474,9 @@ body #vertical-mail {
   #logo-large-screen img:nth-child(12) {
     left: calc(341.8px + 400px - 25px);
     top: calc(0px - 192.38px + 400px - 25px);
+  }
+
+  #list-entreprise article {
+    width: 1000px;
   }
 }

@@ -7,6 +7,7 @@
 		<link rel="icon" href="assets/img/leo-larou-chalot.jpg">
 		<link rel="stylesheet" href="assets/style/style.css" />
 		<script src="assets/script/script.js" defer></script>
+		<script src="assets/script/dropdown.js"></script>
 		<script src="https://kit.fontawesome.com/36ea092baf.js" crossorigin="anonymous" defer></script>
 		<title>Accueil - Portfolio</title>
 	</head>
@@ -51,9 +52,66 @@
       </section>
 
       <section id="list-entreprises">
-				<div class="container-reflexion">
-					<a href="entreprise_safebear.html" target="_blank"><img class="logo-entreprise" src="assets/img/Entreprise/Safebear/safebear-final-01-2.webp" alt="Logo Safebear"></a>
-				 </div>
+				<article id="SAFEBEAR">
+					<div class="container-reflexion">
+						<a href="entreprise_safebear.html" target="_blank">
+							<img class="logo-entreprise" src="assets/img/Entreprise/Safebear/safebear-final-01-2.webp" alt="Logo Safebear">
+						</a>
+				 	</div>
+					<div class="dropdown">
+						<input type="button" name="lien5" value="Réalisations" onclick="toggleDropdown()" />
+						<div id="dropdown-content" class="dropdown-content">
+
+								<div class="skill">
+									<div class="img">
+										<img src="assets/img/Entreprise/Safebear/intelligence-artificielle.jpg" alt="IA image" />
+									</div>
+									<div class="text">
+										<h3>Apprentissage supervisé de l'IA développée par l'entreprise</h3>
+										<p>
+											J'ai travaillé sur l'apprentissage supervisé de l'IA développée par
+											l'entreprise, en accompagnant l'équipe dans la labellisation de
+											commentaires en fonction de leur degré de toxicité. Cette expérience
+											m'a permis d'acquérir des compétences en matière d'<strong class="highlight">apprentissage
+											automatique</strong> et de <strong class="highlight">traitement du langage naturel</strong>.
+										</p>
+									</div>
+								</div>
+								<div class="skill">
+									<div class="img">
+										<img src="assets/img/Entreprise/Safebear/application-mobile.jpg" alt="Mobile app image" />
+									</div>
+									<div class="text">
+										<h3>Tests d'utilisation de l'application mobile</h3>
+										<p>
+											J'ai participé aux tests d'utilisation de l'application mobile de
+											l'entreprise, en testant les fonctionnalités liées à la création de
+											comptes utilisateurs sur Android. Cette expérience m'a permis
+											d'acquérir des compétences en matière de <strong class="highlight">tests d'utilisabilité</strong> et
+											d'<strong class="highlight">assurance qualité</strong>.
+										</p>
+									</div>
+								</div>
+								<div class="skill">
+									<div class="img">
+										<img src="assets/img/Entreprise/Safebear/design-mobile.jpg" alt="Design image" />
+									</div>
+									<div class="text">
+										<h3>
+											Accompagnement dans la réflexion sur la création des visuels et logo
+										</h3>
+										<p>
+											J'ai accompagné l'équipe dans la réflexion sur la création des visuels
+											et du logo de l'entreprise, en collaboration avec l'agence Gorille.
+											Cette expérience m'a permis d'acquérir des compétences en matière de
+											<strong class="highlight">branding</strong> et de <strong class="highlight">design graphique</strong>.
+										</p>
+									</div>
+								</div>      
+
+						</div>
+					</div>
+				</article>				
 			</section>
 			<input class="btn-up" type="button" name="lien5" value="Up" onclick="self.location.href='#'" onclick />
 		</main>
