@@ -265,6 +265,7 @@ input[type="button"] {
   border: var(--border-green);
   color: var(--color-link);
   transition: var(--transition-timer);
+  cursor:crosshair;
 }
 button:hover,
 input[type="button"]:hover {
@@ -823,6 +824,7 @@ body #vertical-mail {
   width: 60%;
   height: 100%;
   transition: 0.5s;
+  cursor: pointer;
 }
 .container-reflexion a {
   display: block;
