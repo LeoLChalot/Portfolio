@@ -234,6 +234,7 @@ strong {
     justify-content: center;
     align-items: center;
   }
+
   #small .slide {
     width: 100%;
     max-width: 500px;
@@ -440,9 +441,9 @@ strong {
   .skw-page__content {
     background: #292929;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-flow: column wrap;
     position: absolute;
     left: 0;
     top: 0;
@@ -467,12 +468,13 @@ strong {
     list-style-type: none;
     text-align: center;
     margin: 1rem;
-    font-size: 1.1em;
+    font-size: 12px;
   }
   .skw-page__content p {
+    font-size: 12px;
     display: block;
     text-align: justify;
-    padding: 1.3rem;
+    padding: 1rem;
     word-wrap: break-word;
   }
   .skw-page__half--left .skw-page__content {

@@ -1,199 +1,308 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="assets/img/leo-larou-chalot.jpg">
-		<link rel="stylesheet" href="assets/style/style.css" />
-		<script src="assets/script/aside.js" defer></script>
-		<script src="assets/script/typewritter.js" defer></script>
-		<script src="assets/script/aos.js" defer></script>
-		<script src="assets/script/script.js" defer></script>
-		<script src="https://kit.fontawesome.com/36ea092baf.js" crossorigin="anonymous" defer></script>
-		<title>Accueil - Portfolio</title>
-	</head>
-	<body>
-		<header>
-			<div id="btn-burger">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<aside id="aside-container">
-				<ul id="aside-menu">
-					<li class="aside-item"><a href="bts_sio.html">BTS SIO</a></li>
-					<li class="aside-item"><a href="ecole.html">Ecole</a></li>
-					<li class="aside-item"><a href="entreprise.html">Entreprise</a></li>
-					<li class="aside-item"><a href="veilles.html">Veilles</a></li>
-					<li class="aside-item"><a href="apprentissage_personnel.html">Appr Perso</a></li>
-					<li class="aside-item"><a href="documentation.html">Docs</a></li>
-				</ul>
-			</aside>
-			<nav>
-				<a href="bts_sio.html">BTS SIO</a>
-				<a href="ecole.html">Ecole</a>
-				<a href="entreprise.html">Entreprise</a>
-				<a href="veilles.html">Veilles</a>
-				<a href="apprentissage_personnel.html">Appr Perso</a>
-				<a href="documentation.html">Docs</a>
-			</nav>
-		</header>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="assets/img/leo-larou-chalot.jpg" />
+      <link rel="stylesheet" href="assets/style/style.css" />
+      <script src="assets/script/aside.js" defer></script>
+      <script src="assets/script/typewritter.js" defer></script>
+      <script src="assets/script/aos.js" defer></script>
+      <script src="assets/script/script.js" defer></script>
+      <script
+         src="https://kit.fontawesome.com/36ea092baf.js"
+         crossorigin="anonymous"
+         defer
+      ></script>
+      <title>Accueil - Portfolio</title>
+   </head>
+   <body>
+      <header>
+         <div id="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+         <aside id="aside-container">
+            <ul id="aside-menu">
+               <li class="aside-item"><a href="bts_sio.html">BTS SIO</a></li>
+               <li class="aside-item"><a href="ecole.html">Ecole</a></li>
+               <li class="aside-item">
+                  <a href="entreprise.html">Entreprise</a>
+               </li>
+               <li class="aside-item"><a href="veilles.html">Veilles</a></li>
+               <li class="aside-item">
+                  <a href="apprentissage_personnel.html">Appr Perso</a>
+               </li>
+               <li class="aside-item"><a href="documentation.html">Docs</a></li>
+            </ul>
+         </aside>
+         <nav>
+            <a href="bts_sio.html">BTS SIO</a>
+            <a href="ecole.html">Ecole</a>
+            <a href="entreprise.html">Entreprise</a>
+            <a href="veilles.html">Veilles</a>
+            <a href="apprentissage_personnel.html">Appr Perso</a>
+            <a href="documentation.html">Docs</a>
+         </nav>
+      </header>
 
-		<main>
+      <main>
+         <section class="title">
+            <p class="highlight">Salut, je m'appelle</p>
+            <h1
+               class="typewrite"
+               data-period="5000"
+               data-type='[ "Léo Larou-Chalot" ]'
+            >
+               <span class="wrap"></span>
+            </h1>
+            <h2 class="text-muted">
+               Je vous présente ici mon
+               <span class="highlight">portfolio numérique</span>.
+            </h2>
+            <p>
+               Ce portfolio me suivra durant mon cursus dans le développement
+               informatique, il me servira de support pour vous transmettre mon
+               appétence pour le développement !
+            </p>
+            <div class="btn-container">
+               <input
+                  type="button"
+                  name="lien4"
+                  value="A propos"
+                  onclick="self.location.href='#a-propos'"
+                  onclick
+               />
+               <!-- <button><a id="btn-cv" href="assets/DOCS/CV_larou-chalot-leo.pdf" target="_blank">CV</a></button> -->
+               <input
+                  type="button"
+                  name="lien5"
+                  value="CV"
+                  onclick="self.location.href='#pdf'"
+                  onclick
+               />
+            </div>
+         </section>
 
-			<section class="title">
-				<p class="highlight">Salut, je m'appelle</p>
-				<h1 class="typewrite" data-period="5000" data-type='[ "Léo Larou-Chalot" ]'>
-					<span class="wrap"></span>
-				</h1>
-				<h2 class="text-muted">Je vous présente ici mon <span class="highlight">portfolio numérique</span>.</h2>
-				<p>
-					Ce portfolio me suivra durant mon cursus dans le développement informatique, il me servira de
-					support pour vous transmettre mon appétence pour le développement !
-				</p>
-				<div class="btn-container">
-					<input
-						type="button"
-						name="lien4"
-						value="A propos"
-						onclick="self.location.href='#a-propos'"
-						onclick
-					/>
-					<!-- <button><a id="btn-cv" href="assets/DOCS/CV_larou-chalot-leo.pdf" target="_blank">CV</a></button> -->
-					<input type="button" name="lien5" value="CV" onclick="self.location.href='#pdf'" onclick />
-				</div>
-			</section>
-			
-			<section id="a-propos">
-				<div id="logo-large-screen">
-					<img src="assets/img/logo/langages/resized/logo-css.png" alt="logo css">
-					<img src="assets/img/logo/langages/resized/logo-html.png" alt="logo html">
-					<img src="assets/img/logo/langages/resized/logo-react.png" alt="logo react">
-					<img src="assets/img/logo/langages/resized/logo-mysql.png" alt="logo mysql">
-					<img src="assets/img/logo/langages/resized/logo-node.png" alt="logo node">
-					<img src="assets/img/logo/langages/resized/logo-php.png" alt="logo php">
-					<img src="assets/img/logo/langages/resized/logo-sass.png" alt="logo sass">
-					<img src="assets/img/logo/langages/resized/logo-javascript.png" alt="logo javascript">
-					<img src="assets/img/logo/langages/resized/logo-python.png" alt="logo python">
-					<img src="assets/img/logo/langages/resized/logo-django.png" alt="logo django">
-					<img src="assets/img/logo/langages/resized/logo-gitbash.png" alt="logo gitbash">
-					<img src="assets/img/logo/langages/resized/logo-jquery.png" alt="logo jquery">
-				</div>
-				<h3 id="title-info"><span id="title-info-down">Quelques</span> <span>informations...</span></h3>
-				<div id="container-info">
-					<div id="image-design">
-						<img src="assets/img/moi_2.jpg" alt="" />
-					</div>
-					<div id="list-info">
-						<ul>
-							<li><p><strong>Nom :</strong> Larou-Chalot</p></li>
-							<li><p><strong>Prénom :</strong> Léo</p></li>
-							<li><p><strong>Né le :</strong> 14 mars 1995</p></li>
-							<li><p><strong>Age :</strong> 28 ans</p></li>
-							<li><p><strong>Etudes :</strong> BTS SIO SLAM</p></li>
-							<li><p><strong>Statut :</strong> Initial</p></li>
-							<li><p><strong>@Mail :</strong> l.larouchalot@ecole-ipssi.net</p></li>
-							<li>
-								<p>
-									<strong>Linkedin :</strong>
-									<a class="borderline" href="https://www.linkedin.com/in/LeoLChalot" target="_blank"
-										>LeoLChalot</a
-									>
-								</p>
-							</li>
-							<li>
-								<p>
-									<strong>Github :</strong>
-									<a class="borderline" href="https://github.com/LeoLChalot" target="_blank"
-										>LeoLChalot</a
-									>
-								</p>
-							</li>
-						</ul>
-					</div>
-				</div>
+         <section id="a-propos">
+            <div id="logo-large-screen">
+               <img
+                  src="assets/img/logo/langages/resized/logo-css.png"
+                  alt="logo css"
+               />
+               <img
+                  src="assets/img/logo/langages/resized/logo-html.png"
+                  alt="logo html"
+               />
+               <img
+                  src="assets/img/logo/langages/resized/logo-react.png"
+                  alt="logo react"
+               />
+               <img
+                  src="assets/img/logo/langages/resized/logo-mysql.png"
+                  alt="logo mysql"
+               />
+               <img
+                  src="assets/img/logo/langages/resized/logo-node.png"
+                  alt="logo node"
+               />
+               <img
+                  src="assets/img/logo/langages/resized/logo-php.png"
+                  alt="logo php"
+               />
+               <img
+                  src="assets/img/logo/langages/resized/logo-sass.png"
+                  alt="logo sass"
+               />
+               <img
+                  src="assets/img/logo/langages/resized/logo-javascript.png"
+                  alt="logo javascript"
+               />
+               <img
+                  src="assets/img/logo/langages/resized/logo-python.png"
+                  alt="logo python"
+               />
+               <img
+                  src="assets/img/logo/langages/resized/logo-django.png"
+                  alt="logo django"
+               />
+               <img
+                  src="assets/img/logo/langages/resized/logo-gitbash.png"
+                  alt="logo gitbash"
+               />
+               <img
+                  src="assets/img/logo/langages/resized/logo-jquery.png"
+                  alt="logo jquery"
+               />
+            </div>
+            <h3 id="title-info">
+               <span id="title-info-down">Quelques</span>
+               <span>informations...</span>
+            </h3>
+            <div id="container-info">
+               <div id="image-design">
+                  <img src="assets/img/moi_2.jpg" alt="" />
+               </div>
+               <div id="list-info">
+                  <ul>
+                     <li>
+                        <p><strong>Nom :</strong> Larou-Chalot</p>
+                     </li>
+                     <li>
+                        <p><strong>Prénom :</strong> Léo</p>
+                     </li>
+                     <li>
+                        <p><strong>Né le :</strong> 14 mars 1995</p>
+                     </li>
+                     <li>
+                        <p><strong>Age :</strong> 28 ans</p>
+                     </li>
+                     <li>
+                        <p><strong>Etudes :</strong> BTS SIO SLAM</p>
+                     </li>
+                     <li>
+                        <p><strong>Statut :</strong> Initial</p>
+                     </li>
+                     <li>
+                        <p>
+                           <strong>@Mail :</strong>
+                           l.larouchalot@ecole-ipssi.net
+                        </p>
+                     </li>
+                     <li>
+                        <p>
+                           <strong>Linkedin :</strong>
+                           <a
+                              class="borderline"
+                              href="https://www.linkedin.com/in/LeoLChalot"
+                              target="_blank"
+                              >LeoLChalot</a
+                           >
+                        </p>
+                     </li>
+                     <li>
+                        <p>
+                           <strong>Github :</strong>
+                           <a
+                              class="borderline"
+                              href="https://github.com/LeoLChalot"
+                              target="_blank"
+                              >LeoLChalot</a
+                           >
+                        </p>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+				<section id="avenir">
+					<h1>Pour la suite</h1>
+					<p>Il est important de préciser que cette j'envisage de prétendre au Bachelor Dev Full Stack puis d'ambitionner l'obtention du Mastère Dev Data & IA pour cette reconversion.</p>
+				</section>
 				
-			</section>
 
-			<section id="pdf">
-				<embed src="assets/DOCS/CV_larou-chalot-leo.pdf" width="100%" height="1000px" type="application/pdf"/>
-			</section>
+         <section id="pdf">
+            <embed
+               src="assets/DOCS/CV_larou-chalot-leo.pdf"
+               width="100%"
+               height="1000px"
+               type="application/pdf"
+            />
+         </section>
 
-			<input class="btn-up" type="button" name="lien5" value="Up" onclick="self.location.href='#'" onclick />
-		</main>
+         <input
+            class="btn-up"
+            type="button"
+            name="lien5"
+            value="Up"
+            onclick="self.location.href='#'"
+            onclick
+         />
+      </main>
 
-		<footer>
-			<div id="vertical-ico">
-				<p>
-					<a href="https://github.com/LeoLChalot" target="_blank">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							width="20px"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-github"
-						>
-							<title>Lien vers mon GitHub</title>
-							<path
-								d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-							></path>
-						</svg>
-					</a>
-					<a href="https://www.instagram.com/leo_chalot/" target="_blank">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							width="20px"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-instagram"
-						>
-							<title>Pour en voir plus sur mes passes temps</title>
-							<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-							<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-							<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-						</svg>
-					</a>
-					<a href="https://www.linkedin.com/in/LeoLChalot" target="_blank">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							width="20px"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-linkedin"
-						>
-							<title>Lien vers mon réseau professionnel</title>
-							<path
-								d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-							></path>
-							<rect x="2" y="9" width="4" height="12"></rect>
-							<circle cx="4" cy="4" r="2"></circle>
-						</svg>
-					</a>
-				</p>
-			</div>
-			<div id="vertical-mail">
-				<p><a href="mailto:larouchalot@gmail.com">larouchalot@gmail.com</a></p>
-			</div>
-			<p class="copyright">&#9400 Léo Larou-Chalot</p>
-		</footer>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script src="assets/script/aos.js"></script>
-
-	</body>
+      <footer>
+         <div id="vertical-ico">
+            <p>
+               <a href="https://github.com/LeoLChalot" target="_blank">
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     role="img"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     width="20px"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     class="feather feather-github"
+                  >
+                     <title>Lien vers mon GitHub</title>
+                     <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                     ></path>
+                  </svg>
+               </a>
+               <a href="https://www.instagram.com/leo_chalot/" target="_blank">
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     role="img"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     width="20px"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     class="feather feather-instagram"
+                  >
+                     <title>Pour en voir plus sur mes passes temps</title>
+                     <rect
+                        x="2"
+                        y="2"
+                        width="20"
+                        height="20"
+                        rx="5"
+                        ry="5"
+                     ></rect>
+                     <path
+                        d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                     ></path>
+                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+               </a>
+               <a href="https://www.linkedin.com/in/LeoLChalot" target="_blank">
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     role="img"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     width="20px"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     class="feather feather-linkedin"
+                  >
+                     <title>Lien vers mon réseau professionnel</title>
+                     <path
+                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                     ></path>
+                     <rect x="2" y="9" width="4" height="12"></rect>
+                     <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+               </a>
+            </p>
+         </div>
+         <div id="vertical-mail">
+            <p>
+               <a href="mailto:larouchalot@gmail.com">larouchalot@gmail.com</a>
+            </p>
+         </div>
+         <p class="copyright">&#9400 Léo Larou-Chalot</p>
+      </footer>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="assets/script/aos.js"></script>
+   </body>
 </html>
