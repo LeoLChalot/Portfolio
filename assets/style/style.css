@@ -451,6 +451,7 @@ body #vertical-mail {
   width: 100%;
 }
 #avenir{
+  padding: 15px;
   width: 100%;
   max-width: 700px;
 }
