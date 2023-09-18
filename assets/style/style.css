@@ -1097,7 +1097,7 @@ body #vertical-mail {
   }
   #veille-container #article-container .article {
     padding: 2rem var(--padding-card);
-    max-width: 600px;
+    max-width: 550px;
     background-color: var(--background-card);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
