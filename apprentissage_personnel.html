@@ -6,9 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" href="assets/img/leo-larou-chalot.jpg">
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-		<!-- <link rel="stylesheet" href="assets/style/style.css" /> -->
-		<link rel="stylesheet" href="assets/style/styles.pure.css" />
+		<link rel="stylesheet" href="assets/style/style.css" />
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+		<script src="assets/script/script.js" defer></script>
 		<script src="assets/script/aos.js" defer></script>
 		<script src="assets/script/typewritter.js" defer></script>
 		<script src="assets/script/aside.js" defer></script>
@@ -25,7 +25,7 @@
 			</div>
 			<aside id="aside-container">
 				<ul id="aside-menu">
-					<li class="aside-item"><a href="index.html">Accueil</a></li>
+					<li class="link" class="aside-item"><a href="index.html">Accueil</a></li>
 					<li class="aside-item"><a href="bts_sio.html">BTS SIO</a></li>
 					<li class="aside-item"><a href="ecole.html">Ecole</a></li>
 					<li class="aside-item"><a href="entreprise.html">Entreprise</a></li>
@@ -34,12 +34,12 @@
 				</ul>
 			</aside>
 			<nav>
-				<a href="index.html">Accueil</a>
-				<a href="bts_sio.html">BTS SIO</a>
-				<a href="ecole.html">Ecole</a>
-				<a href="entreprise.html">Entreprise</a>
-				<a href="veilles.html">Veilles</a>
-				<a href="documentation.html">Docs</a>
+				<a class="link" href="index.html">Accueil</a>
+				<a class="link" href="bts_sio.html">BTS SIO</a>
+				<a class="link" href="ecole.html">Ecole</a>
+				<a class="link" href="entreprise.html">Entreprise</a>
+				<a class="link" href="veilles.html">Veilles</a>
+				<a class="link" href="documentation.html">Docs</a>
 			</nav>
 		</header>
 
@@ -56,58 +56,13 @@
 					<span class="highlight">perseverance</span> permettent à coup sûr de se démarquer.
 				</p>
 			</section>
-			<section class="openclassrooms" data-aos="flip-left">
-				<h1 class="before" num="01">OpenClassroom</h1>
-				<h2>Une référence incontournable</h2>
-				<p>Cela fait bientôt 3 ans que je me forme en parrallèle de mon cursus en informatique.</p>
-				<p>
-					L'image ci dessous vous donnera un idée en temps réel de ma progression dans les différents secteurs
-					qui m'ont ou qui me passionnent, et qui m'ont permis d'acquérir une certaine assurance dans le
-					milieu du développement.
-				</p>
-				<div class="progression">
-					<img src="assets/img/openclassrooms.png" class="pic" alt="Capture d'écrande ma progression personnelle" />
-				</div>
-			</section>
-			<section class="linkedin" data-aos="flip-right">
-				<h1 class="before" num="02">Linkedin Learning</h1>
-				<h2>L'apprentissage vidéoludique</h2>
-				<p>
-					Lors de mon entrée à l'IPSSI, l'accès à cette plateforme m'a permis de toucher à des sujets plus
-					techniques, de façon tout aussi accessible...
-				</p>
-				<p>
-					L'image ci dessous vous donnera un idée en temps réel de ma progression dans les différents secteurs
-					qui m'ont ou qui me passionnent, et qui m'ont permis d'acquérir une certaine assurance dans le
-					milieu du développement.
-				</p>
-				<div class="progression">
-					<img src="assets/img/linkedinLearning(1).png" alt="Capture d'écrande ma progression personnelle" class="pic" />
-				</div>
-			</section>
-			<section class="freecodecamp" data-aos="flip-left">
-				<h1 class="before" num="03">Free Code Camp</h1>
-				<h2>L'apprentissage par la pratique</h2>
-				<p>
-					L'image ci dessous vous donnera un idée en temps réel de ma progression dans les différents secteurs
-					qui m'ont ou qui me passionnent, et qui m'ont permis d'acquérir une certaine assurance dans le
-					milieu du développement.
-				</p>
-				<div class="progression">
-					<img src="assets/img/freecodecamp(1).png" alt="Capture d'écrande ma progression personnelle" class="pic" />
-				</div>
-			</section>
-			<section class="codecademy" data-aos="flip-right">
-				<h1 class="before" num="04">Codecademy</h1>
-				<h2>L'apprentissage par la pratique</h2>
-				<p>
-					L'image ci dessous vous donnera un idée en temps réel de ma progression dans les différents secteurs
-					qui m'ont ou qui me passionnent, et qui m'ont permis d'acquérir une certaine assurance dans le
-					milieu du développement.
-				</p>
-				<div class="progression">
-					<img src="assets/img/codecademy.png" alt="Capture d'écrande ma progression personnelle" class="pic" />
-				</div>
+			<section id="list-documentation">
+				<div class="container-reflexion">
+					<img src="assets/img/apprentissage_perso/openclassroom.jpg" alt="">
+					<img src="assets/img/apprentissage_perso/linkedinlearning.jpg" alt="">
+					<img src="assets/img/apprentissage_perso/freecodecamp.png" alt="">
+					<img src="assets/img/apprentissage_perso/codecademy.avif" alt="">
+				 </div>
 			</section>
 			<input class="btn-up" type="button" value="Up" onclick="self.location.href='#'" onclick />
 		</main>
@@ -177,7 +132,7 @@
 			<div id="vertical-mail">
 				<p><a href="mailto:larouchalot@gmail.com">larouchalot@gmail.com</a></p>
 			</div>
-			<p class="copyright">&#9400 Léo Larou-Chalot</p>
+			<p class="copyright">© Léo Larou-Chalot</p>
 		</footer>
 
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
