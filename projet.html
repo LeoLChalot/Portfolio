@@ -1,274 +1,239 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="assets/img/leo-larou-chalot.jpg">
-		<link rel="stylesheet" href="assets/style/style.css" />
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-		<script src="assets/script/script.js" defer></script>
-		<script src="assets/script/gallery.js" defer></script>
-		<script src="https://kit.fontawesome.com/36ea092baf.js" crossorigin="anonymous" defer></script>
-		<title>Projets - Portfolio</title>
-	</head>
-	<body>
-		<header>
-			<div id="btn-burger">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<aside id="aside-container">
-				<ul id="aside-menu">
-					<li class="aside-item"><a href="index.html">Accueil</a></li>
-					<li class="aside-item"><a href="bts_sio.html">BTS SIO</a></li>
-					<li class="aside-item"><a href="ecole.html">Ecole</a></li>
-					<li class="aside-item"><a href="entreprise.html">Entreprise</a></li>
-					<li class="aside-item"><a href="veilles.html">Veilles</a></li>
-					<li class="aside-item"><a href="apprentissage_personnel.html">Appr Perso</a></li>
-					<li class="aside-item"><a href="documentation.html">Docs</a></li>
-				</ul>
-			</aside>
-			<nav>
-				<a class="link" href="index.html">Accueil</a>
-				<a class="link" href="bts_sio.html">BTS SIO</a>
-				<a class="link" href="ecole.html">Ecole</a>
-				<a class="link" href="entreprise.html">Entreprise</a>
-				<a class="link" href="veilles.html">Veilles</a>
-				<a class="link" href="apprentissage_personnel.html">Appr Perso</a>
-				<a class="link" href="documentation.html">Docs</a>
-			</nav>
-		</header>
-		<main>
-			<section class="title">
-				<h1 class="typewrite" data-period="5000" data-type='[ "Collection..." ]'>
-					<span class="wrap"></span>
-				</h1>
-				<h2 class="text-muted">... Des différents <span class="highlight">projets réalisés</span> en école</h2>
-				<p>
-					Parce que la présentation de mes réalisations vaut plus que de simples mots, je vous propose ici une
-					collection de l'ensemble de mes projets réalisés au sein de l'<span class="highlight">IPSSI</span>
-					durant mon cursus.
-				</p>
-				<div class="btn-container">
-					<input type="button" name="lien1" value="Act. Pro" onclick="self.location.href='#AP'" onclick />
-					<input type="button" name="lien2" value="Projets" onclick="self.location.href='#projets'" onclick />
-				</div>
-			</section>
-			<section id="list-projet">
-				<div id="AP">
-					<!-- * OK -->
-					<div class="card">
-						<div class="card-container card-right" data-aos="fade-right">
-							<div class="card-info">
-								<p class="highlight">Activité Professionnelle</p>
-								<h2 class=" h-projet before" num="AP.1">
-									Horizon Dev Web
-								</h2>
-								<div class="card-text">
-									<p>
-										Lors de cette activité professionnelle, nous avons dû imaginer un concept
-										d'entreprise et réaliser une site web dédié aux services proposés par celle-ci.
-									</p>
-								</div>
-								<div class="list-techno">
-									<p>HTML 5</p>
-									<p>CSS 3</p>
-									<p>Js (ES6)</p>
-									<p>PHP</p>
-									<a href="https://github.com/LeoLChalot/BTSSIO-AP1-horizon" target="_blank"
-										>Github</a
-									>
-									<a href="assets/DOCS/AP1/AP1-DOC.pdf" target="_blank"
-										>Documentation</a
-									>
-								</div>
-							</div>
-							<div class="card-image">
-								<img src="assets/img/AP1/logo2.png" alt="Logo entreprise fictive" />
-							</div>
-						</div>
 
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="assets/img/leo-larou-chalot.jpg">
+	<link rel="stylesheet" href="assets/style/style.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+	<script src="assets/script/script.js" defer></script>
+	<script src="assets/script/gallery.js" defer></script>
+	<script src="https://kit.fontawesome.com/36ea092baf.js" crossorigin="anonymous" defer></script>
+	<title>Projets - Portfolio</title>
+</head>
+
+<body>
+	<header>
+		<div id="btn-burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<aside id="aside-container">
+			<ul id="aside-menu">
+				<li class="aside-item"><a href="index.html">Accueil</a></li>
+				<li class="aside-item"><a href="bts_sio.html">BTS SIO</a></li>
+				<li class="aside-item"><a href="ecole.html">Ecole</a></li>
+				<li class="aside-item"><a href="entreprise.html">Entreprise</a></li>
+				<li class="aside-item"><a href="veilles.html">Veilles</a></li>
+				<li class="aside-item"><a href="apprentissage_personnel.html">Appr Perso</a></li>
+				<li class="aside-item"><a href="documentation.html">Docs</a></li>
+			</ul>
+		</aside>
+		<nav>
+			<a class="link" href="index.html">Accueil</a>
+			<a class="link" href="bts_sio.html">BTS SIO</a>
+			<a class="link" href="ecole.html">Ecole</a>
+			<a class="link" href="entreprise.html">Entreprise</a>
+			<a class="link" href="veilles.html">Veilles</a>
+			<a class="link" href="apprentissage_personnel.html">Appr Perso</a>
+			<a class="link" href="documentation.html">Docs</a>
+		</nav>
+	</header>
+	<main>
+		<section class="title">
+			<h1 class="typewrite" data-period="5000" data-type='[ "Collection..." ]'>
+				<span class="wrap"></span>
+			</h1>
+			<h2 class="text-muted">... Des différents <span class="highlight">projets réalisés</span> en école</h2>
+			<p>
+				Parce que la présentation de mes réalisations vaut plus que de simples mots, je vous propose ici une
+				collection de l'ensemble de mes projets réalisés au sein de l'<span class="highlight">IPSSI</span>
+				durant mon cursus.
+			</p>
+			<div class="btn-container">
+				<input type="button" name="lien1" value="Act. Pro" onclick="self.location.href='#AP'" onclick />
+				<input type="button" name="lien2" value="Projets" onclick="self.location.href='#projets'" onclick />
+			</div>
+		</section>
+		<section id="list-projet">
+			<div id="AP">
+				<!-- * OK -->
+				<div class="card">
+					<div class="card-container card-right" data-aos="fade-right">
+						<div class="card-info">
+							<p class="highlight">Activité Professionnelle</p>
+							<h2 class=" h-projet before" num="AP.1">
+								Horizon Dev Web
+							</h2>
+							<div class="card-text">
+								<p>
+									Lors de cette activité professionnelle, nous avons dû imaginer un concept
+									d'entreprise et réaliser une site web dédié aux services proposés par celle-ci.
+								</p>
+							</div>
+							<div class="list-techno">
+								<p>HTML 5</p>
+								<p>CSS 3</p>
+								<p>Js (ES6)</p>
+								<p>PHP</p>
+								<a href="https://github.com/LeoLChalot/BTSSIO-AP1-horizon" target="_blank">Github</a>
+								<a href="assets/DOCS/AP1/AP1-DOC.pdf" target="_blank">Documentation</a>
+							</div>
+						</div>
+						<div class="card-image">
+							<img src="assets/img/AP1/logo2.png" alt="Logo entreprise fictive" />
+						</div>
 					</div>
-					<div class="card">
-						<div class="card-container card-left" data-aos="fade-left">
-							<div class="card-image">
+
+				</div>
+				<div class="card">
+					<div class="card-container card-left" data-aos="fade-left">
+						<div class="card-image">
 							<img src="realisations/ap/ap2/m2l.png" alt="" />
-							</div>
-							<div class="card-info">
-								<p class="highlight">Activité Professionnelle</p>
-								<h2 class="h-projet before" num="AP.2">Maison des Ligue de Lorraine</h2>
-								<div class="card-text">
-									<p>
-										Organisation des solutions techniques (web, et mobile), et préparation des cahiers des charges des 	activités professionnelles 3 et 4 (semestres 3 et 4).
-									</p>
-								</div>
-								<div class="list-techno">
-									<a href="assets/DOCS/AP2/AP2-DOC.pdf" target="_blank"
-										>Documentation</a
-									>
-									<a href="#" target="_blank">Github</a>
-									<p>Trello</p>
-									<p>Discord</p>
-									<p>Teams</p>
-								</div>
-							</div>
 						</div>
-					</div>
-					<div class="card">
-						<div class="card-container card-right" data-aos="fade-right">
-							<div class="card-info">
-								<p class="highlight">Activité Professionnelle</p>
-								<h2 class=" h-projet before" num="AP.3">M2L Solution Légère (3ème semestre)</h2>
-								<div class="card-text">
-									<p>
-										Réalisation de la solution légère (WEB) pour la Maison des Ligue de Lorraine. Cette
-										activité professionnelle sera réalisée durant la seconde année de BTS.
-									</p>
-								</div>
-								<div class="list-techno">
-									<p>React</p>
-									<p>JSX</p>									
-									<a href="#" target="_blank">Github</a>
-									<a href="assets/DOCS/AP2/AP2-DOC.pdf" target="_blank"
-									>Documentation</a
-								>
-								</div>
+						<div class="card-info">
+							<p class="highlight">Activité Professionnelle</p>
+							<h2 class="h-projet before" num="AP.2">Maison des Ligue de Lorraine</h2>
+							<div class="card-text">
+								<p>
+									Organisation des solutions techniques (web, et mobile), et préparation des cahiers des charges des
+									activités professionnelles 3 et 4 (semestres 3 et 4).
+								</p>
 							</div>
-							<div class="card-image">
-								<img src="realisations/ap/ap2/m2l.png" alt="" />
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-container card-left" data-aos="fade-left">
-							<div class="card-image">
-								<img src="realisations/ap/ap2/m2l.png" alt="" />
-							</div>
-							<div class="card-info">
-								<p class="highlight">Activité Professionnelle</p>
-								<h2 class="h-projet before" num="AP.4">M2L Solution Lourde (4ème semestre)</h2>
-								<div class="card-text">
-									<p>
-										Réalisation de la solution lourde (WEB) pour la Maison des Ligue de Lorraine. Cette
-										activité professionnelle sera réalisée durant la seconde année de BTS.
-									</p>
-								</div>
-								<div class="list-techno">
-									<a href="assets/DOCS/AP2/AP2-DOC.pdf" target="_blank"
-									>Documentation</a
-								>
-									<a href="#" target="_blank">Github</a>
-									<p>Technologies à définir...</p>
-								</div>
+							<div class="list-techno">
+								<a href="assets/DOCS/AP2/AP2-DOC.pdf" target="_blank">Documentation</a>
+								<a href="#" target="_blank" style="text-decoration:line-through;">Github</a>
+								<p>Trello</p>
+								<p>Discord</p>
+								<p>Teams</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div id="projets">
-					<!-- * OK -->
-					<div class="card">
-						<div class="card-container card-right" data-aos="fade-right">
-							<div class="card-info">
-								<p class="highlight">Projet Scolaire</p>
-								<h2 class="h-projet before" num="01">Librairie Fictive "MilleFeuilles"</h2>
-								<div class="card-text">
-									<p>
-										Utilisation de l'API Google Book pour la réalisation d'un site web de recherche et
-										de réservation de références de livres. Initiation à l'utilisation des API avec PHP,
-										gestion des créations et connexions de comptes utilisateurs.
-									</p>
-								</div>
-								<div class="list-techno">
-									<p>HTML 5</p>
-									<p>CSS 3</p>
-									<p>Bootstrap</p>
-									<p>PHP</p>
-									<p>SQL</p>
-									<a href="https://github.com/LeoLChalot/BTSSIO-API-Google-Book" target="_blank"
-										>Github</a
-									>
-									<a href="assets/DOCS/MILLEFEUILLE/Millefeuille.pdf" target="_blank"
-										>Documentation</a
-									>
-								</div>
+				<div class="card">
+					<div class="card-container card-right" data-aos="fade-right">
+						<div class="card-info">
+							<p class="highlight">Activité Professionnelle</p>
+							<h2 class=" h-projet before" num="AP.3">M2L Solution Légère (3ème semestre)</h2>
+							<div class="card-text">
+								<p>
+									Réalisation de la solution légère (WEB) pour la Maison des Ligue de Lorraine. Cette
+									activité professionnelle sera réalisée durant la seconde année de BTS.
+								</p>
 							</div>
-							<div class="card-image">
-								<img src="assets/img/projet-09/projet-09_1.png" alt="Images Librairie millefeuilles" />
+							<div class="list-techno">
+								<p>React</p>
+								<p>JSX</p>
+								<a href="https://github.com/LeoLChalot/BTSSIO-maison-des-ligues" target="_blank">Github</a>
+								<a href="https://github.com/LeoLChalot/BTSSIO-maison-des-ligues/wiki" target="_blank">Doc. Tech</a>
+								<a href="assets/DOCS/AP3/m2l-wu.pdf" target="_blank">Doc. Util</a>
+							</div>
+						</div>
+						<div class="card-image">
+							<img src="realisations/ap/ap2/m2l.png" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-container card-left" data-aos="fade-left">
+						<div class="card-image">
+							<img src="realisations/ap/ap2/m2l.png" alt="" />
+						</div>
+						<div class="card-info">
+							<p class="highlight">Activité Professionnelle</p>
+							<h2 class="h-projet before" num="AP.4">M2L Solution Lourde (4ème semestre)</h2>
+							<div class="card-text">
+								<p>
+									Réalisation de la solution lourde (WEB) pour la Maison des Ligue de Lorraine. Cette
+									activité professionnelle sera réalisée durant la seconde année de BTS.
+								</p>
+							</div>
+							<div class="list-techno">
+								<a href="assets/DOCS/AP4/m2l-mu.pdf" target="_blank">Doc. Util</a>
+								<a href="https://github.com/LeoLChalot/BTSSIO-maison-des-ligues-flutter/wiki" target="_blank">Doc.
+									Tech</a>
+								<a href="https://github.com/LeoLChalot/BTSSIO-maison-des-ligues-flutter" target="_blank">Github</a>
+								<p>Technologies à définir...</p>
 							</div>
 						</div>
 					</div>
-			<input class="btn-up" type="button" name="lien5" value="Up" onclick="self.location.href='#'" onclick />
-		</main>
-		<footer>
-			<div id="vertical-ico">
-				<p>
-					<a href="https://github.com/LeoLChalot" target="_blank">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							width="20px"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-github"
-						>
-							<title>Lien vers mon GitHub</title>
-							<path
-								d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-							></path>
-						</svg>
-					</a>
-					<a href="https://www.instagram.com/leo_chalot/" target="_blank">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							width="20px"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-instagram"
-						>
-							<title>Pour en voir plus sur mes passes temps</title>
-							<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-							<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-							<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-						</svg>
-					</a>
-					<a href="https://www.linkedin.com/in/LeoLChalot" target="_blank">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							width="20px"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-linkedin"
-						>
-							<title>Lien vers mon réseau professionnel</title>
-							<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-							<rect x="2" y="9" width="4" height="12"></rect>
-							<circle cx="4" cy="4" r="2"></circle>
-						</svg>
-					</a>
-				</p>
+				</div>
 			</div>
-			<div id="vertical-mail">
-				<p><a href="mailto:larouchalot@gmail.com">larouchalot@gmail.com</a></p>
-			</div>
-			<p class="copyright">© Léo Larou-Chalot</p>
-		</footer>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script src="assets/script/aos.js"></script>
-	</body>
+			<div id="projets">
+				<!-- * OK -->
+				<div class="card">
+					<div class="card-container card-right" data-aos="fade-right">
+						<div class="card-info">
+							<p class="highlight">Projet Scolaire</p>
+							<h2 class="h-projet before" num="01">Librairie Fictive "MilleFeuilles"</h2>
+							<div class="card-text">
+								<p>
+									Utilisation de l'API Google Book pour la réalisation d'un site web de recherche et
+									de réservation de références de livres. Initiation à l'utilisation des API avec PHP,
+									gestion des créations et connexions de comptes utilisateurs.
+								</p>
+							</div>
+							<div class="list-techno">
+								<p>HTML 5</p>
+								<p>CSS 3</p>
+								<p>Bootstrap</p>
+								<p>PHP</p>
+								<p>SQL</p>
+								<a href="https://github.com/LeoLChalot/BTSSIO-API-Google-Book" target="_blank">Github</a>
+								<a href="assets/DOCS/MILLEFEUILLE/Millefeuille.pdf" target="_blank">Documentation</a>
+							</div>
+						</div>
+						<div class="card-image">
+							<img src="assets/img/projet-09/projet-09_1.png" alt="Images Librairie millefeuilles" />
+						</div>
+					</div>
+				</div>
+				<input class="btn-up" type="button" name="lien5" value="Up" onclick="self.location.href='#'" onclick />
+	</main>
+	<footer>
+		<div id="vertical-ico">
+			<p>
+				<a href="https://github.com/LeoLChalot" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+						stroke-width="2" width="20px" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+						<title>Lien vers mon GitHub</title>
+						<path
+							d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+						</path>
+					</svg>
+				</a>
+				<a href="https://www.instagram.com/leo_chalot/" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+						stroke-width="2" width="20px" stroke-linecap="round" stroke-linejoin="round"
+						class="feather feather-instagram">
+						<title>Pour en voir plus sur mes passes temps</title>
+						<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+						<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+						<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+					</svg>
+				</a>
+				<a href="https://www.linkedin.com/in/LeoLChalot" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+						stroke-width="2" width="20px" stroke-linecap="round" stroke-linejoin="round"
+						class="feather feather-linkedin">
+						<title>Lien vers mon réseau professionnel</title>
+						<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+						<rect x="2" y="9" width="4" height="12"></rect>
+						<circle cx="4" cy="4" r="2"></circle>
+					</svg>
+				</a>
+			</p>
+		</div>
+		<div id="vertical-mail">
+			<p><a href="mailto:larouchalot@gmail.com">larouchalot@gmail.com</a></p>
+		</div>
+		<p class="copyright">© Léo Larou-Chalot</p>
+	</footer>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="assets/script/aos.js"></script>
+</body>
+
 </html>

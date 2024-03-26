@@ -1,189 +1,163 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="assets/img/leo-larou-chalot.jpg">
-		<link rel="stylesheet" href="assets/style/style.css" />
-		<script src="assets/script/script.js" defer></script>
-		<script src="assets/script/dropdown.js"></script>
-		<script src="https://kit.fontawesome.com/36ea092baf.js" crossorigin="anonymous" defer></script>
-		<title>Accueil - Portfolio</title>
-	</head>
-	<body>
-		<header>
-			<div id="btn-burger">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<aside id="aside-container">
-				<ul id="aside-menu">
-          <li class="aside-item"><a href="index.html">Accueil</a></li>
-					<li class="aside-item"><a href="bts_sio.html">BTS SIO</a></li>
-          <li class="aside-item"><a href="ecole.html">Ecole</a></li>
-					<li class="aside-item"><a href="veilles.html">Veilles</a></li>
-					<li class="aside-item"><a href="apprentissage_personnel.html">Appr Perso</a></li>
-					<li class="aside-item"><a href="documentation.html">Docs</a></li>
-				</ul>
-			</aside>
-			<nav>
-				<a class="link" href="index.html">Accueil</a>
-				<a class="link" href="bts_sio.html">BTS SIO</a>
-				<a class="link" href="ecole.html">Ecole</a>
-				<a class="link" href="veilles.html">Veilles</a>
-				<a class="link" href="apprentissage_personnel.html">Appr Perso</a>
-				<a class="link" href="documentation.html">Docs</a>
-			</nav>
-		</header>
 
-		<main>
-      <section class="title">
-        <h1 class="typewrite" data-period="5000" data-type='[ "L&lsquo;entreprise" ]'>
-					<span class="wrap"></span>
-				</h1>
-				<h2 class="text-muted">Présentation de mon parcours professionnel à l'IPSSI</h2>
-				<p>
-					Parce qu'un parcours d'apprentissage ne se fait pas sans une véritable expérience professionnelle
-				</p>
-				<p>Je vous présente dans la section ci-dessous les différentes <span class="highlight">entreprises</span> avec lesquelles j'aurai eu la chance de travailler</p>
-				<input type="button" name="lien5" value="Voir" onclick="self.location.href='#list-entreprises'" onclick />
-      </section>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="assets/img/leo-larou-chalot.jpg">
+	<link rel="stylesheet" href="assets/style/style.css" />
+	<script src="assets/script/script.js" defer></script>
+	<script src="assets/script/dropdown.js"></script>
+	<script src="https://kit.fontawesome.com/36ea092baf.js" crossorigin="anonymous" defer></script>
+	<title>Accueil - Portfolio</title>
+</head>
 
-      <section id="list-entreprises">
-				<article id="SAFEBEAR">
-					<div class="container-reflexion">
-						<a href="entreprise_safebear.html" target="_blank">
-							<img class="logo-entreprise" src="assets/img/Entreprise/Safebear/SafeBear_logo.png" alt="Logo Safebear">
-						</a>
-				 	</div>
-					<div class="dropdown">
-						<input type="button" name="lien5" value="Réalisations" onclick="toggleDropdown()" />
-						<div id="dropdown-content" class="dropdown-content">
+<body>
+	<header>
+		<div id="btn-burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<aside id="aside-container">
+			<ul id="aside-menu">
+				<li class="aside-item"><a href="index.html">Accueil</a></li>
+				<li class="aside-item"><a href="bts_sio.html">BTS SIO</a></li>
+				<li class="aside-item"><a href="ecole.html">Ecole</a></li>
+				<li class="aside-item"><a href="veilles.html">Veilles</a></li>
+				<li class="aside-item"><a href="apprentissage_personnel.html">Appr Perso</a></li>
+				<li class="aside-item"><a href="documentation.html">Docs</a></li>
+			</ul>
+		</aside>
+		<nav>
+			<a class="link" href="bts_sio.html">BTS SIO</a>
+			<a class="link" href="ecole.html">Ecole</a>
+			<a class="link" href="entreprise.html">Entreprise</a>
+			<a class="link" href="veilles.html">Veilles</a>
+			<a class="link" href="apprentissage_personnel.html">Appr Perso</a>
+			<a class="link" href="documentation.html">Docs</a>
+		</nav>
+	</header>
 
-								<div class="skill">
-									<div class="img">
-										<img src="assets/img/Entreprise/Safebear/intelligence-artificielle.jpg" alt="IA image" />
-									</div>
-									<div class="text">
-										<h3>Apprentissage supervisé de l'IA développée par l'entreprise</h3>
-										<p>
-											J'ai travaillé sur l'apprentissage supervisé de l'IA développée par
-											l'entreprise, en accompagnant l'équipe dans la labellisation de
-											commentaires en fonction de leur degré de toxicité. Cette expérience
-											m'a permis d'acquérir des compétences en matière d'<strong class="highlight">apprentissage
-											automatique</strong> et de <strong class="highlight">traitement du langage naturel</strong>.
-										</p>
-									</div>
-								</div>
-								<div class="skill">
-									<div class="img">
-										<img src="assets/img/Entreprise/Safebear/application-mobile.jpg" alt="Mobile app image" />
-									</div>
-									<div class="text">
-										<h3>Tests d'utilisation de l'application mobile</h3>
-										<p>
-											J'ai participé aux tests d'utilisation de l'application mobile de
-											l'entreprise, en testant les fonctionnalités liées à la création de
-											comptes utilisateurs sur Android. Cette expérience m'a permis
-											d'acquérir des compétences en matière de <strong class="highlight">tests d'utilisabilité</strong> et
-											d'<strong class="highlight">assurance qualité</strong>.
-										</p>
-									</div>
-								</div>
-								<div class="skill">
-									<div class="img">
-										<img src="assets/img/Entreprise/Safebear/design-mobile.jpg" alt="Design image" />
-									</div>
-									<div class="text">
-										<h3>
-											Accompagnement dans la réflexion sur la création des visuels et logo
-										</h3>
-										<p>
-											J'ai accompagné l'équipe dans la réflexion sur la création des visuels
-											et du logo de l'entreprise, en collaboration avec l'agence Gorille.
-											Cette expérience m'a permis d'acquérir des compétences en matière de
-											<strong class="highlight">branding</strong> et de <strong class="highlight">design graphique</strong>.
-										</p>
-									</div>
-								</div>      
+	<main>
+		<section class="title">
+			<h1 class="typewrite" data-period="5000" data-type='[ "L&lsquo;entreprise" ]'>
+				<span class="wrap"></span>
+			</h1>
+			<h2 class="text-muted">Présentation de mon parcours professionnel à l'IPSSI</h2>
+			<p>
+				Parce qu'un parcours d'apprentissage ne se fait pas sans une véritable expérience professionnelle
+			</p>
+			<p>Je vous présente dans la section ci-dessous les différentes <span class="highlight">entreprises</span> avec
+				lesquelles j'aurai eu la chance de travailler</p>
+			<input type="button" name="lien5" value="Voir" onclick="self.location.href='#list-entreprises'" onclick />
+		</section>
 
+		<section id="list-entreprises">
+			<article id="SAFEBEAR">
+				<div class="container-reflexion">
+					<a href="entreprise_safebear.html" target="_blank">
+						<img class="logo-entreprise" src="assets/img/Entreprise/Safebear/SafeBear_logo.png" alt="Logo Safebear">
+					</a>
+				</div>
+				<div class="dropdown">
+					<input type="button" name="lien5" value="Réalisations" onclick="toggleDropdown()" />
+					<div id="dropdown-content" class="dropdown-content">
+
+						<div class="skill">
+							<div class="img">
+								<img src="assets/img/Entreprise/Safebear/intelligence-artificielle.jpg" alt="IA image" />
+							</div>
+							<div class="text">
+								<h3>Apprentissage supervisé de l'IA développée par l'entreprise</h3>
+								<p>
+									J'ai travaillé sur l'apprentissage supervisé de l'IA développée par
+									l'entreprise, en accompagnant l'équipe dans la labellisation de
+									commentaires en fonction de leur degré de toxicité. Cette expérience
+									m'a permis d'acquérir des compétences en matière d'<strong class="highlight">apprentissage
+										automatique</strong> et de <strong class="highlight">traitement du langage naturel</strong>.
+								</p>
+							</div>
 						</div>
-					</div>
-				</article>				
-			</section>
-			<input class="btn-up" type="button" name="lien5" value="Up" onclick="self.location.href='#'" onclick />
-		</main>
+						<div class="skill">
+							<div class="img">
+								<img src="assets/img/Entreprise/Safebear/application-mobile.jpg" alt="Mobile app image" />
+							</div>
+							<div class="text">
+								<h3>Tests d'utilisation de l'application mobile</h3>
+								<p>
+									J'ai participé aux tests d'utilisation de l'application mobile de
+									l'entreprise, en testant les fonctionnalités liées à la création de
+									comptes utilisateurs sur Android. Cette expérience m'a permis
+									d'acquérir des compétences en matière de <strong class="highlight">tests d'utilisabilité</strong> et
+									d'<strong class="highlight">assurance qualité</strong>.
+								</p>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="img">
+								<img src="assets/img/Entreprise/Safebear/design-mobile.jpg" alt="Design image" />
+							</div>
+							<div class="text">
+								<h3>
+									Accompagnement dans la réflexion sur la création des visuels et logo
+								</h3>
+								<p>
+									J'ai accompagné l'équipe dans la réflexion sur la création des visuels
+									et du logo de l'entreprise, en collaboration avec l'agence Gorille.
+									Cette expérience m'a permis d'acquérir des compétences en matière de
+									<strong class="highlight">branding</strong> et de <strong class="highlight">design graphique</strong>.
+								</p>
+							</div>
+						</div>
 
-		<footer>
-			<div id="vertical-ico">
-				<p>
-					<a href="https://github.com/LeoLChalot" target="_blank">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							width="20px"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-github"
-						>
-							<title>Lien vers mon GitHub</title>
-							<path
-								d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-							></path>
-						</svg>
-					</a>
-					<a href="https://www.instagram.com/leo_chalot/" target="_blank">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							width="20px"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-instagram"
-						>
-							<title>Pour en voir plus sur mes passes temps</title>
-							<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-							<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-							<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-						</svg>
-					</a>
-					<a href="https://www.linkedin.com/in/LeoLChalot" target="_blank">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							width="20px"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-linkedin"
-						>
-							<title>Lien vers mon réseau professionnel</title>
-							<path
-								d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-							></path>
-							<rect x="2" y="9" width="4" height="12"></rect>
-							<circle cx="4" cy="4" r="2"></circle>
-						</svg>
-					</a>
-				</p>
-			</div>
-			<div id="vertical-mail">
-				<p><a href="mailto:larouchalot@gmail.com">larouchalot@gmail.com</a></p>
-			</div>
-			<p class="copyright">© Léo Larou-Chalot</p>
-		</footer>
-	</body>
+					</div>
+				</div>
+			</article>
+		</section>
+		<input class="btn-up" type="button" name="lien5" value="Up" onclick="self.location.href='#'" onclick />
+	</main>
+
+	<footer>
+		<div id="vertical-ico">
+			<p>
+				<a href="https://github.com/LeoLChalot" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+						stroke-width="2" width="20px" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+						<title>Lien vers mon GitHub</title>
+						<path
+							d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+						</path>
+					</svg>
+				</a>
+				<a href="https://www.instagram.com/leo_chalot/" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+						stroke-width="2" width="20px" stroke-linecap="round" stroke-linejoin="round"
+						class="feather feather-instagram">
+						<title>Pour en voir plus sur mes passes temps</title>
+						<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+						<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+						<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+					</svg>
+				</a>
+				<a href="https://www.linkedin.com/in/LeoLChalot" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+						stroke-width="2" width="20px" stroke-linecap="round" stroke-linejoin="round"
+						class="feather feather-linkedin">
+						<title>Lien vers mon réseau professionnel</title>
+						<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+						<rect x="2" y="9" width="4" height="12"></rect>
+						<circle cx="4" cy="4" r="2"></circle>
+					</svg>
+				</a>
+			</p>
+		</div>
+		<div id="vertical-mail">
+			<p><a href="mailto:larouchalot@gmail.com">larouchalot@gmail.com</a></p>
+		</div>
+		<p class="copyright">© Léo Larou-Chalot</p>
+	</footer>
+</body>
+
 </html>

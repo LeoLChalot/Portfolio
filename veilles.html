@@ -1,183 +1,218 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="assets/img/leo-larou-chalot.jpg">
-		<link rel="stylesheet" href="assets/style/style.css" />
-		<script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
-		<script src="assets/script/typewritter.js" defer></script>
-		<script src="assets/script/aside.js" defer></script>
-		<script src="assets/script/rss.js" defer></script>
-		<script src="https://kit.fontawesome.com/36ea092baf.js" crossorigin="anonymous" defer></script>
-		<title>Veilles - Portfolio</title>
-	</head>
-	<body>
-		<header>
-			<div id="btn-burger">
-				<span></span>
-				<span></span>
-				<span></span>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="assets/img/leo-larou-chalot.jpg">
+	<link rel="stylesheet" href="assets/style/style.css" />
+	<script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+	<script src="assets/script/typewritter.js" defer></script>
+	<script src="assets/script/aside.js" defer></script>
+	<script src="assets/script/rss.js" defer></script>
+	<script src="https://kit.fontawesome.com/36ea092baf.js" crossorigin="anonymous" defer></script>
+	<title>Veilles - Portfolio</title>
+</head>
+
+<body>
+	<header>
+		<div id="btn-burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<aside id="aside-container">
+			<ul id="aside-menu">
+				<li class="aside-item"><a href="index.html">Accueil</a></li>
+				<li class="aside-item"><a href="bts_sio.html">BTS SIO</a></li>
+				<li class="aside-item"><a href="ecole.html">Ecole</a></li>
+				<li class="aside-item"><a href="entreprise.html">Entreprise</a></li>
+				<li class="aside-item"><a href="apprentissage_personnel.html">Appr Perso</a></li>
+				<li class="aside-item"><a href="documentation.html">Docs</a></li>
+			</ul>
+		</aside>
+		<nav>
+			<a class="link" href="index.html">Accueil</a>
+			<a class="link" href="bts_sio.html">BTS SIO</a>
+			<a class="link" href="ecole.html">Ecole</a>
+			<a class="link" href="entreprise.html">Entreprise</a>
+			<a class="link" href="veilles.html">Veilles</a>
+			<a class="link" href="apprentissage_personnel.html">Appr Perso</a>
+			<a class="link" href="documentation.html">Docs</a>
+		</nav>
+	</header>
+
+	<main>
+
+		<section class="title">
+			<h1 class="typewrite" data-period="5000" data-type='[ "Veilles techno" ]'>
+				<span class="wrap"></span>
+			</h1>
+			<h2 class="text-muted">Parcequ'un parcours dans le numérique ne se fait pas sans veilles...</h2>
+			<p>
+				Les deux <span class="highlight">veilles technologiques</span> ci-dessous auront été réalisées
+				pendant mon parcours au sein de l&apos;<span class="highlight">IPSSI</span>.
+			</p>
+			<p class="text-info">La veille sur le Web 3.0 est en cours...</p>
+			<div class="btn-container">
+				<input type="button" name="lien1" value="IA" onclick="self.location.href='#IA'" onclick />
+				<input type="button" name="lien5" value="Web 3.0" onclick="self.location.href='#'" onclick />
 			</div>
-			<aside id="aside-container">
-				<ul id="aside-menu">
-					<li class="aside-item"><a href="index.html">Accueil</a></li>
-					<li class="aside-item"><a href="bts_sio.html">BTS SIO</a></li>
-					<li class="aside-item"><a href="ecole.html">Ecole</a></li>
-					<li class="aside-item"><a href="entreprise.html">Entreprise</a></li>
-					<li class="aside-item"><a href="apprentissage_personnel.html">Appr Perso</a></li>
-					<li class="aside-item"><a href="documentation.html">Docs</a></li>
-				</ul>
-			</aside>
-			<nav>
-				<a class="link" href="index.html">Accueil</a>
-				<a class="link" href="bts_sio.html">BTS SIO</a>
-				<a class="link" href="ecole.html">Ecole</a>
-				<a class="link" href="entreprise.html">Entreprise</a>
-				<a class="link" href="apprentissage_personnel.html">Appr Perso</a>
-				<a class="link" href="documentation.html">Docs</a>
-			</nav>
-		</header>
+		</section>
 
-		<main>
-
-			<section class="title">
-				<h1 class="typewrite" data-period="5000" data-type='[ "Veilles techno" ]'>
+		<section class="veille" id="IA">
+			<div class="header-ia">
+				<h1>L'Intelligence Artificielle</h1>
+				<h2 class="typewrite" data-period="2000" data-type='[ "Utopie ?", "Dystopie ?" ]'>
 					<span class="wrap"></span>
-				</h1>
-				<h2 class="text-muted">Parcequ'un parcours dans le numérique ne se fait pas sans veilles...</h2>
-				<p>
-					Les deux <span class="highlight">veilles technologiques</span> ci-dessous auront été réalisées
-					pendant mon parcours au sein de l'<span class="highlight">IPSSI</span>.
-				</p>
-				<p class="text-info">La veille sur le Web 3.0 est en cours...</p>
-				<div class="btn-container">
-					<input type="button" name="lien1" value="IA" onclick="self.location.href='#IA'" onclick />
-					<input type="button" name="lien5" value="Web 3.0" onclick="self.location.href='#'" onclick />
+				</h2>
+				<p>L&apos;intelligence artificielle (ou IA) est de plus en plus présente dans notre quotidien, notamment au travers
+					de nouveaux produits ou services. Elle repose cependant sur des algorithmes gourmands en données, souvent
+					personnelles, et son usage nécessite le respect de certaines précautions.</p>
+				<q class="text-info text-muted">En 1950, le mathématicien Alan Turing se posait une question : » les machines
+					peuvent-elles penser ? « . En réalité, cette simple interrogation allait bouleverser le monde.</q>
+				<p>Comme toute nouvelle technologie, les systèmes utilisant de l&apos;intelligence artificielle sont encore sujets à
+					des défaillances, à des attaques, ou peuvent avoir des impacts encore insoupçonnés sur les individus et sur la
+					société. Sans remettre en cause les avantages que peuvent proposer ces systèmes, il est néanmoins primordial
+					de connaître les risques auxquels ils exposent les utilisateurs.</p>
+
+				<div class="info-ia">
+					<hr>
+					<ul>
+						<li>
+							<p class="text-info"><span class="highlight">1943 : </span>Premier modèle mathématique d'un réseau de
+								neurones</p>
+						</li>
+						<li>
+							<p class="text-info"><span class="highlight">1950 : </span>Premier ordinateur à réseau de neurones</p>
+						</li>
+						<li>
+							<p class="text-info"><span class="highlight">1952 : </span>1er logiciel capable &apos;’apprendre à jouer aux
+								échecs de manière autonome</p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p class="text-info"><span class="highlight">1959 : </span>Arthur Samuel invente le terme de Machine
+								Learning (IBM)</p>
+						</li>
+						<li>
+							<p class="text-info"><span class="highlight">1997 : </span>L&apos;IA Deep Blue d&apos;IBM triomphe du champion du
+								monde d’échecs Gary Kasparov</p>
+						</li>
+						<li>
+							<p class="text-info"><span class="highlight">2008 : </span>Progrès dans le domaine de la reconnaissance de
+								discours (Google)</p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p class="text-info"><span class="highlight">2012 : </span>Début d&apos;une ère nouvelle pour le Deep Learning
+							</p>
+						</li>
+						<li>
+							<p class="text-info"><span class="highlight">2016 : </span>Victoire du système AlphaGo de Google DeepMind
+								sur Lee Sedol</p>
+						</li>
+					</ul>
+					<hr>
 				</div>
-			</section>
-
-			<section class="veille" id="IA">
-				<div class="header-ia">
-					<h1>L'Intelligence Artificielle</h1>
-					<h2 class="typewrite" data-period="2000" data-type='[ "Utopie ?", "Dystopie ?" ]'>
-						<span class="wrap"></span>
-					</h2>
-					<p>L’intelligence artificielle (ou IA) est de plus en plus présente dans notre quotidien, notamment au travers de nouveaux produits ou services. Elle repose cependant sur des algorithmes gourmands en données, souvent personnelles, et son usage nécessite le respect de certaines précautions.</p>
-					<q class="text-info text-muted">En 1950, le mathématicien Alan Turing se posait une question :  » les machines peuvent-elles penser ? « . En réalité, cette simple interrogation allait bouleverser le monde.</q>
-					<p>Comme toute nouvelle technologie, les systèmes utilisant de l’intelligence artificielle sont encore sujets à des défaillances, à des attaques, ou peuvent avoir des impacts encore insoupçonnés sur les individus et sur la société. Sans remettre en cause les avantages que peuvent proposer ces systèmes, il est néanmoins primordial de connaître les risques auxquels ils exposent les utilisateurs.</p>
-
-					<div class="info-ia">
-						<hr>
-						<ul>
-							<li><p class="text-info"><span class="highlight">1943 : </span>Premier modèle mathématique d'un réseau de neurones</p></li>
-							<li><p class="text-info"><span class="highlight">1950 : </span>Premier ordinateur à réseau de neurones</p></li>
-							<li><p class="text-info"><span class="highlight">1952 : </span>1er logiciel capable d’apprendre à jouer aux échecs de manière autonome</p></li>
-						</ul>
-						<ul>
-							<li><p class="text-info"><span class="highlight">1959 : </span>Arthur Samuel invente le terme de Machine Learning (IBM)</p></li>
-							<li><p class="text-info"><span class="highlight">1997 : </span>L’IA Deep Blue d’IBM triomphe du champion du monde d’échecs Gary Kasparov</p></li>
-							<li><p class="text-info"><span class="highlight">2008 : </span>Progrès dans le domaine de la reconnaissance de discours (Google)</p></li>
-						</ul>
-						<ul>
-							<li><p class="text-info"><span class="highlight">2012 : </span>Début d’une ère nouvelle pour le Deep Learning</p></li>
-							<li><p class="text-info"><span class="highlight">2016 : </span>Victoire du système AlphaGo de Google DeepMind sur Lee Sedol</p></li>
-						</ul>
-						<hr>
+				<div class="feed-choice">
+					<div class="rss-button">
+						<h3>Feed RSS Google</h3>
+						<input id="btn-rss-ia" type="button" value="Afficher" />
 					</div>
-					<div class="feed-choice">
-						<div class="rss-button">
-							<h3>Feed RSS Google</h3>
-							<input id="btn-rss-ia" type="button" value="Afficher"/>
-						</div>
-						<div class="pdf-button">
-							<h3>Informations</h3>
-							<input id="btn-pdf-ia" type="button" value="Afficher"/>
-						</div>
+					<div class="pdf-button">
+						<h3>Informations</h3>
+						<input id="btn-pdf-ia" type="button" value="Afficher" />
 					</div>
 				</div>
-
-				<div id="pdf-container">
-					<embed src="assets/DOCS/veille-IA.pdf" width="600px" height="600px" type="application/pdf">
-				</div>
-
-				<div id="veille-container">
-					<div id="article-container"></div>
-				</div>
-			</section>
-			
-			<input class="btn-up" type="button" name="lien5" value="Up" onclick="self.location.href='#'" onclick />
-		</main>
-
-		<footer>
-			<div id="vertical-ico">
-				<p>
-					<a href="https://github.com/LeoLChalot" target="_blank">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							width="20px"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-github"
-						>
-							<title>Lien vers mon GitHub</title>
-							<path
-								d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-							></path>
-						</svg>
-					</a>
-					<a href="https://www.instagram.com/leo_chalot/" target="_blank">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							width="20px"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-instagram"
-						>
-							<title>Pour en voir plus sur mes passes temps</title>
-							<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-							<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-							<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-						</svg>
-					</a>
-					<a href="https://www.linkedin.com/in/LeoLChalot" target="_blank">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							width="20px"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-linkedin"
-						>
-							<title>Lien vers mon réseau professionnel</title>
-							<path
-								d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-							></path>
-							<rect x="2" y="9" width="4" height="12"></rect>
-							<circle cx="4" cy="4" r="2"></circle>
-						</svg>
-					</a>
-				</p>
 			</div>
-			<div id="vertical-mail">
-				<p><a href="mailto:larouchalot@gmail.com">larouchalot@gmail.com</a></p>
+
+			<div id="pdf-container">
+				<embed src="assets/DOCS/veille-IA.pdf" width="600px" height="600px" type="application/pdf">
 			</div>
-			<p class="copyright">© Léo Larou-Chalot</p> 
-		</footer>
-	</body>
+
+			<div id="veille-container">
+				<div id="article-container"></div>
+			</div>
+		</section>
+
+		<section class="veille" id="WEB3">
+			<div class="header-web">
+				<h1>Le web</h1>
+				<h2 class="typewrite" data-period="2000" data-type='[ "Utopie ?", "Dystopie ?" ]'>
+					<span class="wrap"></span>
+				</h2>
+				<div class="info-ia">
+					<hr>
+					
+					<hr>
+				</div>
+				<div class="feed-choice">
+					<div class="rss-button">
+						<h3>Feed RSS Google</h3>
+						<input id="btn-rss-ia" type="button" value="Afficher" />
+					</div>
+					<div class="pdf-button">
+						<h3>Informations</h3>
+						<input id="btn-pdf-ia" type="button" value="Afficher" />
+					</div>
+				</div>
+			</div>
+
+			<div id="pdf-container">
+				<embed src="assets/DOCS/veille-IA.pdf" width="600px" height="600px" type="application/pdf">
+			</div>
+
+			<div id="veille-container">
+				<div id="article-container"></div>
+			</div>
+		</section>
+
+		<input class="btn-up" type="button" name="lien5" value="Up" onclick="self.location.href='#'" onclick />
+	</main>
+
+	<footer>
+		<div id="vertical-ico">
+			<p>
+				<a href="https://github.com/LeoLChalot" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+						stroke-width="2" width="20px" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+						<title>Lien vers mon GitHub</title>
+						<path
+							d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+						</path>
+					</svg>
+				</a>
+				<a href="https://www.instagram.com/leo_chalot/" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+						stroke-width="2" width="20px" stroke-linecap="round" stroke-linejoin="round"
+						class="feather feather-instagram">
+						<title>Pour en voir plus sur mes passes temps</title>
+						<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+						<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+						<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+					</svg>
+				</a>
+				<a href="https://www.linkedin.com/in/LeoLChalot" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+						stroke-width="2" width="20px" stroke-linecap="round" stroke-linejoin="round"
+						class="feather feather-linkedin">
+						<title>Lien vers mon réseau professionnel</title>
+						<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+						<rect x="2" y="9" width="4" height="12"></rect>
+						<circle cx="4" cy="4" r="2"></circle>
+					</svg>
+				</a>
+			</p>
+		</div>
+		<div id="vertical-mail">
+			<p><a href="mailto:larouchalot@gmail.com">larouchalot@gmail.com</a></p>
+		</div>
+		<p class="copyright">© Léo Larou-Chalot</p>
+	</footer>
+</body>
+
 </html>

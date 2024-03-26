@@ -1,137 +1,114 @@
- class="link"<!DOCTYPE html>
+class="link"
+<!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="assets/img/leo-larou-chalot.jpg">
-		<link rel="stylesheet" href="assets/style/style.css" />
-		<script src="assets/script/script.js" defer></script>
-		<script src="https://kit.fontawesome.com/36ea092baf.js" crossorigin="anonymous" defer></script>
-		<title>Synthèse - Portfolio</title>
-	</head>
-	<body>
 
-		<header>
-			<div id="btn-burger">
-				<span></span>
-				<span></span>
-				<span></span>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="assets/img/leo-larou-chalot.jpg">
+	<link rel="stylesheet" href="assets/style/style.css" />
+	<script src="assets/script/script.js" defer></script>
+	<script src="https://kit.fontawesome.com/36ea092baf.js" crossorigin="anonymous" defer></script>
+	<title>Synthèse - Portfolio</title>
+</head>
+
+<body>
+
+	<header>
+		<div id="btn-burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<aside id="aside-container">
+			<ul id="aside-menu">
+				<li class="aside-item"><a href="index.html">Accueil</a></li>
+				<li class="aside-item"><a href="bts_sio.html">BTS SIO</a></li>
+				<li class="aside-item"><a href="ecole.html">Ecole</a></li>
+				<li class="aside-item"><a href="entreprise.html">Entreprise</a></li>
+				<li class="aside-item"><a href="veilles.html">Veilles</a></li>
+				<li class="aside-item"><a href="apprentissage_personnel.html">Appr Perso</a></li>
+				<li class="aside-item"><a href="documentation.html">Docs</a></li>
+			</ul>
+		</aside>
+		<nav>
+			<a class="link" href="index.html">Accueil</a>
+			<a class="link" href="bts_sio.html">BTS SIO</a>
+			<a class="link" href="ecole.html">Ecole</a>
+			<a class="link" href="entreprise.html">Entreprise</a>
+			<a class="link" href="veilles.html">Veilles</a>
+			<a class="link" href="apprentissage_personnel.html">Appr Perso</a>
+			<a class="link" href="documentation.html">Docs</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class="title">
+			<h1 class="typewrite" data-period="5000" data-type='[ "Synthèse" ]'>
+				<span class="wrap"></span>
+			</h1>
+			<h2 class="text-muted">
+				Présentation du tableau de synthèse des compétence acquises pendant ma formation.
+			</h2>
+			<p>
+				Le <span class="highlight">tableau de synthèse</span> ci-dessous permet de mettre en avant les
+				différentes cométences acquises pendant ma formation à l'IPSSI.
+			</p>
+			<p class="text-info text-muted">
+				Une rubrique dédiée à la documentation technique, ainsi qu'à la liste de mes projets est disponible.
+			</p>
+			<div class="btn-container">
+				<input type="button" name="lien1" value="Synthèse" onclick="self.location.href='synthese.html#synthese'"
+					onclick />
+
 			</div>
-			<aside id="aside-container">
-				<ul id="aside-menu">
-					<li class="aside-item"><a href="index.html">Accueil</a></li>
-					<li class="aside-item"><a href="bts_sio.html">BTS SIO</a></li>
-					<li class="aside-item"><a href="ecole.html">Ecole</a></li>
-					<li class="aside-item"><a href="entreprise.html">Entreprise</a></li>
-					<li class="aside-item"><a href="veilles.html">Veilles</a></li>
-					<li class="aside-item"><a href="apprentissage_personnel.html">Appr Perso</a></li>
-					<li class="aside-item"><a href="documentation.html">Docs</a></li>
-				</ul>
-			</aside>
-			<nav>
-				<a class="link" href="index.html">Accueil</a>
-				<a class="link" href="bts_sio.html">BTS SIO</a>
-				<a class="link" href="ecole.html">Ecole</a>
-				<a class="link" href="entreprise.html">Entreprise</a>
-				<a class="link" href="veilles.html">Veilles</a>
-				<a class="link" href="apprentissage_personnel.html">Appr Perso</a>
-				<a class="link" href="documentation.html">Docs</a>
-			</nav>
-		</header>
+		</section>
+		<section id="synthese">
+			<embed src="assets/DOCS/tableau_synthese.pdf" width="100%" height="600px" type="application/pdf" />
+		</section>
+	</main>
 
-		<main>
-			<section class="title">
-				<h1 class="typewrite" data-period="5000" data-type='[ "Synthèse" ]'>
-					<span class="wrap"></span>
-				</h1>
-				<h2 class="text-muted">
-					Présentation du tableau de synthèse des compétence acquises pendant ma formation.
-				</h2>
-				<p>
-					Le <span class="highlight">tableau de synthèse</span> ci-dessous permet de mettre en avant les
-					différentes cométences acquises pendant ma formation à l'IPSSI.
-				</p>
-				<p class="text-info text-muted">
-					Une rubrique dédiée à la documentation technique, ainsi qu'à la liste de mes projets est disponible.
-				</p>
-				<div class="btn-container">
-					<input type="button" name="lien1" value="Synthèse" onclick="self.location.href='synthese.html#synthese'" onclick />
+	<footer>
+		<div id="vertical-ico">
+			<p>
+				<a href="https://github.com/LeoLChalot" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+						stroke-width="2" width="20px" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+						<title>Lien vers mon GitHub</title>
+						<path
+							d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+						</path>
+					</svg>
+				</a>
+				<a href="https://www.instagram.com/leo_chalot/" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+						stroke-width="2" width="20px" stroke-linecap="round" stroke-linejoin="round"
+						class="feather feather-instagram">
+						<title>Pour en voir plus sur mes passes temps</title>
+						<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+						<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+						<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+					</svg>
+				</a>
+				<a href="https://www.linkedin.com/in/LeoLChalot" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+						stroke-width="2" width="20px" stroke-linecap="round" stroke-linejoin="round"
+						class="feather feather-linkedin">
+						<title>Lien vers mon réseau professionnel</title>
+						<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+						<rect x="2" y="9" width="4" height="12"></rect>
+						<circle cx="4" cy="4" r="2"></circle>
+					</svg>
+				</a>
+			</p>
+		</div>
+		<div id="vertical-mail">
+			<p><a href="mailto:larouchalot@gmail.com">larouchalot@gmail.com</a></p>
+		</div>
+		<p class="copyright">© Léo Larou-Chalot</p>
+	</footer>
 
-				</div>
-			</section>
-			<section id="synthese">
-				<embed src="assets/DOCS/tableau_synthese.pdf" width="100%" height="600px" type="application/pdf"/>
-			</section>
-		</main>
-		
-		<footer>
-			<div id="vertical-ico">
-				<p>
-					<a href="https://github.com/LeoLChalot" target="_blank">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							width="20px"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-github"
-						>
-							<title>Lien vers mon GitHub</title>
-							<path
-								d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-							></path>
-						</svg>
-					</a>
-					<a href="https://www.instagram.com/leo_chalot/" target="_blank">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							width="20px"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-instagram"
-						>
-							<title>Pour en voir plus sur mes passes temps</title>
-							<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-							<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-							<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-						</svg>
-					</a>
-					<a href="https://www.linkedin.com/in/LeoLChalot" target="_blank">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							width="20px"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-linkedin"
-						>
-							<title>Lien vers mon réseau professionnel</title>
-							<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-							<rect x="2" y="9" width="4" height="12"></rect>
-							<circle cx="4" cy="4" r="2"></circle>
-						</svg>
-					</a>
-				</p>
-			</div>
-			<div id="vertical-mail">
-				<p><a href="mailto:larouchalot@gmail.com">larouchalot@gmail.com</a></p>
-			</div>
-			<p class="copyright">© Léo Larou-Chalot</p>
-		</footer>
+</body>
 
-	</body>
 </html>
