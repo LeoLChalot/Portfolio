@@ -5,13 +5,11 @@
 // **	   Récupération du flus RSS    ** //
 // ************************************** //
 let btnGoogleIA = document.getElementById('btn-rss-ia');
-let btnPdfIA = document.getElementById('btn-pdf-ia');
 
 console.log(btnGoogleIA);
 
 // ? Création des éléments de la section veille IA
 let veilleContainer = document.getElementById('veille-container');
-let pdfContainer = document.getElementById('pdf-container');
 let articleContainer = document.createElement('div');
 
 let divArticleContainer = document.getElementById('article-container');
