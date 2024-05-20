@@ -54,30 +54,64 @@
 				Les deux <span class="highlight">veilles technologiques</span> ci-dessous auront été réalisées
 				pendant mon parcours au sein de l&apos;<span class="highlight">IPSSI</span>.
 			</p>
-			<p class="text-info">La veille sur le Web 3.0 est en cours...</p>
 			<div class="btn-container">
-				<input type="button" name="lien1" value="IA" onclick="self.location.href='#IA'" onclick />
-				<input type="button" name="lien5" value="Web 3.0" onclick="self.location.href='#'" onclick />
+				<input type="button" name="lien1" value="IA" onclick="self.location.href='#ia'" onclick />
+				<input type="button" name="lien5" value="Blockchain" onclick="self.location.href='#blockchain'" onclick />
 			</div>
 		</section>
 
-		<section class="veille" id="IA">
-			<div class="header-ia">
-				<h1>L'Intelligence Artificielle</h1>
+		<section class="veille" id="ia">
+			<div class="veille_header">
+				<h1 class="highlight">L'Intelligence Artificielle</h1>
 				<h2 class="typewrite" data-period="2000" data-type='[ "Utopie ?", "Dystopie ?" ]'>
 					<span class="wrap"></span>
 				</h2>
-				<p>L&apos;intelligence artificielle (ou IA) est de plus en plus présente dans notre quotidien, notamment au
-					travers
-					de nouveaux produits ou services. Elle repose cependant sur des algorithmes gourmands en données, souvent
-					personnelles, et son usage nécessite le respect de certaines précautions.</p>
+				<h3>
+					L&apos;Intelligence Artificielle : une révolution technologique aux multiples impacts</h3>
+				<p>L&apos;intelligence artificielle (IA) est un domaine en plein essor qui révolutionne de nombreux aspects de
+					notre
+					société. Elle englobe un large éventail de technologies permettant aux machines d&apos;effectuer des tâches
+					intellectuelles généralement associées aux humains, telles que l&apos;apprentissage, la résolution de
+					problèmes, la prise de décision et la reconnaissance de formes.</p>
 				<q class="text-info text-muted">En 1950, le mathématicien Alan Turing se posait une question : » les machines
 					peuvent-elles penser ? « . En réalité, cette simple interrogation allait bouleverser le monde.</q>
-				<p>Comme toute nouvelle technologie, les systèmes utilisant de l&apos;intelligence artificielle sont encore
-					sujets à
-					des défaillances, à des attaques, ou peuvent avoir des impacts encore insoupçonnés sur les individus et sur la
-					société. Sans remettre en cause les avantages que peuvent proposer ces systèmes, il est néanmoins primordial
-					de connaître les risques auxquels ils exposent les utilisateurs.</p>
+
+				<h3>Impacts sur la société</h3>
+				<ul>
+					<li>
+						<p><span class="highlight">Santé</span>: Aide au diagnostic, développement de nouveaux traitements,
+							personnalisation des soins, robotisation chirurgicale, etc.
+					</li>
+					<li>
+						<p><span class="highlight">Transport</span>: Véhicules autonomes, optimisation des flux de trafic, gestion
+							intelligente des infrastructures, etc.
+					</li>
+					<li>
+						<p><span class="highlight">Environnement</span>: Lutte contre le changement climatique, optimisation de la
+							consommation énergétique, gestion durable des ressources, etc.
+					</li>
+					<li>
+						<p><span class="highlight">Éducation</span>: Personnalisation de l&apos;apprentissage, adaptation aux
+							besoins individuels des élèves, systèmes d&apos;évaluation automatisés, etc.
+					</li>
+					<li>
+						<p><span class="highlight">Sécurité</span>: Détection et prévention, cybersécurité renforcée, surveillance
+							des infrastructures critiques, etc.
+					</li>
+				</ul>
+				<br>
+
+				<p>L&apos;intelligence artificielle (IA) bouleverse de nombreux aspects de notre société, promettant des
+					avancées remarquables dans des domaines comme la santé, les transports, l&apos;environnement ou
+					l&apos;éducation. Cependant, cette révolution technologique s&apos;accompagne de défis majeurs qu&apos;il est
+					impératif de prendre en compte.</p>
+
+				<h3>Enjeux sociétaux et éthiques cruciaux</h3>
+				<p>L&apos;IA soulève des questions fondamentales quant à son utilisation responsable. Il est crucial de garantir
+					l&apos;absence de biais et de discrimination dans les systèmes d&apos;IA, de préserver la vie privée et les
+					libertés individuelles, et d&apos;assurer la transparence et l&apos;explicabilité de leurs décisions.
+					L&apos;impact potentiel de l&apos;IA sur l&apos;emploi et la nécessité d&apos;une reconversion des
+					travailleurs ne doivent pas non plus être négligés.</p>
 
 				<div class="info-ia">
 					<hr>
@@ -90,7 +124,7 @@
 							<p class="text-info"><span class="highlight">1950 : </span>Premier ordinateur à réseau de neurones</p>
 						</li>
 						<li>
-							<p class="text-info"><span class="highlight">1952 : </span>1er logiciel capable &apos;’apprendre à jouer
+							<p class="text-info"><span class="highlight">1952 : </span>1er logiciel capable d&apos;apprendre à jouer
 								aux
 								échecs de manière autonome</p>
 						</li>
@@ -123,65 +157,81 @@
 					</ul>
 					<hr>
 				</div>
+
 				<div class="feed-choice">
 					<div class="rss-button">
 						<h3>Feed RSS Google</h3>
 						<input id="btn-rss-ia" type="button" value="Afficher" />
 					</div>
-					<div class="pdf-button">
-						<h3>Informations</h3>
-						<input id="btn-pdf-ia" type="button" value="Afficher" />
-					</div>
 				</div>
 			</div>
 
-			<div id="veille-container">
-				<div id="article-container"></div>
+			<div id="veille-container-ia">
+				<div id="article-container-ia"></div>
 			</div>
 		</section>
 
-		<section class="veille" id="WEB3">
-			<div class="header-web">
-				<h1>Le web 3.0</h1>
-				<h2 class="typewrite" data-period="2000" data-type='[ "Signature numérique ?", "Souveraineté ?" ]'>
+		<section class="veille" id="blockchain">
+			<div class="veille_header">
+				<h1 class="highlight">Le web 3.0</h1>
+				<h2 class="typewrite" data-period="2000" data-type='[ "Signature numérique", "Décentralisation" ]'>
 					<span class="wrap"></span>
 				</h2>
-				<h3>Le Web 3.0 : Vers un internet décentralisé, intelligent et plus démocratique</h3>
-				<p style="text-align: justify;">
-					Le Web 3.0, souvent présenté comme la prochaine grande évolution d'Internet, promet de révolutionner notre
-					façon d'interagir avec le monde numérique.<br>Cette nouvelle itération du Web se base sur des technologies
-					décentralisées, telles que la blockchain et l'intelligence artificielle, pour créer un internet plus ouvert,
-					plus transparent et plus démocratique.</p>
-				<h3>Un web décentralisé</h3>
-				<p style="text-align: justify;">L'une des principales caractéristiques du Web 3.0 est sa structure
-					décentralisée.<br>Contrairement au Web
-					2.0,
-					où les plateformes géantes comme Google, Facebook et Amazon contrôlent une grande partie des données et des
-					services, le Web 3.0 vise à distribuer le pouvoir entre les utilisateurs.<br>Cela signifie que les
-					utilisateurs
-					auront plus de contrôle sur leurs données personnelles et pourront interagir directement les uns avec les
-					autres sans passer par des intermédiaires.</p>
+				<h3>Le principe</h3>
+				<p>La blockchain, est une technologie de stockage et de transmission d&apos;informations décentralisée. Elle se
+					présente comme une base de données distribuée, sécurisée et transparente, regroupant l&apos;historique de tous
+					les échanges effectués au sein d'un réseau.</p>
 
-				<h3>Un web intelligent</h3>
+				<p>Son fonctionnement repose sur l&apos;enchaînement de blocs, contenant chacun un ensemble de transactions
+					horodatées et vérifiées par les membres du réseau. Chaque bloc est lié au précédent par un hachage
+					cryptographique, garantissant l&apos;immuabilité de la chaîne et la traçabilité des transactions.</p>
 
-				<p style="text-align: justify;">Le Web 3.0 tire également parti de l'intelligence artificielle pour améliorer
-					l'expérience utilisateur et rendre le web plus intelligent. L'IA permettra aux machines de mieux comprendre le
-					contexte des requêtes des utilisateurs et de leur fournir des résultats plus pertinents et personnalisés. Cela
-					pourrait se traduire par des recommandations de produits plus précises, des moteurs de recherche plus
-					performants et des assistants virtuels plus utiles.</p>
+				<h3>Les caractéristiques</h3>
+				<ul>
+					<li>
+						<p><span class="highlight">Décentralisation</span>: La blockchain n&apos;est gérée par aucune
+							entité centrale, mais par l&apos;ensemble des
+							participants du réseau. Cela supprime les intermédiaires et renforce la confiance entre les parties
+							prenantes.
+					</li>
+					<li>
+						<p><span class="highlight">Transparence</span>: Toutes les transactions inscrites sur la blockchain sont
+							visibles et accessibles par tous les membres du réseau. Cela favorise la transparence et la lutte contre
+							la fraude.
+					</li>
+					<li>
+						<p><span class="highlight">Sécurité</span>: La cryptographie et le consensus distribué garantissent
+							l&apos;immuabilité et la sécurité des données enregistrées sur la blockchain. Les modifications
+							frauduleuses sont quasi impossibles.
+					</li>
+					<li>
+						<p><span class="highlight">Traçabilité</span>: Chaque transaction laisse une trace indélébile sur la
+							blockchain, permettant un suivi précis et transparent de l&apos;historique des échanges.
+					</li>
+				</ul>
 
-				<h3>Un web plus démocratique</h3>
+				<h3>Avantages et Enjeux</h3>
+				<p>La blockchain présente de nombreux avantages, tels que la sécurité renforcée, la transparence accrue, la
+					réduction des coûts intermédiaires et l&apos;accélération des processus. Cependant, elle soulève également des
+					enjeux importants, notamment en matière de réglementation, de protection des données personnelles et
+					d&apos;impact environnemental.</p>
 
-				<p style="text-align: justify;">Le Web 3.0 a le potentiel de rendre Internet plus démocratique en donnant aux
-					utilisateurs plus de contrôle sur leurs données et en leur offrant de nouvelles façons de s'organiser et de
-					collaborer. Cela pourrait conduire à une société plus équitable et plus inclusive, où chacun a la possibilité
-					de s'exprimer et de participer à la vie numérique.</p>
+
+				<br>
+
+
+
+				<div class="feed-choice">
+					<div class="rss-button">
+						<h3>Feed RSS blochain.news</h3>
+						<input id="btn-rss-blockchain" type="button" value="Afficher" />
+					</div>
+				</div>
+
 			</div>
 
-
-
-			<div id="veille-container">
-				<div id="article-container"></div>
+			<div id="veille-container-blockchain">
+				<div id="article-container-blockchain"></div>
 			</div>
 		</section>
 

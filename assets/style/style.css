@@ -88,7 +88,7 @@ section {
    padding: var(--padding-section);
 }
 
-section .header-ia {
+section .veille_header {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -112,7 +112,7 @@ main {
 
 ul li {
    list-style-type: none;
-   text-align: center;
+   text-align: left;
    line-height: 30px;
 }
 
@@ -821,13 +821,19 @@ body #vertical-mail {
    align-items: center;
 }
 
-#veille-container {
+.veille_header {
+   text-align: justify;
+}
+
+#veille-container-ia,
+#veille-container-blockchain {
    display: none;
    opacity: 0;
    transition: var(--transition-timer-3);
 }
 
-#veille-container.active {
+#veille-container-ia.active,
+#veille-container-blockchain.active {
    width: 100%;
    display: flex;
    flex-direction: column;
@@ -837,24 +843,33 @@ body #vertical-mail {
    transition: var(--transition-timer);
 }
 
-#veille-container #article-container .article {
+#veille-container-ia #article-container-ia,
+#veille-container-blockchain #article-container-blockchain {
+   width: 100%;
+   padding: 1em;
+   display: flex;
+   justify-content: center;
+   align-items: stretch;
+   align-content: baseline;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 2em;
+}
+
+#veille-container-ia #article-container-ia .article,
+#veille-container-blockchain #article-container-blockchain .article {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
    width: 100%;
    max-width: 600px;
    background-color: var(--background-card);
    border-radius: var(--border-radius);
    box-shadow: var(--shadow);
+   padding: 1em;
 }
 
-#veille-container #article-container {
-   width: 100%;
-   padding: 1em;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: row;
-   flex-wrap: wrap;
-   gap: 2em;
-}
+
 
 .header h1 {
    text-align: center;
