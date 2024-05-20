@@ -398,45 +398,35 @@ nav {
 /* ************************************* */
 /* *                Aside              * */
 /* ************************************* */
-#aside-container {
+
+#nav {
    z-index: 1000;
    position: fixed;
    top: 0;
    left: 0;
    height: 100%;
-   /* width: 100%; */
+   width: 100%;
    background-color: var(--background-card);
    backdrop-filter: blur(8px);
-   transform: translateX(-400px);
+   transform: translateX(-100%);
    transition: var(--transition-timer);
-}
-
-#aside-container.active {
-   transform: translateX(0px);
-   transition: var(--transition-timer);
-   box-shadow: var(--shadow);
-   backdrop-filter: blur(50%);
-}
-
-#aside-container #aside-menu {
    width: 100%;
    height: 100%;
    padding: var(--padding-section);
    display: flex;
    flex-direction: column;
-   /* align-items: flex-end; */
+
    align-items: center;
    justify-content: space-around;
 }
 
-#aside-container #aside-menu .aside-item {
-   list-style-type: none;
-   width: 100%;
-   text-align: right;
-   /* text-align: center; */
+#nav.active {
+   transform: translateX(0px);
+   transition: var(--transition-timer);
+   box-shadow: var(--shadow);
 }
 
-#aside-container #aside-menu .aside-item a {
+#nav a {
    color: var(--color-link);
    font-size: 1.3em;
    font-weight: bold;
@@ -858,6 +848,7 @@ body #vertical-mail {
 
 #veille-container-ia #article-container-ia .article,
 #veille-container-blockchain #article-container-blockchain .article {
+   position: relative;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -868,7 +859,6 @@ body #vertical-mail {
    box-shadow: var(--shadow);
    padding: 1em;
 }
-
 
 
 .header h1 {
@@ -917,26 +907,36 @@ body #vertical-mail {
 .article-view a {
    text-align: center;
 }
-
+.article-date{
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+   font-size: 0.7em;
+}
 .article-text {
    padding: 1em;
    width: 100%;
    display: flex;
    flex-direction: column;
    justify-content: space-around;
+   
 }
 
 .article-text .article-description p:first-child {
    text-align: justify;
    line-height: 1.4em;
+   margin-bottom: 1rem;
 }
 
 .article-text .article-tag {
+   position: relative;
+   top: 20px;
    width: 100%;
    display: flex;
    flex-direction: row;
    justify-content: flex-start;
    gap: 10px;
+   overflow: scroll;
 }
 
 .article-text .article-tag p {
@@ -1110,24 +1110,23 @@ body #vertical-mail {
       display: none;
    }
 
-   nav {
-      z-index: 10000;
+
+   #nav {
       background-color: #54617f;
-      position: fixed;
-      top: 0;
-      left: 0;
-      display: flex;
+      flex-direction: row;
       justify-content: space-around;
       align-items: center;
       width: 100%;
       height: 50px;
+      transform: translateX(0);
       box-shadow: 0px -2px 24px 10px rgba(0, 0, 0, 1);
    }
 
-   nav a {
+   #nav a {
       font-weight: bold;
       font-size: 1.2rem;
       cursor: pointer;
+      letter-spacing: 1px;
    }
 
    #AP,

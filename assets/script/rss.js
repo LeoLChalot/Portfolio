@@ -6,20 +6,16 @@
 // ************************************** //
 let btnGoogleIA = document.getElementById('btn-rss-ia');
 let btnBlockchain = document.getElementById('btn-rss-blockchain');
-// console.log(btnGoogleIA);
 
 // ? Création des éléments de la section veille IA
 let veilleContainerIa = document.getElementById('veille-container-ia');
 let veilleContainerBlockchain = document.getElementById('veille-container-blockchain');
 
-// let articleContainer = document.createElement('div');
-
 const divArticleContainerIa = document.getElementById('article-container-ia');
 const divArticleContainerBlockchain = document.getElementById('article-container-blockchain');
 
-let url_ai = 'https://blog.google/technology/ai/rss/';
-let url_blockchain = 'https://blockchain.news/rss';
-
+const url_ai = 'https://blog.google/technology/ai/rss/';
+const url_blockchain = 'https://blockchain.news/rss';
 let parser, xmlDoc;
 
 btnGoogleIA.addEventListener('click', () => {
@@ -245,8 +241,6 @@ try {
 
             let cleanText = textWithoutCdata.replace(/<[^>]*>/g, '');
 
-            pDescription.innerHTML = cleanText;
-
             /*
             ? console.log({ "cleanText": cleanText });
             * The Binance has revealed its plans to support the upcoming network upgrade of IRISnet (IRIS). (Read More)
@@ -291,6 +285,7 @@ try {
                divArticleTag.appendChild(pTag);
                console.log({ "pTag": pTag.innerHTML });
             }
+            pDescription.innerHTML = cleanText;
 
             // ? Formatage de la date au format souhaité
             let date =

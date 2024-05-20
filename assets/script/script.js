@@ -1,6 +1,6 @@
 // ? JS Menu aside
 let btnBurger = document.getElementById("btn-burger");
-let asideContainer = document.querySelector("#aside-container");
+let nav = document.querySelector("#nav");
 let btnBurgerSpan = document.querySelectorAll("#btn-burger span");
 let copyright = document.querySelector(".copyright");
 let body = document.querySelector("body");
@@ -8,9 +8,7 @@ let body = document.querySelector("body");
 
 btnBurger.addEventListener("click", () => {
 	btnBurger.classList.toggle("active");
-	asideContainer.classList.toggle("active");
-	copyright.classList.toggle("active");
-	console.log(copyright);
+	nav.classList.toggle("active");
 });
 
 
