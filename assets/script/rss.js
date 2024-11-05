@@ -153,12 +153,7 @@ const proxyUrl = "https://cors-anywhere.herokuapp.com/";
 
 try {
    axios
-      .get(url_blockchain, {
-         headers: {
-            'Content-Type': 'text/xml',
-            'Access-Control-Allow-Origin': ['*', 'https://leolchalot.github.io'],
-         },
-      })
+   .get(proxyUrl + url_blockchain)
       .then((result) => {
          let data = result.data;
          // console.log(data);
