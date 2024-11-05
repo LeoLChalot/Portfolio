@@ -156,7 +156,7 @@ try {
       .get(url_blockchain, {
          headers: {
             'Content-Type': 'text/xml',
-            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Origin': ['*', 'https://leolchalot.github.io'],
          },
       })
       .then((result) => {
