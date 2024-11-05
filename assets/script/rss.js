@@ -96,9 +96,8 @@ try {
             for (let i = 0; i < tagList.length; i++) {
                tag = tagList[i].childNodes[0].nodeValue;
 
-               tagArray.length >= 5 ? null : tagArray.push(tag);
-
-               
+               if (tagArray.length >= 5) break
+               tagArray.push(tag);
             }
             for (let i = 0; i < tagArray.length; i++) {
                let pTag = document.createElement('p');
