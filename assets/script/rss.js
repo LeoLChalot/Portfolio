@@ -147,9 +147,16 @@ try {
 
 const proxyUrl = "https://cors-anywhere.herokuapp.com/";
 // ? Requête au flux Blockchain.news
+// .get(proxyUrl + url_blockchain)
+
 try {
    axios
-      .get(proxyUrl + url_blockchain)
+      .get(url_blockchain, {
+         headers: {
+            'Content-Type': 'text/xml',
+            'Access-Control-Allow-Origin': '*',
+         },
+      })
       .then((result) => {
          let data = result.data;
          // console.log(data);
